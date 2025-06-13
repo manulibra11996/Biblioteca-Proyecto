@@ -1,7 +1,7 @@
 package com.example.Biblioteca_Version_2.controler;
 
 import com.example.Biblioteca_Version_2.entidades.Autor;
-import com.example.Biblioteca_Version_2.entidades.AutorRepository;
+import com.example.Biblioteca_Version_2.repositories.AutorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
