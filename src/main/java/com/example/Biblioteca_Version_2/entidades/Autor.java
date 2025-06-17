@@ -3,9 +3,6 @@ package com.example.Biblioteca_Version_2.entidades;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Setter;
-
-import com.example.Biblioteca_Version_2.entidades.Autor;
-
 import java.util.Date;
 
 
@@ -14,8 +11,7 @@ import java.util.Date;
 @Entity
 @Table(name = "autores")
 public class Autor {
-    @lombok.Setter
-    @lombok.Getter
+
     @Id
     @GeneratedValue(strategy =GenerationType.IDENTITY)
     private Long id;
@@ -30,6 +26,17 @@ public class Autor {
     private Date fechaNacimiento;
     @Column(name = "nacionalidad")
     private String nacionalidad;
+
+    public Autor() {
+    }
+
+    public Autor(String nombre, String apellido, String biografia, Date fechaNacimiento, String nacionalidad) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.biografia = biografia;
+        this.fechaNacimiento = fechaNacimiento;
+        this.nacionalidad = nacionalidad;
+    }
 
     public String getNombre() {
         return nombre;

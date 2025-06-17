@@ -23,7 +23,7 @@ public class Prestamo {
     @JoinColumn(name = "libro_id")
     private Libros libro;//Modificar por el tipo Libro
 
-    @NonNull
+    @Column(nullable = false)
     private Date fechaEntrega;
 
     private Date fechaDevolucion;

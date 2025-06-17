@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 @Table(name = "categorias") // personaliza el nombre de la tabla
 public class Categorias {
 
-@Id // indica que este atributo es la clave primaria
+    @Id // indica que este atributo es la clave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
