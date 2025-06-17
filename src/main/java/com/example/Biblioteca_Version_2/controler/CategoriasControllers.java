@@ -9,7 +9,7 @@ import java.util.List;
 @Controller
 public class CategoriasControllers {
     // anotación que mapea las peticiones GET a la URL "/alquiler"
-
+    /*
     private List<Categorias> categoria;
 
     public CategoriasControllers() {
@@ -47,5 +47,6 @@ public class CategoriasControllers {
         //    return true;
         //}
         //return false;
+     */
     }
 

@@ -11,7 +11,7 @@ import java.util.List;
 
 public class AutorControllers {
 
-
+    /*
     // Controlador de Autor
     @RestController
     @RequestMapping("/api/autores")
@@ -83,5 +83,5 @@ public class AutorControllers {
         }
     }
 
-
+*/
 }

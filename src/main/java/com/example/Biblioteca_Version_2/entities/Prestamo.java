@@ -28,9 +28,11 @@ public class Prestamo {
     @JoinColumn(name = "libro_id")
     private Libros libro;//Modificar por el tipo Libro
 
+    @Temporal(TemporalType.DATE)
     @Column(nullable = false)
     private Date fechaEntrega;
 
+    @Temporal(TemporalType.DATE)
     private Date fechaDevolucion;
 
     // constructor vacío

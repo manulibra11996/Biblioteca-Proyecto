@@ -40,18 +40,18 @@ public class LibrosControllers {
         return "libro-list";
     }
 
-    @GetMapping("/libros/{id}") // http://localhost:8080/productos/1
-    public String findById(Model model, @PathVariable Long id) {
-        Optional<Libros> libroOpt = libroRepository.findById(id);
+    //@GetMapping("/libros/{id}") // http://localhost:8080/productos/1
+    //public String findById(Model model, @PathVariable Long id) {
+    //    Optional<Libros> libroOpt = libroRepository.findById(id);
 
-        if (libroOpt.isPresent()) {
-            model.addAttribute("libro", libroOpt.get());
-        } else {
-            model.addAttribute("error", "404 Producto Not Found");
-        }
+    //    if (libroOpt.isPresent()) {
+    //        model.addAttribute("libro", libroOpt.get());
+     //   } else {
+      //      model.addAttribute("error", "404 Producto Not Found");
+      //  }
 
-        return "producto-detail";
-    }
+       // return "producto-detail";
+    //}
 
     @GetMapping("/libros/nuevo")
     public String createForm(Model model) {
@@ -62,19 +62,19 @@ public class LibrosControllers {
     }
 
 
-    @GetMapping("/libros/{id}/editar")
-    public String editForm(Model model, @PathVariable Long id) {
-        Optional<Libros> libroOpt = libroRepository.findById(id);
+    //@GetMapping("/libros/{id}/editar")
+    //public String editForm(Model model, @PathVariable Long id) {
+    //    Optional<Libros> libroOpt = libroRepository.findById(id);
 
-        if (libroOpt.isPresent()) {
-            model.addAttribute("libro", libroOpt.get());
-            model.addAttribute("categorias", categoriaRepository.findAll());
-        } else {
-            model.addAttribute("error", "Libro no encontrado");
-        }
+    //    if (libroOpt.isPresent()) {
+     //       model.addAttribute("libro", libroOpt.get());
+     //       model.addAttribute("categorias", categoriaRepository.findAll());
+     //   } else {
+     //       model.addAttribute("error", "Libro no encontrado");
+      //  }
 
-        return "libro-form";
-    }
+      //  return "libro-form";
+    //}
 
 
     @PostMapping("/libros") // podría ser @PostMapping("/libros/form") si en el formulario pusiera th:action="@{/libros/form}"
