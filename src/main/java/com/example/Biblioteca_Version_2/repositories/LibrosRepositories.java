@@ -1,6 +1,6 @@
 package com.example.Biblioteca_Version_2.repositories;
 
-import com.example.Biblioteca_Version_2.entidades.Libros;
+import com.example.Biblioteca_Version_2.entities.Libros;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

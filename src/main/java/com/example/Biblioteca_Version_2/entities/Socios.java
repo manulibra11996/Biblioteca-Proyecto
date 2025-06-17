@@ -1,7 +1,6 @@
-package com.example.Biblioteca_Version_2.entidades;
+package com.example.Biblioteca_Version_2.entities;
 
 import jakarta.persistence.*;
-import lombok.Data;
 
 @Entity // indica que esta clase es una tabla
 @Table(name = "socios") // personaliza el nombre de la tabla

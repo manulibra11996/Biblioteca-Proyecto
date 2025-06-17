@@ -1,4 +1,4 @@
-package com.example.Biblioteca_Version_2.entidades;
+package com.example.Biblioteca_Version_2.entities;
 
 import jakarta.persistence.*;
 
@@ -12,15 +12,15 @@ public class Libros {
     private Long id;
     private String titulo;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "id_autor")
     private Autor autor;
 
     private Integer numeroPaginas;
     private Boolean disponible;
 
-    @OneToMany
-    @JoinTable(
+    @ManyToOne
+    @JoinColumn(
             name= "id_categoria"
     )
     private Categorias categoria;

@@ -1,13 +1,10 @@
-package com.example.Biblioteca_Version_2.entidades;
+package com.example.Biblioteca_Version_2.entities;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Setter;
 import java.util.Date;
 
 
 // Entidad Autor
-@Builder
 @Entity
 @Table(name = "autores")
 public class Autor {
@@ -21,7 +18,7 @@ public class Autor {
     private String apellido;
     @Column(name = "biografia")
     private String biografia;
-    @Setter
+
     @Column(name = "fecha_nacimiento")
     private Date fechaNacimiento;
     @Column(name = "nacionalidad")
@@ -36,6 +33,14 @@ public class Autor {
         this.biografia = biografia;
         this.fechaNacimiento = fechaNacimiento;
         this.nacionalidad = nacionalidad;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -64,6 +69,10 @@ public class Autor {
 
     public Date getFechaNacimiento() {
         return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
     }
 
     public String getNacionalidad() {

@@ -1,4 +1,4 @@
-package com.example.Biblioteca_Version_2.entidades;
+package com.example.Biblioteca_Version_2.entities;
 
 import jakarta.persistence.*;
 

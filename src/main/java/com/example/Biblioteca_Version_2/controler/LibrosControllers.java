@@ -1,7 +1,7 @@
 package com.example.Biblioteca_Version_2.controler;
 
 import org.springframework.ui.Model;
-import com.example.Biblioteca_Version_2.entidades.Libros;
+import com.example.Biblioteca_Version_2.entities.Libros;
 import com.example.Biblioteca_Version_2.repositories.CategoriasRepositories;
 import com.example.Biblioteca_Version_2.repositories.LibrosRepositories;
 import org.springframework.beans.factory.annotation.Autowired;

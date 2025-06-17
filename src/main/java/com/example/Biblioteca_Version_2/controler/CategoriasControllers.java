@@ -1,7 +1,6 @@
 package com.example.Biblioteca_Version_2.controler;
 
-import com.example.Biblioteca_Version_2.entidades.Categorias;
-import com.example.Biblioteca_Version_2.repositories.CategoriasRepositories;
+import com.example.Biblioteca_Version_2.entities.Categorias;
 import org.springframework.stereotype.Controller;
 
 import java.util.ArrayList;

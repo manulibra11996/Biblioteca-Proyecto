@@ -1,6 +1,6 @@
 package com.example.Biblioteca_Version_2.repositories;
 
-import com.example.Biblioteca_Version_2.entidades.Autor;
+import com.example.Biblioteca_Version_2.entities.Autor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;

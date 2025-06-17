@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.grajilla</groupId>
-	<artifactId>aviberico</artifactId>
+	<artifactId>biblioteca</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>aviberico</name>
+	<name>biblioteca</name>
 	<description>Pajareando con la grajilla</description>
 	<url/>
 	<licenses>
