@@ -4,7 +4,7 @@ import com.example.Biblioteca_Version_2.repositories.PrestamoRepositories;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class PrestamoControler {
+public class PrestamoController {
     private PrestamoRepositories prestamoRepositories;
 
     public PrestamoController(PrestamoRepositories prestamoRepositories) {

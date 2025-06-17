@@ -78,7 +78,7 @@ public class LibrosControllers {
 
 
     @PostMapping("/libros") // podría ser @PostMapping("/libros/form") si en el formulario pusiera th:action="@{/libros/form}"
-    public String saveForm(@ModelAttribute Libro libro) {
+    public String saveForm(@ModelAttribute Libros libro) {
         libroRepository.save(libro);
 
         return "redirect:/libros";

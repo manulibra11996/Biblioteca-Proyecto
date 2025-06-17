@@ -1,6 +1,7 @@
 package com.example.Biblioteca_Version_2.entidades;
 
 import jakarta.persistence.*;
+import lombok.NonNull;
 
 import java.util.Date;
 
@@ -13,15 +14,16 @@ public class Prestamo {
     private Long id;
 
     //MUCHOS Prestamos pertenece a UN socio
-    //@ManyToOne
-    //@JoinColumn(name = "socio_id")
-    private String socio;//Modificar por el tipo Socio
+    @OneToMany
+    @JoinColumn(name = "socio_id")
+    private Socios socio;//Modificar por el tipo Socio
 
     //MUCHOS Prestamos pertenece a UN libro
-    //@ManyToOne
-    //@JoinColumn(name = "libro_id")
-    private String libro;//Modificar por el tipo Libro
+    @OneToMany
+    @JoinColumn(name = "libro_id")
+    private Libros libro;//Modificar por el tipo Libro
 
+    @NonNull
     private Date fechaEntrega;
 
     private Date fechaDevolucion;
@@ -31,7 +33,7 @@ public class Prestamo {
     }
 
     // constructor con parámetros
-    public Prestamo(String socio, String libro, Date fechaEntrega, Date fechaDevolucion) {
+    public Prestamo(Socios socio, Libros libro, Date fechaEntrega, Date fechaDevolucion) {
         this.socio = socio;
         this.libro = libro;
         this.fechaEntrega = fechaEntrega;
@@ -47,19 +49,19 @@ public class Prestamo {
         this.id = id;
     }
 
-    public String getSocio() {
+    public Socios getSocio() {
         return socio;
     }
 
-    public void setSocio(String socio) {
+    public void setSocio(Socios socio) {
         this.socio = socio;
     }
 
-    public String getLibro() {
+    public Libros getLibro() {
         return libro;
     }
 
-    public void setLibro(String libro) {
+    public void setLibro(Libros libro) {
         this.libro = libro;
     }
 

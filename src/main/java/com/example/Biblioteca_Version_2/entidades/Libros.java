@@ -12,38 +12,30 @@ public class Libros {
     private Long id;
     private String titulo;
 
-    //@JoinColumn(name = "id_autor")
-    private String autor;
+    @OneToMany
+    @JoinColumn(name = "id_autor")
+    private Autor autor;
 
     private Integer numeroPaginas;
     private Boolean disponible;
 
-    //@JoinTable(
-    //        name= "id_categoria"
-    //)
-    private String categoria;
+    @OneToMany
+    @JoinTable(
+            name= "id_categoria"
+    )
+    private Categorias categoria;
 
-    //@ManytoMany
-    //@JoinTable(
-    //        name = "libro_prestamo",
-    //        joinColumns =
-    //        @JoinColumn(name = "libro_id"),
-    //       inverseJoinColumns =
-    //       @JoinColumn(name = "prestamo_id"))
-
-    private String prestamos;
 
     public Libros() {
     }
 
-    public Libros(String titulo, String autor, Integer numeroPaginas, Boolean disponible, String categoria, String prestamos) {
+    public Libros(String titulo, Autor autor, Integer numeroPaginas, Boolean disponible, Categorias categoria, String prestamos) {
         this.titulo = titulo;
         this.autor = autor;
         this.numeroPaginas = numeroPaginas;
         this.disponible = disponible;
         this.categoria = categoria;
-        this.prestamos = prestamos;
-    }
+}
 
     // Getters y setters
     public Long getId() {
@@ -62,11 +54,11 @@ public class Libros {
         this.titulo = titulo;
     }
 
-    public String getAutor() {
+    public Autor getAutor() {
         return autor;
     }
 
-    public void setAutor(String autor) {
+    public void setAutor(Autor autor) {
         this.autor = autor;
     }
 
@@ -86,20 +78,13 @@ public class Libros {
         this.disponible = disponible;
     }
 
-    public String getCategoria() {
+    public Categorias getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(Categorias categoria) {
         this.categoria = categoria;
     }
 
-    public String getPrestamos() {
-        return prestamos;
-    }
-
-    public void setPrestamos(String prestamos) {
-        this.prestamos = prestamos;
-    }
 }
 
