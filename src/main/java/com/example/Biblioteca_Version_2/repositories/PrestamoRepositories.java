@@ -4,4 +4,6 @@ import com.example.Biblioteca_Version_2.entities.Prestamo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PrestamoRepositories extends JpaRepository<Prestamo, Long> {
+
+    // prestamos de 1 semana
 }

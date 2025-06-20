@@ -11,8 +11,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -39,5 +41,19 @@ public class PrestamoController {
         model.addAttribute("socios", socios);
 
         return "prestamo/prestamo-list";
+    }
+
+    // detalle de prestamo
+    @GetMapping("/prestamo/{id}")
+    public String findById(Model model, @PathVariable Long id) {
+        Optional<Prestamo> prestamoOpt = prestamoRepositories.findById(id);
+
+        if (prestamoOpt.isPresent()) {
+            model.addAttribute("prestamo", prestamoOpt.get());
+        } else {
+            model.addAttribute("error", "No se ha encontrado el prestamo");
+        }
+
+        return "prestamo/prestamo-detail"; // TODO: crear proveedor-detail.html
     }
 }
