@@ -31,10 +31,10 @@ public class LibrosControllers {
         List<Libros> libros = librosRepositories.findAll();
         model.addAttribute("libro", libros);
 
-        return "libros/libro-list";
+        return "libros/libros-list";
     }
 
-    @GetMapping("/libros/{id}") // http://localhost:8080/productos/1
+    @GetMapping("/libro/{id}") // http://localhost:8080/productos/1
     public String findById(Model model, @PathVariable Long id) {
         Optional<Libros> libroOpt = librosRepositories.findById(id);
 
