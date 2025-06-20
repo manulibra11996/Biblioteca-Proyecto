@@ -1,5 +1,5 @@
 -- Insertar en categorias
-INSERT INTO `biblioteca`.`categorias` (`descripcion`, `nombre`) VALUES ('Romance', 'Libros de amor');
+INSERT INTO `biblioteca`.`categorias` (`nombre`, `descripcion`) VALUES ('Romance', 'Libros de amor');
 
 -- Insertar en autores
 INSERT INTO `biblioteca`.`autores` (`apellido`, `biografia`, `fecha_nacimiento`, `nacionalidad`, `nombre`) VALUES ('Fernández', 'renacimiento', '1605-01-16', 'España', 'Manuel');

@@ -2,12 +2,64 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Listado de categorias</title>
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}">
 
 </head>
 <body>
 
+<div class="container mt-4 mb-5">
+    <h1 class="mb-4">
+        <i class="fa-solid fa-bounce me-2"></i>Lista de categoria
+    </h1>
+    <a th:href="@{/categoria/construccion}" class="btn btn-success mb-3">
+        <i class="fa-solid fa-plus me-2"></i>Insertar nuevo categoria
+    </a>
+
+    <div th:unless="${categoria.isEmpty()}" class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+            <tr>
+                <th><i class="fa-solid fa-hashtag me-1"></i>ID</th>
+                <th><i class="fa-solid me-1"></i>Nombre</th>
+                <th><i class="fa-solid me-1"></i>Descripcion</th>
+                <th><i class="fa-solid fa-gears me-1"></i>Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="categoria : ${categoria}" class="align-middle">
+                <td th:text="${categoria.id}"></td>
+                <td th:text="${categoria.nombre}"></td>
+                <td th:text="${categoria.descripcion}"></td>
+                <td>
+                    <div class="d-flex gap-1">
+                        <a th:href="@{/categoria/{id}(id=${categoria.id})}"
+                           class="btn btn-primary btn-sm"
+                           title="Ver detalle">
+                            <i class="fa-solid fa-eye me-1"></i>Ver
+                        </a>
+                        <a th:href="@{categoria/{id}/edit(id=${categoria.id})}"
+                           class="btn btn-warning btn-sm"
+                           title="Editar categoria">
+                            <i class="fa-solid fa-file-pen me-1"></i>Editar
+                        </a>
+
+                        <button type="button"
+                                class="btn btn-danger btn-sm btn-delete"
+                                data-bs-toggle="modal"
+                                data-bs-target="#confirmDeleteModal"
+                                th:data-categoria-id="${categoria.id}"
+                                title="Eliminar categoria">
+                            <i class="fa-solid fa-trash me-1"></i>Borrar
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
 </body>
 </html>
