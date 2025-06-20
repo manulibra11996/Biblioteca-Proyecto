@@ -1,5 +1,10 @@
 package com.example.Biblioteca_Version_2.controler;
 
+import com.example.Biblioteca_Version_2.repositories.PrestamoRepositories;
+import com.example.Biblioteca_Version_2.repositories.SociosRepositories;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import com.example.Biblioteca_Version_2.entities.Libros;
 import com.example.Biblioteca_Version_2.repositories.CategoriasRepositories;
@@ -11,30 +16,19 @@ import java.util.List;
 import java.util.Optional;
 
 
-@RestController
-@RequestMapping("/api/libros")
+@Slf4j
+@RequiredArgsConstructor
+@Controller
 public class LibrosControllers {
 
-    @Autowired
-    private LibrosRepositories libroRepository;
-    private CategoriasRepositories categoriaRepository;
+    private final CategoriasRepositories categoriasRepositories;
+    private final LibrosRepositories librosRepositories;
 
-    @GetMapping
-    public List<Libros> getAllLibros() {
-
-        return libroRepository.findAll();
-
-    }
-
-    public LibrosControllers(LibrosRepositories libroRepository, CategoriasRepositories categoriaRepository) {
-        this.libroRepository = libroRepository;
-        this.categoriaRepository = categoriaRepository;
-    }
 
     @GetMapping("/libro") // http://localhost:8080/productos
     public String findAll(Model model) {
 
-        List<Libros> libros = libroRepository.findAll();
+        List<Libros> libros = librosRepositories.findAll();
         model.addAttribute("libro", libros);
 
         return "libros/libro-list";
@@ -42,7 +36,7 @@ public class LibrosControllers {
 
     @GetMapping("/libros/{id}") // http://localhost:8080/productos/1
     public String findById(Model model, @PathVariable Long id) {
-        Optional<Libros> libroOpt = libroRepository.findById(id);
+        Optional<Libros> libroOpt = librosRepositories.findById(id);
 
         if (libroOpt.isPresent()) {
             model.addAttribute("libro", libroOpt.get());
@@ -56,7 +50,7 @@ public class LibrosControllers {
     @GetMapping("/libros/nuevo")
     public String createForm(Model model) {
         model.addAttribute("libro", new Libros());
-        model.addAttribute("categorias", categoriaRepository.findAll());
+        model.addAttribute("categorias", categoriasRepositories.findAll());
 
         return "libro-form";
     }
@@ -79,7 +73,7 @@ public class LibrosControllers {
 
     @PostMapping("/libros") // podría ser @PostMapping("/libros/form") si en el formulario pusiera th:action="@{/libros/form}"
     public String saveForm(@ModelAttribute Libros libro) {
-        libroRepository.save(libro);
+        librosRepositories.save(libro);
 
         return "redirect:/libros";
     }

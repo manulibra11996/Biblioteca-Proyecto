@@ -18,7 +18,7 @@ public class Autor {
     private String apellido;
     @Column(name = "biografia")
     private String biografia;
-
+    @Temporal(TemporalType.DATE)
     @Column(name = "fecha_nacimiento")
     private Date fechaNacimiento;
     @Column(name = "nacionalidad")

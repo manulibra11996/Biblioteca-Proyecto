@@ -1,10 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Listado de autores</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}">
+
 </head>
 <body>
 
+<div class="container mt-4 mb-5">
+  <h1 class="mb-4">
+    <i class="fa-solid fa-bounce me-2"></i>Lista de autor
+  </h1>
+  <a th:href="@{/autor/construccion}" class="btn btn-success mb-3">
+    <i class="fa-solid fa-plus me-2"></i>Insertar nuevo autor
+  </a>
+
+  <div th:unless="${autor.isEmpty()}" class="table-responsive">
+    <table class="table table-striped table-hover">
+      <thead class="table-dark">
+      <tr>
+        <th><i class="fa-solid fa-hashtag me-1"></i>ID</th>
+        <th><i class="fa-solid me-1"></i>Nombre</th>
+        <th><i class="fa-solid me-1"></i>Apellido</th>
+        <th><i class="fa-solid me-1"></i>Biografia</th>
+        <th><i class="fa-solid me-1"></i>Fecha de nacimiento</th>
+        <th><i class="fa-solid me-1"></i>Nacionalidad</th>
+        <th><i class="fa-solid fa-gears me-1"></i>Acciones</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="autor : ${autor}" class="align-middle">
+        <td th:text="${autor.id}"></td>
+        <td th:text="${autor.nombre}"></td>
+        <td th:text="${autor.apellido}"></td>
+        <td th:text="${autor.biografia}"></td>
+        <td th:text="${autor.fechaNacimiento}"></td>
+        <td th:text="${autor.Nacionalidad}"></td>
+        <td>
+          <div class="d-flex gap-1">
+            <a th:href="@{/autor/{id}(id=${autor.id})}"
+               class="btn btn-primary btn-sm"
+               title="Ver detalle">
+              <i class="fa-solid fa-eye me-1"></i>Ver
+            </a>
+            <a th:href="@{autor/{id}/edit(id=${autor.id})}"
+               class="btn btn-warning btn-sm"
+               title="Editar autor">
+              <i class="fa-solid fa-file-pen me-1"></i>Editar
+            </a>
+
+            <button type="button"
+                    class="btn btn-danger btn-sm btn-delete"
+                    data-bs-toggle="modal"
+                    data-bs-target="#confirmDeleteModal"
+                    th:data-autor-id="${autor.id}"
+                    title="Eliminar autor">
+              <i class="fa-solid fa-trash me-1"></i>Borrar
+            </button>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
 </body>
 </html>

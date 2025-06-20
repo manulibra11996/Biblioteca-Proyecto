@@ -4,6 +4,8 @@ import com.example.Biblioteca_Version_2.entities.Categorias;
 import com.example.Biblioteca_Version_2.entities.Socios;
 import com.example.Biblioteca_Version_2.repositories.CategoriasRepositories;
 import com.example.Biblioteca_Version_2.repositories.SociosRepositories;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,22 +15,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 import java.util.Optional;
 
+@Slf4j
+@RequiredArgsConstructor
 @Controller
 public class SociosControllers {
 
-    @Autowired
-    private SociosRepositories sociosRepositories;
-
-    @GetMapping
-    public List<Socios> getAllSocios() {
-
-        return sociosRepositories.findAll();
-
-    }
-
-    public SociosControllers(SociosRepositories sociosRepositories) {
-        this.sociosRepositories = sociosRepositories;
-    }
+    private final SociosRepositories sociosRepositories;
 
     @GetMapping("/socio") // http://localhost:8080/productos
     public String findAll(Model model) {

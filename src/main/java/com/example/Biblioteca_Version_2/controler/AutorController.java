@@ -4,6 +4,9 @@ import com.example.Biblioteca_Version_2.entities.Autor;
 import com.example.Biblioteca_Version_2.entities.Categorias;
 import com.example.Biblioteca_Version_2.repositories.AutorRepository;
 import com.example.Biblioteca_Version_2.repositories.CategoriasRepositories;
+import com.example.Biblioteca_Version_2.repositories.SociosRepositories;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,22 +17,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+@Slf4j
+@RequiredArgsConstructor
 @Controller
 public class AutorController {
 
-    @Autowired
-    private AutorRepository autorRepository;
+    private final AutorRepository autorRepository;
 
-    @GetMapping
-    public List<Autor> getAllAutor() {
-
-        return autorRepository.findAll();
-
-    }
-
-    public AutorController(AutorRepository autorRepository) {
-        this.autorRepository = autorRepository;
-    }
 
     @GetMapping("/autor") // http://localhost:8080/productos
     public String findAll(Model model) {

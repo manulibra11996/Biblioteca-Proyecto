@@ -15,24 +15,27 @@
     <div th:if="${autor}">
 
         <div>
-            <strong>ID:</strong> <span th:text="${prestamo.id}"></span>
+            <strong>ID:</strong> <span th:text="${autor.id}"></span>
         </div>
         <div>
-            <strong>Libro:</strong> <span th:text="${prestamo.libro.titulo}"></span>
+            <strong>Nombre:</strong> <span th:text="${autor.nombre}"></span>
         </div>
         <div>
-            <strong>Socio:</strong> <span th:text="${prestamo.socio.nombre}"></span>
+            <strong>Apellido:</strong> <span th:text="${autor.apellido}"></span>
         </div>
         <div>
-            <strong>Fecha de entrega:</strong> <span th:text="${prestamo.fechaEntrega}"></span>
+            <strong>Biografia:</strong> <span th:text="${autor.biografia}"></span>
         </div>
-        <div th:if="${prestamo.fechaDevolucion != null}">
-            <strong>Fecha de devolución:</strong> <span th:text="${prestamo.fechaDevolucion}"></span>
+        <div>
+            <strong>Fecha de nacimiento:</strong> <span th:text="${autor.fechaNacimiento}"></span>
+        </div>
+        <div>
+            <strong>Nacionalidad:</strong> <span th:text="${autor.nacionalidad}"></span>
         </div>
     </div>
 
     <div>
-        <a th:href="@{/prestamo}">Volver al listado de prestamos</a>
+        <a th:href="@{/autor}">Volver al listado de autores</a>
     </div>
 </div>
 
