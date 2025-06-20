@@ -37,21 +37,21 @@ public class LibrosControllers {
         List<Libros> libros = libroRepository.findAll();
         model.addAttribute("libro", libros);
 
-        return "libro-list";
+        return "libros/libro-list";
     }
 
-    //@GetMapping("/libros/{id}") // http://localhost:8080/productos/1
-    //public String findById(Model model, @PathVariable Long id) {
-    //    Optional<Libros> libroOpt = libroRepository.findById(id);
+    @GetMapping("/libros/{id}") // http://localhost:8080/productos/1
+    public String findById(Model model, @PathVariable Long id) {
+        Optional<Libros> libroOpt = libroRepository.findById(id);
 
-    //    if (libroOpt.isPresent()) {
-    //        model.addAttribute("libro", libroOpt.get());
-     //   } else {
-      //      model.addAttribute("error", "404 Producto Not Found");
-      //  }
+        if (libroOpt.isPresent()) {
+            model.addAttribute("libro", libroOpt.get());
+        } else {
+            model.addAttribute("error", "404 Libros Not Found");
+        }
 
-       // return "producto-detail";
-    //}
+        return "libros/libros-detail";
+    }
 
     @GetMapping("/libros/nuevo")
     public String createForm(Model model) {
