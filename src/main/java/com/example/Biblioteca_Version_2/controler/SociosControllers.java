@@ -36,7 +36,7 @@ public class SociosControllers {
         Optional<Socios> sociosOpt = sociosRepositories.findById(id);
 
         if (sociosOpt.isPresent()) {
-            model.addAttribute("libro", sociosOpt.get());
+            model.addAttribute("socio", sociosOpt.get());
         } else {
             model.addAttribute("error", "404 Socios Not Found");
         }

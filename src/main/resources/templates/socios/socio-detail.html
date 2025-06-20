@@ -2,9 +2,39 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Detalle de socio</title>
 </head>
 <body>
+<div>
+    <h1>Detalle de socio</h1>
+
+    <div th:if="${error}">
+        <p th:text="${error}"></p>
+    </div>
+
+    <div th:if="${socio}">
+
+        <div>
+            <strong>ID:</strong> <span th:text="${socio.id}"></span>
+        </div>
+        <div>
+            <strong>Nombre:</strong> <span th:text="${socio.nombre}"></span>
+        </div>
+        <div>
+            <strong>Direccion:</strong> <span th:text="${socio.direccion}"></span>
+        </div>
+        <div>
+            <strong>Telefono:</strong> <span th:text="${socio.telefono}"></span>
+        </div>
+        <div>
+            <strong>Email:</strong> <span th:text="${socio.email}"></span>
+        </div>
+    </div>
+
+    <div>
+        <a th:href="@{/socio}">Volver al listado de socios</a>
+    </div>
+</div>
 
 </body>
 </html>
