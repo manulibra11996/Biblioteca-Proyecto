@@ -1,0 +1,595 @@
+import React from "react";
+import { BotN } from "./BotN";
+import { Imput } from "./Imput";
+import { Instagram } from "./Instagram";
+import { TopBarOrdenadorY } from "./TopBarOrdenadorY";
+import { VectorWrapper } from "./VectorWrapper";
+import fondoParaAutores from "./fondo-para-autores.svg";
+import image from "./image.png";
+import image1 from "./image.svg";
+import maskGroup2 from "./mask-group-2.png";
+import maskGroup3 from "./mask-group-3.png";
+import maskGroup4 from "./mask-group-4.png";
+import maskGroup5 from "./mask-group-5.png";
+import maskGroup6 from "./mask-group-6.png";
+import maskGroup7 from "./mask-group-7.png";
+import maskGroup8 from "./mask-group-8.png";
+import maskGroup9 from "./mask-group-9.png";
+import maskGroup10 from "./mask-group-10.png";
+import maskGroup11 from "./mask-group-11.png";
+import maskGroup12 from "./mask-group-12.png";
+import maskGroup13 from "./mask-group-13.png";
+import maskGroup from "./mask-group.png";
+import "./style.css";
+import vector2 from "./vector-2.svg";
+
+export const SeccinAutores = () => {
+  return (
+    <div className="seccin-autores">
+      <div className="overlap-group-wrapper">
+        <div className="overlap-group">
+          <img
+            className="fondo-para-autores"
+            alt="Fondo para autores"
+            src={fondoParaAutores}
+          />
+
+          <TopBarOrdenadorY
+            className="top-bar-ordenador-y-m-vil"
+            logotipoRepositorio="logotipo-repositorio-librocultour-1-2.png"
+            property1="default"
+          />
+          <div className="group" />
+
+          <div className="text-wrapper-2">Autores</div>
+
+          <Imput
+            className="imput-instance"
+            icon={<VectorWrapper />}
+            property1="default"
+            propertySearchPropertySearchClassName="design-component-instance-node"
+          />
+          <div className="rectangle" />
+
+          <img className="mask-group" alt="Mask group" src={maskGroup} />
+
+          <img className="img" alt="Mask group" src={image} />
+
+          <img className="mask-group-2" alt="Mask group" src={maskGroup2} />
+
+          <img className="mask-group-3" alt="Mask group" src={maskGroup3} />
+
+          <img className="mask-group-4" alt="Mask group" src={maskGroup4} />
+
+          <img className="mask-group-5" alt="Mask group" src={maskGroup5} />
+
+          <img className="mask-group-6" alt="Mask group" src={maskGroup6} />
+
+          <img className="mask-group-7" alt="Mask group" src={maskGroup7} />
+
+          <img className="mask-group-8" alt="Mask group" src={maskGroup8} />
+
+          <img className="mask-group-9" alt="Mask group" src={maskGroup9} />
+
+          <img className="mask-group-10" alt="Mask group" src={maskGroup10} />
+
+          <img className="mask-group-11" alt="Mask group" src={maskGroup11} />
+
+          <img className="mask-group-12" alt="Mask group" src={maskGroup12} />
+
+          <img className="mask-group-13" alt="Mask group" src={maskGroup13} />
+
+          <div className="text-wrapper-3">Alberto Méndez</div>
+
+          <div className="text-wrapper-4">Almudena Grandes</div>
+
+          <div className="text-wrapper-5">Blue Jeans</div>
+
+          <div className="text-wrapper-6">Deborah Ellis</div>
+
+          <div className="text-wrapper-7">Gabriel García Marquez</div>
+
+          <div className="text-wrapper-8">H.P. Lovecraft</div>
+
+          <div className="text-wrapper-9">Jordi Sierra i Fabra</div>
+
+          <div className="text-wrapper-10">Lewis Carrol</div>
+
+          <div className="text-wrapper-11">Mario Benedetti</div>
+
+          <div className="text-wrapper-12">Mario Vargas Llosa</div>
+
+          <div className="text-wrapper-13">Noah Gordon</div>
+
+          <div className="text-wrapper-14">Pablo Neruda</div>
+
+          <div className="text-wrapper-15">Roald Dahl</div>
+
+          <div className="text-wrapper-16">Rubén Dario</div>
+
+          <img className="vector-2" alt="Vector" src={image1} />
+
+          <div className="text-wrapper-17">1</div>
+
+          <Instagram className="instagram-instance" />
+          <img className="vector-3" alt="Vector" src={vector2} />
+
+          <div className="text-wrapper-18">Política de cookies</div>
+
+          <div className="text-wrapper-19">Política de privacidad</div>
+
+          <div className="text-wrapper-20">Certificaciones de calidad</div>
+
+          <BotN
+            className="botn"
+            enterSvgrepoComClassName="bot-n-instance"
+            property1="normal"
+            text="Añadir autor"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+.seccin-autores {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.seccin-autores .overlap-group-wrapper {
+  background-color: #ffffff;
+  height: 4310px;
+  width: 1440px;
+}
+
+.seccin-autores .overlap-group {
+  height: 4310px;
+  position: relative;
+}
+
+.seccin-autores .fondo-para-autores {
+  height: 4310px;
+  left: 1px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1439px;
+}
+
+.seccin-autores .top-bar-ordenador-y-m-vil {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 1440px !important;
+}
+
+.seccin-autores .group {
+  background-image: url(./vector.svg);
+  background-size: 100% 100%;
+  height: 32px;
+  left: 1350px;
+  position: absolute;
+  top: 27px;
+  width: 32px;
+}
+
+.seccin-autores .text-wrapper-2 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 116px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 205px;
+  white-space: nowrap;
+}
+
+.seccin-autores .imput-instance {
+  border-color: #000000 !important;
+  left: 116px !important;
+  position: absolute !important;
+  top: 385px !important;
+}
+
+.seccin-autores .design-component-instance-node {
+  background-image: url(./search-2.png) !important;
+  height: 32px !important;
+  position: relative !important;
+  width: 32px !important;
+}
+
+.seccin-autores .rectangle {
+  background-color: #1d3461;
+  height: 214px;
+  left: 0;
+  position: absolute;
+  top: 4096px;
+  width: 1440px;
+}
+
+.seccin-autores .mask-group {
+  height: 320px;
+  left: 168px;
+  position: absolute;
+  top: 703px;
+  width: 320px;
+}
+
+.seccin-autores .img {
+  height: 320px;
+  left: 865px;
+  position: absolute;
+  top: 1123px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-2 {
+  height: 320px;
+  left: 168px;
+  position: absolute;
+  top: 1577px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-3 {
+  height: 320px;
+  left: 865px;
+  position: absolute;
+  top: 2041px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-4 {
+  height: 320px;
+  left: 168px;
+  position: absolute;
+  top: 2521px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-5 {
+  height: 320px;
+  left: 865px;
+  position: absolute;
+  top: 2521px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-6 {
+  height: 320px;
+  left: 168px;
+  position: absolute;
+  top: 2991px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-7 {
+  height: 320px;
+  left: 865px;
+  position: absolute;
+  top: 703px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-8 {
+  height: 320px;
+  left: 865px;
+  position: absolute;
+  top: 1577px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-9 {
+  height: 320px;
+  left: 168px;
+  position: absolute;
+  top: 1123px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-10 {
+  height: 320px;
+  left: 168px;
+  position: absolute;
+  top: 2041px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-11 {
+  height: 320px;
+  left: 865px;
+  position: absolute;
+  top: 2991px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-12 {
+  height: 320px;
+  left: 168px;
+  position: absolute;
+  top: 3505px;
+  width: 320px;
+}
+
+.seccin-autores .mask-group-13 {
+  height: 320px;
+  left: 865px;
+  position: absolute;
+  top: 3505px;
+  width: 320px;
+}
+
+.seccin-autores .text-wrapper-3 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 208px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1054px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-4 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 878px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1054px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-5 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 243px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1490px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-6 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 922px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1490px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-7 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 149px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1944px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-8 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 922px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1944px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-9 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 182px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2408px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-10 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 941px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2408px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-11 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 207px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2888px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-12 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 882px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2888px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-13 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 225px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3358px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-14 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 920px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3358px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-15 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 244px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3872px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-16 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 932px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3872px;
+  white-space: nowrap;
+}
+
+.seccin-autores .vector-2 {
+  height: 32px;
+  left: 723px;
+  position: absolute;
+  top: 3979px;
+  width: 32px;
+}
+
+.seccin-autores .text-wrapper-17 {
+  color: #000000;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 687px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3974px;
+}
+
+.seccin-autores .instagram-instance {
+  height: 64px !important;
+  left: 271px !important;
+  position: absolute !important;
+  top: 4169px !important;
+  width: 64px !important;
+}
+
+.seccin-autores .vector-3 {
+  height: 64px;
+  left: 115px;
+  position: absolute;
+  top: 4169px;
+  width: 64px;
+}
+
+.seccin-autores .text-wrapper-18 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 467px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 4192px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-19 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 797px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 4192px;
+  white-space: nowrap;
+}
+
+.seccin-autores .text-wrapper-20 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 1124px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 4192px;
+  white-space: nowrap;
+}
+
+.seccin-autores .botn {
+  background-color: #945600 !important;
+  left: 1063px !important;
+  position: absolute !important;
+  top: 223px !important;
+}
+
+.seccin-autores .bot-n-instance {
+  background-image: url(./clip-path-group-2.png) !important;
+}
