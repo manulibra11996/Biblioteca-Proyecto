@@ -11,4 +11,5 @@ public interface PrestamoRepository extends JpaRepository<Prestamo, Long> {
 
     long countBySocio_Id(Long id);
 
+
 }
