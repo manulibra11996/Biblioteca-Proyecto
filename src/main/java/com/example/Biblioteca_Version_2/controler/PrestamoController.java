@@ -24,6 +24,7 @@ public class PrestamoController {
     private final SociosRepositories sociosRepositories;
     private final LibrosRepositories librosRepositories;
     private final PrestamoRepositories prestamoRepositories;
+    private PrestamoController prestamoService;
 
     // anotación que mapea las peticiones GET a la URL "/alquiler"
     @GetMapping("/prestamo")
@@ -56,4 +57,10 @@ public class PrestamoController {
 
         return "prestamo/prestamo-detail"; // TODO: crear proveedor-detail.html
     }
+    @GetMapping("/prestamos/eliminar/{id}")
+    public String eliminarPrestamo(@PathVariable Long id) {
+        prestamoService.eliminarPrestamo(id);
+        return "redirect:/prestamos";
+    }
+
 }

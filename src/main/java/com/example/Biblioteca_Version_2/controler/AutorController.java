@@ -92,7 +92,13 @@ public class AutorController {
         List<Autor> autores = autorService.searchAutoresByApellido(apellido);
         return new ResponseEntity<>(autores, HttpStatus.OK);
     }
+}// Rutas para Autor
+@GetMapping("/autores/eliminar/{id}")
+public String eliminarAutor(@PathVariable Long id) {
+    autorService.eliminarAutor(id);
+    return "redirect:/autores";
 }
+
 
 */
 }

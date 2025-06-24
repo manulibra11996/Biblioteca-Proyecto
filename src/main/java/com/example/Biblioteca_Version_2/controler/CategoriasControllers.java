@@ -47,4 +47,11 @@ public class CategoriasControllers {
 
         return "categoria/categoria-detail";
     }
+    @GetMapping("/categorias/eliminar/{id}")
+    public String eliminarCategoria(@PathVariable Long id) {
+        CategoriasControllers categoriaService = null;
+        categoriaService.eliminarCategoria(id);
+        return "redirect:/categorias";
+    }
+
 }

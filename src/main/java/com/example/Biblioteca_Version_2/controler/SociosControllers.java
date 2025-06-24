@@ -43,4 +43,12 @@ public class SociosControllers {
 
         return "socios/socio-detail";
     }
+    @GetMapping("/socios/eliminar/{id}")
+    public String eliminarSocio(@PathVariable Long id) {
+        SociosControllers socioService;
+        socioService = null;
+        socioService.eliminarSocio(id);
+        return "redirect:/socios";
+    }
+
 }

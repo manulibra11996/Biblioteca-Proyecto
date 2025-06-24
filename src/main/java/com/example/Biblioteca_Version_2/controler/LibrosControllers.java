@@ -85,4 +85,12 @@ public class LibrosControllers {
 
        // return "redirect:/libros";
    // }
+       // Rutas para Libro
+       @GetMapping("/libros/eliminar/{id}")
+       public String eliminarLibro(@PathVariable Long id) {
+           LibrosControllers libro = null;
+           libro.eliminarLibro(id);
+           return "redirect:/libros";
+       }
+
 }
