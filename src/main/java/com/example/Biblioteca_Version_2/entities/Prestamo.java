@@ -6,6 +6,7 @@ import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Getter
@@ -31,16 +32,16 @@ public class Prestamo {
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(nullable = false)
-    private Date fechaEntrega;
+    private LocalDate fechaEntrega;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date fechaDevolucion;
+    private LocalDate fechaDevolucion;
 
     // constructor vacío
     public Prestamo() {
     }
 
-    public Prestamo(Socio socio, Libro libro, Date fechaEntrega, Date fechaDevolucion) {
+    public Prestamo(Socio socio, Libro libro, LocalDate fechaEntrega, LocalDate fechaDevolucion) {
         this.socio = socio;
         this.libro = libro;
         this.fechaEntrega = fechaEntrega;

@@ -3,6 +3,7 @@ package com.example.Biblioteca_Version_2.entities;
 import jakarta.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 
@@ -22,14 +23,14 @@ public class Autor {
     private String biografia;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(name = "fecha_nacimiento")
-    private Date fechaNacimiento;
+    private LocalDate fechaNacimiento;
     @Column(name = "nacionalidad")
     private String nacionalidad;
 
     public Autor() {
     }
 
-    public Autor(String nombre, String apellido, String biografia, Date fechaNacimiento, String nacionalidad) {
+    public Autor(String nombre, String apellido, String biografia, LocalDate fechaNacimiento, String nacionalidad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.biografia = biografia;
@@ -69,11 +70,11 @@ public class Autor {
         this.biografia = biografia;
     }
 
-    public Date getFechaNacimiento() {
+    public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 
