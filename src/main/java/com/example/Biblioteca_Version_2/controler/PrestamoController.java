@@ -1,17 +1,18 @@
 package com.example.Biblioteca_Version_2.controler;
 
-import com.example.Biblioteca_Version_2.entities.Libros;
+import com.example.Biblioteca_Version_2.entities.Libro;
 import com.example.Biblioteca_Version_2.entities.Prestamo;
-import com.example.Biblioteca_Version_2.entities.Socios;
-import com.example.Biblioteca_Version_2.repositories.LibrosRepositories;
-import com.example.Biblioteca_Version_2.repositories.PrestamoRepositories;
-import com.example.Biblioteca_Version_2.repositories.SociosRepositories;
+import com.example.Biblioteca_Version_2.entities.Socio;
+import com.example.Biblioteca_Version_2.repositories.LibroRepository;
+import com.example.Biblioteca_Version_2.repositories.PrestamoRepository;
+import com.example.Biblioteca_Version_2.repositories.SocioRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,10 +22,9 @@ import java.util.Optional;
 @Controller
 public class PrestamoController {
 
-    private final SociosRepositories sociosRepositories;
-    private final LibrosRepositories librosRepositories;
-    private final PrestamoRepositories prestamoRepositories;
-    private PrestamoController prestamoService;
+    private final SocioRepository socioRepository;
+    private final LibroRepository libroRepository;
+    private final PrestamoRepository prestamoRepository;
 
     // anotación que mapea las peticiones GET a la URL "/alquiler"
     @GetMapping("/prestamo")
@@ -32,9 +32,9 @@ public class PrestamoController {
         log.info("Buscar todos los prestamos para la vista");
 
         // obtener todos los prestamos de la base de datos
-        List<Prestamo> prestamos = prestamoRepositories.findAll();
-        List<Libros> libros = librosRepositories.findAll();
-        List<Socios> socios = sociosRepositories.findAll();
+        List<Prestamo> prestamos = prestamoRepository.findAll();
+        List<Libro> libros = libroRepository.findAll();
+        List<Socio> socios = socioRepository.findAll();
 
         // pasar datos a la vista
         model.addAttribute("prestamos", prestamos);
@@ -47,7 +47,7 @@ public class PrestamoController {
     // detalle de prestamo
     @GetMapping("/prestamo/{id}")
     public String findById(Model model, @PathVariable Long id) {
-        Optional<Prestamo> prestamoOpt = prestamoRepositories.findById(id);
+        Optional<Prestamo> prestamoOpt = prestamoRepository.findById(id);
 
         if (prestamoOpt.isPresent()) {
             model.addAttribute("prestamo", prestamoOpt.get());
@@ -57,10 +57,12 @@ public class PrestamoController {
 
         return "prestamo/prestamo-detail"; // TODO: crear proveedor-detail.html
     }
-    @GetMapping("/prestamos/eliminar/{id}")
-    public String eliminarPrestamo(@PathVariable Long id) {
-        prestamoService.eliminarPrestamo(id);
-        return "redirect:/prestamos";
-    }
+    
+    @PostMapping("/prestamo/{id}/eliminar")
+    public String delete(@PathVariable Long id) {
 
+        prestamoRepository.deleteById(id);
+
+        return "redirect:/prestamo";
+    }
 }

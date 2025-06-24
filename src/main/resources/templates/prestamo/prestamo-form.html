@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de prestamo</title>
+</head>
+<body>
+
+
+<h1 th:if="${prestamo.id != null}">
+  Modificar prestamo <span th:text="${prestamo.id}"></span>
+</h1>
+<h1 th:if="${prestamo.id == null}">Crear nuevo prestamo</h1>
+
+<!-- con operador ternario -->
+<h1 th:text="${prestamo.id != null ? 'Modificar prestamo ' + prestamo.id : 'Crear nuevo prestamo'}" ></h1>
+
+<div th:if="${prestamo}">
+
+  <div>
+    <strong>ID:</strong> <span th:text="${prestamo.id}"></span>
+  </div>
+</div>
+<form th:value="@{/prestamo}" th:object="${prestamo}" method="post">
+
+  <!-- campo oculto para ID -->
+  <input type="hidden" th:field="*{id}">
+
+  <!-- nombre del socio -->
+  <div>
+    <label for="socio">Socio:</label>
+    <select id="socio" th:field="*{socio}">
+      <option value="">-- Seleccione un socio --</option>
+      <option th:each="soc : ${socio}"
+              th:value="${soc.id}"
+              th:text="${soc.nombre}">
+      </option>
+    </select>
+  </div>
+  <br>
+
+  <!-- nombre del libro -->
+  <div>
+    <label for="libro">Libro:</label>
+    <select id="libro" th:field="*{libro}">
+      <option value="">-- Seleccione un libro --</option>
+      <option th:each="lib : ${libro}"
+              th:value="${lib.id}"
+              th:text="${lib.titulo}">
+      </option>
+    </select>
+  </div>
+  <br>
+
+  <!-- Fecha de entrega -->
+  <div>
+    <label for="fechaEntrega">Fecha de entrega:</label>
+    <input type="date"
+           id="dateEntrega"
+           th:field="*{fechaEntrega}"
+           placeholder="01/01/2000">
+  </div>
+  <br>
+
+  <!-- Fecha de devolucion -->
+  <label for="fechaDevolucion">Fecha de Devolucion:</label>
+  <input type="date"
+         id="dateDevolucion"
+         th:field="*{fechaDevolucion}"
+         placeholder="01/01/2000">
+  </div>
+  <br>
+
+  <!-- botones -->
+  <div>
+    <a th:href="@{/prestamo}">Cancelar</a>
+    <button type="submit">
+      <span th:if="${prestamo.id != null}">Actualizar</span>
+      <span th:if="${prestamo.id == null}">Guardar</span>
+      <!-- operador ternario -->
+      <!--<span th:text="${prestamo.id != null ? 'Actualizar' : 'Guardar'}"></span>-->
+    </button>
+  </div>
+</form>
+
+</body>
+</html>

@@ -19,7 +19,7 @@
 
   <div th:unless="${autor.isEmpty()}" class="table-responsive">
     <table class="table table-striped table-hover">
-      <thead class="table-dark">
+        <thead class="table-dark">
       <tr>
         <th><i class="fa-solid fa-hashtag me-1"></i>ID</th>
         <th><i class="fa-solid me-1"></i>Nombre</th>
@@ -51,14 +51,9 @@
               <i class="fa-solid fa-file-pen me-1"></i>Editar
             </a>
 
-            <button type="button"
-                    class="btn btn-danger btn-sm btn-delete"
-                    data-bs-toggle="modal"
-                    data-bs-target="#confirmDeleteModal"
-                    th:data-autor-id="${autor.id}"
-                    title="Eliminar autor">
-              <i class="fa-solid fa-trash me-1"></i>Borrar
-            </button>
+              <form th:action="@{/autor/{id}/eliminar(id=${autor.id})}" method="post">
+                  <button class="btn btn-info" type="submit">Borrar</button>
+              </form>
           </div>
         </td>
       </tr>

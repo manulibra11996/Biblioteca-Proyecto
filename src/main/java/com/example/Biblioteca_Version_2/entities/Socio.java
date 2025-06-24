@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity // indica que esta clase es una tabla
 @Table(name = "socios") // personaliza el nombre de la tabla
-public class Socios {
+public class Socio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,10 +22,10 @@ public class Socios {
     @Column(nullable = false)
     private String email; // columna email
 
-    public Socios() {
+    public Socio() {
     }
 
-    public Socios(String nombre, String direccion, String telefono, String email) {
+    public Socio(String nombre, String direccion, String telefono, String email) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;

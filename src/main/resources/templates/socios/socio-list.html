@@ -48,14 +48,9 @@
                             <i class="fa-solid fa-file-pen me-1"></i>Editar
                         </a>
 
-                        <button type="button"
-                                class="btn btn-danger btn-sm btn-delete"
-                                data-bs-toggle="modal"
-                                data-bs-target="#confirmDeleteModal"
-                                th:data-socio-id="${socio.id}"
-                                title="Eliminar socio">
-                            <i class="fa-solid fa-trash me-1"></i>Borrar
-                        </button>
+                        <form th:action="@{/socio/{id}/eliminar(id=${socio.id})}" method="post">
+                            <button class="btn btn-info" type="submit">Borrar</button>
+                        </form>
                     </div>
                 </td>
             </tr>

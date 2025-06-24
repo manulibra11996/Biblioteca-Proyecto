@@ -3,6 +3,7 @@ package com.example.Biblioteca_Version_2.entities;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
 
 
 import java.util.Date;
@@ -21,25 +22,25 @@ public class Prestamo {
     //MUCHOS Prestamos pertenece a UN socio
     @ManyToOne
     @JoinColumn(name = "socio_id")
-    private Socios socio;//Modificar por el tipo Socio
+    private Socio socio;//Modificar por el tipo Socio
 
     //MUCHOS Prestamos pertenece a UN libro
     @ManyToOne
     @JoinColumn(name = "libro_id")
-    private Libros libro;//Modificar por el tipo Libro
+    private Libro libro;//Modificar por el tipo Libro
 
-    @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(nullable = false)
     private Date fechaEntrega;
 
-    @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date fechaDevolucion;
 
     // constructor vacío
     public Prestamo() {
     }
 
-    public Prestamo(Socios socio, Libros libro, Date fechaEntrega, Date fechaDevolucion) {
+    public Prestamo(Socio socio, Libro libro, Date fechaEntrega, Date fechaDevolucion) {
         this.socio = socio;
         this.libro = libro;
         this.fechaEntrega = fechaEntrega;
