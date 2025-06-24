@@ -1,12 +1,9 @@
 package com.example.Biblioteca_Version_2.controler;
 
-import com.example.Biblioteca_Version_2.entities.Categorias;
 import com.example.Biblioteca_Version_2.entities.Socios;
-import com.example.Biblioteca_Version_2.repositories.CategoriasRepositories;
 import com.example.Biblioteca_Version_2.repositories.SociosRepositories;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,25 +1,31 @@
 package com.example.Biblioteca_Version_2.entities;
-
 import jakarta.persistence.*;
 
-@Entity // indica que esta clase es una tabla
-@Table(name = "categorias") // personaliza el nombre de la tabla
-public class Categorias {
+import java.util.ArrayList;
+import java.util.List;
 
-    @Id // indica que este atributo es la clave primaria
+@Entity
+@Table(name = "categorias")
+public class Categoria {
+
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nombre;
+
     private String descripcion;
 
-    public Categorias() {
-    }
+    // constructor vacío
+    public Categoria() {}
 
-    public Categorias(String nombre, String descripcion) {
+    // constructor con parámetros menos el id
+    public Categoria(String nombre, String descripcion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
 
+    // getters y setters
     public Long getId() {
         return id;
     }
@@ -43,4 +49,17 @@ public class Categorias {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+    // toString
+    @Override
+    public String toString() {
+        return "Categoria{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                '}';
+    }
 }
+
+
+

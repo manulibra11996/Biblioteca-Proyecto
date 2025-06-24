@@ -1,15 +1,12 @@
 package com.example.Biblioteca_Version_2.controler;
 
-import com.example.Biblioteca_Version_2.repositories.PrestamoRepositories;
-import com.example.Biblioteca_Version_2.repositories.SociosRepositories;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import com.example.Biblioteca_Version_2.entities.Libros;
-import com.example.Biblioteca_Version_2.repositories.CategoriasRepositories;
+import com.example.Biblioteca_Version_2.repositories.CategoriaRepository;
 import com.example.Biblioteca_Version_2.repositories.LibrosRepositories;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,7 +18,7 @@ import java.util.Optional;
 @Controller
 public class LibrosControllers {
 
-    private final CategoriasRepositories categoriasRepositories;
+    private final CategoriaRepository categoriasRepositories;
     private final LibrosRepositories librosRepositories;
 
 
