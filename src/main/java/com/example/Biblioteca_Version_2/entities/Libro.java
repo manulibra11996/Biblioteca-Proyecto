@@ -23,13 +23,13 @@ public class Libro {
     @JoinColumn(
             name= "id_categoria"
     )
-    private Categorias categoria;
+    private Categoria categoria;
 
 
     public Libro() {
     }
 
-    public Libro(String titulo, Autor autor, Integer numeroPaginas, Boolean disponible, Categorias categoria, String prestamos) {
+    public Libro(String titulo, Autor autor, Integer numeroPaginas, Boolean disponible, Categoria categoria, String prestamos) {
         this.titulo = titulo;
         this.autor = autor;
         this.numeroPaginas = numeroPaginas;
@@ -78,11 +78,11 @@ public class Libro {
         this.disponible = disponible;
     }
 
-    public Categorias getCategoria() {
+    public Categoria getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(Categorias categoria) {
+    public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
 
