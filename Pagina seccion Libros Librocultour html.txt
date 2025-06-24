@@ -1,284 +1,149 @@
-import React from "react";
-import { BotN } from "./BotN";
-import { Imput } from "./Imput";
-import { Instagram } from "./Instagram";
-import { TopBarOrdenadorY } from "./TopBarOrdenadorY";
-import { VectorWrapper } from "./VectorWrapper";
-import aliciaEnElPaisDeLasMaravillasLewisCarrol1 from "./alicia-en-el-pais-de-las-maravillas-lewis-carrol-1.png";
-import cronicaDeUnaMuerteAnunciadaGabrielGarciaMRquez1 from "./cronica-de-una-muerte-anunciada-gabriel-garcia-m-rquez-1.png";
-import elMedicoNoahGordon1 from "./el-medico-noah-gordon-1.png";
-import elPanDeLaGuerraDevorahEllis1 from "./el-pan-de-la-guerra-devorah-ellis-1.png";
-import image1 from "./image.svg";
-import losCachorrosMarioVargasLlosa1 from "./los-cachorros-mario-vargas-llosa-1.png";
-import losGirasolesCiegosAlbertoMendez1 from "./los-girasoles-ciegos-alberto-mendez-1.png";
-import pedroYElCapitanMarioBenedetti1 from "./pedro-y-el-capitan-mario-benedetti-1.png";
-import "./style.css";
-import vector12 from "./vector-1-2.svg";
-import vector13 from "./vector-1-3.svg";
-import vector1 from "./vector-1.svg";
-import vector22 from "./vector-2-2.svg";
-import vector23 from "./vector-2-3.svg";
-import vector2 from "./vector-2.svg";
-import vector3 from "./vector-3.svg";
-import vector4 from "./vector-4.svg";
-
-export const SeccinLibros = () => {
-  return (
-    <div className="seccin-libros">
-      <div className="overlap-group-wrapper">
-        <div className="overlap-group">
-          <img className="img" alt="Vector" src={image1} />
-
-          <BotN
-            className="botn"
-            enterSvgrepoComClassName="bot-n-instance"
-            property1="normal"
-          />
-          <p className="lorem-ipsum-dolor">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            Proin maximus, lectus a sagittis ullamcorper, eros magna
-            <br />
-            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
-          </p>
-
-          <div className="text-wrapper-2">Resumen:</div>
-
-          <div className="text-wrapper-3">Categoría: Novela</div>
-
-          <div className="text-wrapper-4">Autor: Mario Vargas Llosa</div>
-
-          <div className="text-wrapper-5">Título: Los Cachorros</div>
-
-          <img className="vector-2" alt="Vector" src={vector12} />
-
-          <p className="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            Proin maximus, lectus a sagittis ullamcorper, eros magna
-            <br />
-            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
-          </p>
-
-          <div className="text-wrapper-6">Resumen:</div>
-
-          <div className="text-wrapper-7">Categoría: Novela; Crimen</div>
-
-          <div className="text-wrapper-8">Autor: Gabriel García Márquez</div>
-
-          <p className="text-wrapper-9">
-            Título: Crónica de una muerte anunciada
-          </p>
-
-          <img
-            className="los-cachorros-mario"
-            alt="Los cachorros mario"
-            src={losCachorrosMarioVargasLlosa1}
-          />
-
-          <img
-            className="cronica-de-una"
-            alt="Cronica de una"
-            src={cronicaDeUnaMuerteAnunciadaGabrielGarciaMRquez1}
-          />
-
-          <div className="text-wrapper-10">Título: El Médico</div>
-
-          <BotN
-            className="design-component-instance-node"
-            enterSvgrepoComClassName="botn-2"
-            property1="normal"
-          />
-          <div className="text-wrapper-11">Autor: Noah Gordon</div>
-
-          <div className="text-wrapper-12">
-            Categoría: Novela; Ficción histórica
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="seccin-libros">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <img class="vector" src="img/vector-1-3.svg" />
+          <div class="botn">
+            <div class="enter-svgrepo-com"></div>
+            <div class="text-wrapper">Préstamo</div>
           </div>
-
-          <p className="lorem-ipsum-dolor-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            Proin maximus, lectus a sagittis ullamcorper, eros magna
-            <br />
-            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          <p class="lorem-ipsum-dolor">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Proin maximus, lectus a sagittis ullamcorper,
+            eros magna<br />pellentesque quam, sit amet hendrerit ligula augue vel mauris.
           </p>
-
-          <BotN
-            className="botn-3"
-            enterSvgrepoComClassName="botn-4"
-            property1="normal"
-          />
-          <img className="vector-3" alt="Vector" src={vector22} />
-
-          <img className="vector-4" alt="Vector" src={vector3} />
-
-          <div className="text-wrapper-13">1</div>
-
-          <img
-            className="los-girasoles-ciegos"
-            alt="Los girasoles ciegos"
-            src={losGirasolesCiegosAlbertoMendez1}
-          />
-
-          <div className="text-wrapper-14">Título: Los girasoles ciegos</div>
-
-          <div className="text-wrapper-15">Autor: Alberto Méndez</div>
-
-          <div className="text-wrapper-16">Categoría: Novela</div>
-
-          <div className="text-wrapper-17">Resumen:</div>
-
-          <p className="lorem-ipsum-dolor-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            Proin maximus, lectus a sagittis ullamcorper, eros magna
-            <br />
-            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          <div class="div">Resumen:</div>
+          <div class="text-wrapper-2">Categoría: Novela</div>
+          <div class="text-wrapper-3">Autor: Mario Vargas Llosa</div>
+          <div class="text-wrapper-4">Título: Los Cachorros</div>
+          <img class="img" src="img/vector-1-4.svg" />
+          <p class="p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Proin maximus, lectus a sagittis ullamcorper,
+            eros magna<br />pellentesque quam, sit amet hendrerit ligula augue vel mauris.
           </p>
-
-          <BotN
-            className="botn-5"
-            enterSvgrepoComClassName="botn-6"
-            property1="normal"
-          />
-          <img className="vector-5" alt="Vector" src={vector23} />
-
-          <div className="text-wrapper-18">Resumen:</div>
-
-          <p className="lorem-ipsum-dolor-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            Proin maximus, lectus a sagittis ullamcorper, eros magna
-            <br />
-            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
-          </p>
-
-          <BotN
-            className="botn-7"
-            enterSvgrepoComClassName="botn-8"
-            property1="normal"
-          />
-          <img
-            className="el-pan-de-la-guerra"
-            alt="El pan de la guerra"
-            src={elPanDeLaGuerraDevorahEllis1}
-          />
-
-          <p className="text-wrapper-19">Título: El pan de la guerra</p>
-
-          <div className="text-wrapper-20">Autor: Devorah Ellis</div>
-
-          <div className="text-wrapper-21">Categoría: Novela; Juvenil</div>
-
-          <div className="text-wrapper-22">Resumen:</div>
-
-          <p className="lorem-ipsum-dolor-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            Proin maximus, lectus a sagittis ullamcorper, eros magna
-            <br />
-            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
-          </p>
-
-          <BotN
-            className="botn-9"
-            enterSvgrepoComClassName="botn-10"
-            property1="normal"
-          />
-          <img className="vector-6" alt="Vector" src={vector2} />
-
-          <p className="text-wrapper-23">
-            Título: Alicia en el País de las Maravillas
-          </p>
-
-          <div className="text-wrapper-24">Autor: Lewis Carrol</div>
-
-          <div className="text-wrapper-25">Categoría: Fantasía; Infantil</div>
-
-          <div className="text-wrapper-26">Resumen:</div>
-
-          <img
-            className="alicia-en-el-pais-de"
-            alt="Alicia en el pais de"
-            src={aliciaEnElPaisDeLasMaravillasLewisCarrol1}
-          />
-
-          <div className="overlap">
-            <TopBarOrdenadorY
-              className="top-bar-ordenador-y-m-vil"
-              logotipoRepositorio="image.png"
-              property1="default"
-            />
-            <div className="group" />
+          <div class="text-wrapper-5">Resumen:</div>
+          <div class="text-wrapper-6">Categoría: Novela; Crimen</div>
+          <div class="text-wrapper-7">Autor: Gabriel García Márquez</div>
+          <p class="text-wrapper-8">Título: Crónica de una muerte anunciada</p>
+          <img class="los-cachorros-mario" src="img/los-cachorros-mario-vargas-llosa-1.png" />
+          <img class="cronica-de-una" src="img/cronica-de-una-muerte-anunciada-gabriel-garcia-m-rquez-1.png" />
+          <div class="text-wrapper-9">Título: El Médico</div>
+          <div class="botn-2">
+            <div class="enter-svgrepo-com-2"></div>
+            <div class="text-wrapper">Préstamo</div>
           </div>
-
-          <div className="text-wrapper-27">Libros</div>
-
-          <Imput
-            className="imput-instance"
-            icon={<VectorWrapper />}
-            property1="default"
-            propertySearchPropertySearchClassName="imput-2"
-          />
-          <p className="text-wrapper-28">Título: Pedro y el Capitán</p>
-
-          <div className="text-wrapper-29">Autor: Mario Benedetti</div>
-
-          <div className="text-wrapper-30">Resumen:</div>
-
-          <p className="lorem-ipsum-dolor-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            Proin maximus, lectus a sagittis ullamcorper, eros magna
-            <br />
-            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          <div class="text-wrapper-10">Autor: Noah Gordon</div>
+          <div class="text-wrapper-11">Categoría: Novela; Ficción histórica</div>
+          <p class="lorem-ipsum-dolor-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Proin maximus, lectus a sagittis ullamcorper,
+            eros magna<br />pellentesque quam, sit amet hendrerit ligula augue vel mauris.
           </p>
-
-          <BotN
-            className="botn-11"
-            enterSvgrepoComClassName="botn-12"
-            property1="normal"
-          />
-          <img className="vector-7" alt="Vector" src={vector1} />
-
-          <img
-            className="pedro-y-el-capitan"
-            alt="Pedro y el capitan"
-            src={pedroYElCapitanMarioBenedetti1}
-          />
-
-          <div className="overlap-2">
-            <Instagram className="instagram-instance" />
-            <img className="vector-8" alt="Vector" src={vector4} />
-
-            <div className="text-wrapper-31">Política de cookies</div>
-
-            <div className="text-wrapper-32">Política de privacidad</div>
-
-            <div className="text-wrapper-33">Certificaciones de calidad</div>
+          <div class="botn-3">
+            <div class="enter-svgrepo-com-3"></div>
+            <div class="text-wrapper">Préstamo</div>
           </div>
-
-          <div className="text-wrapper-34">Categoría: Drama</div>
-
-          <img
-            className="el-medico-noah"
-            alt="El medico noah"
-            src={elMedicoNoahGordon1}
-          />
-
-          <img className="vector-9" alt="Vector" src={vector13} />
-
-          <BotN
-            className="botn-13"
-            enterSvgrepoComClassName="botn-14"
-            property1="normal"
-            text="Añadir libro"
-          />
+          <img class="vector-2" src="img/vector-2-3.svg" />
+          <img class="vector-3" src="img/image.svg" />
+          <div class="text-wrapper-12">1</div>
+          <img class="los-girasoles-ciegos" src="img/los-girasoles-ciegos-alberto-mendez-1.png" />
+          <div class="text-wrapper-13">Título: Los girasoles ciegos</div>
+          <div class="text-wrapper-14">Autor: Alberto Méndez</div>
+          <div class="text-wrapper-15">Categoría: Novela</div>
+          <div class="text-wrapper-16">Resumen:</div>
+          <p class="lorem-ipsum-dolor-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Proin maximus, lectus a sagittis ullamcorper,
+            eros magna<br />pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+          <div class="botn-4">
+            <div class="enter-svgrepo-com-4"></div>
+            <div class="text-wrapper">Préstamo</div>
+          </div>
+          <img class="vector-4" src="img/vector-2.svg" />
+          <div class="text-wrapper-17">Resumen:</div>
+          <p class="lorem-ipsum-dolor-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Proin maximus, lectus a sagittis ullamcorper,
+            eros magna<br />pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+          <div class="botn-5">
+            <div class="enter-svgrepo-com-5"></div>
+            <div class="text-wrapper">Préstamo</div>
+          </div>
+          <img class="el-pan-de-la-guerra" src="img/el-pan-de-la-guerra-devorah-ellis-1.png" />
+          <p class="text-wrapper-18">Título: El pan de la guerra</p>
+          <div class="text-wrapper-19">Autor: Devorah Ellis</div>
+          <div class="text-wrapper-20">Categoría: Novela; Juvenil</div>
+          <div class="text-wrapper-21">Resumen:</div>
+          <p class="lorem-ipsum-dolor-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Proin maximus, lectus a sagittis ullamcorper,
+            eros magna<br />pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+          <div class="botn-6">
+            <div class="enter-svgrepo-com-6"></div>
+            <div class="text-wrapper">Préstamo</div>
+          </div>
+          <img class="vector-5" src="img/vector-2-2.svg" />
+          <p class="text-wrapper-22">Título: Alicia en el País de las Maravillas</p>
+          <div class="text-wrapper-23">Autor: Lewis Carrol</div>
+          <div class="text-wrapper-24">Categoría: Fantasía; Infantil</div>
+          <div class="text-wrapper-25">Resumen:</div>
+          <img class="alicia-en-el-pais-de" src="img/alicia-en-el-pais-de-las-maravillas-lewis-carrol-1.png" />
+          <div class="overlap">
+            <div class="top-bar-ordenador-y">
+              <img class="logotipo-repositorio" src="img/logotipo-repositorio-librocultour-1.png" />
+              <div class="text-wrapper-26">Libros</div>
+              <div class="text-wrapper-26">Autores</div>
+              <div class="text-wrapper-26">Categorías</div>
+            </div>
+            <div class="group"></div>
+          </div>
+          <div class="text-wrapper-27">Libros</div>
+          <div class="imput">
+            <div class="component"></div>
+            <div class="text-wrapper-28">Buscar</div>
+            <img class="vector-6" src="img/vector.png" />
+          </div>
+          <p class="text-wrapper-29">Título: Pedro y el Capitán</p>
+          <div class="text-wrapper-30">Autor: Mario Benedetti</div>
+          <div class="text-wrapper-31">Resumen:</div>
+          <p class="lorem-ipsum-dolor-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Proin maximus, lectus a sagittis ullamcorper,
+            eros magna<br />pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+          <div class="botn-7">
+            <div class="enter-svgrepo-com-7"></div>
+            <div class="text-wrapper">Préstamo</div>
+          </div>
+          <img class="vector-7" src="img/vector-1-2.svg" />
+          <img class="pedro-y-el-capitan" src="img/pedro-y-el-capitan-mario-benedetti-1.png" />
+          <div class="overlap-2">
+            <img class="instagram" src="img/instagram.svg" />
+            <img class="vector-8" src="img/vector.svg" />
+            <div class="text-wrapper-32">Política de cookies</div>
+            <div class="text-wrapper-33">Política de privacidad</div>
+            <div class="text-wrapper-34">Certificaciones de calidad</div>
+          </div>
+          <div class="text-wrapper-35">Categoría: Drama</div>
+          <img class="el-medico-noah" src="img/el-medico-noah-gordon-1.png" />
+          <img class="vector-9" src="img/vector-1.svg" />
+          <div class="botn-8">
+            <div class="enter-svgrepo-com-8"></div>
+            <div class="text-wrapper">Añadir libro</div>
+          </div>
         </div>
       </div>
     </div>
-  );
-};
+  </body>
+</html>
+
+
+
 
 .seccin-libros {
   background-color: #ffffff;

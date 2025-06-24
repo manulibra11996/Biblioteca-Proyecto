@@ -1,126 +1,95 @@
-import React from "react";
-import { BotN } from "./BotN";
-import { Instagram } from "./Instagram";
-import group2 from "./group-2.png";
-import group3 from "./group-3.png"
-import group4 from "./group-4.png"
-import group from "./group.png";
-import image1 from "./image.png";
-import image from "./image.svg";
-import logotipoRepositorioLibrocultour1 from "./logotipo-repositorio-librocultour-1.png";
-import "./style.css";
-import vector22 from "./vector-2-2.svg";
-import vector23 from "./vector-2-3.svg";
-import vector24 from "./vector-2-4.svg";
-import vector2 from "./vector-2.svg";
-import vector from "./vector.svg";
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pgina-de-socios">
+      <div class="div">
+        <div class="overlap-group">
+          <img class="logotipo-repositorio" src="img/logotipo-repositorio-librocultour-1.png" />
+        </div>
+        <div class="overlap">
+          <img class="instagram" src="img/instagram.svg" />
+          <img class="vector" src="img/vector.svg" />
+          <div class="text-wrapper">Política de cookies</div>
+          <div class="text-wrapper-2">Política de privacidad</div>
+          <div class="text-wrapper-3">Certificaciones de calidad</div>
+        </div>
+        <div class="text-wrapper-4">Socios inscritos</div>
+        <img class="group" src="img/group-4.png" />
+        <img class="img" src="img/group-3.png" />
+        <img class="group-2" src="img/group-5.png" />
+        <img class="group-3" src="img/group-2.png" />
+        <img class="group-4" src="img/group.png" />
+        <img class="vector-2" src="img/vector-2-3.svg" />
+        <img class="vector-3" src="img/vector-2.svg" />
+        <img class="vector-4" src="img/vector-2-2.svg" />
+        <img class="vector-5" src="img/vector-2-4.svg" />
+        <img class="vector-6" src="img/image.svg" />
+        <div class="nombre-miguel-ngel">Nombre: Miguel&nbsp;&nbsp;Ángel</div>
+        <div class="text-wrapper-5">Apellidos: de Andrés Quintín</div>
+        <div class="text-wrapper-6">Email: loremipsum@gmail.com</div>
+        <div class="text-wrapper-7">Teléfono: +123456789</div>
+        <div class="text-wrapper-8">Préstamos activos: 0</div>
+        <div class="text-wrapper-9">Renovaciones: 0</div>
+        <p class="p">Fecha último préstamo: dd / mm / aaaa</p>
+        <div class="text-wrapper-10">Nombre: José Antonio</div>
+        <div class="text-wrapper-11">Apellidos: Camacho Iborra</div>
+        <div class="text-wrapper-12">Email: loremipsum@gmail.com</div>
+        <div class="text-wrapper-13">Teléfono: +123456789</div>
+        <div class="text-wrapper-14">Préstamos activos: 0</div>
+        <div class="text-wrapper-15">Renovaciones: 0</div>
+        <p class="text-wrapper-16">Fecha último préstamo: dd / mm / aaaa</p>
+        <div class="text-wrapper-17">Nombre: Miguel</div>
+        <div class="text-wrapper-18">Apellidos: Rey Marfil</div>
+        <div class="text-wrapper-19">Email: loremipsum@gmail.com</div>
+        <div class="text-wrapper-20">Teléfono: +123456789</div>
+        <div class="text-wrapper-21">Préstamos activos: 0</div>
+        <div class="text-wrapper-22">Renovaciones: 0</div>
+        <p class="text-wrapper-23">Fecha último préstamo: dd / mm / aaaa</p>
+        <div class="text-wrapper-24">Nombre: Jesús</div>
+        <div class="text-wrapper-25">Apellidos: Romanillos Rubio</div>
+        <div class="text-wrapper-26">Email: loremipsum@gmail.com</div>
+        <div class="text-wrapper-27">Teléfono: +123456789</div>
+        <div class="text-wrapper-28">Préstamos activos: 0</div>
+        <div class="text-wrapper-29">Renovaciones: 0</div>
+        <p class="text-wrapper-30">Fecha último préstamo: dd / mm / aaaa</p>
+        <div class="text-wrapper-31">Nombre: Daniel</div>
+        <div class="text-wrapper-32">Apellidos: Moreta Díez</div>
+        <div class="text-wrapper-33">Email: loremipsum@gmail.com</div>
+        <div class="text-wrapper-34">Teléfono: +123456789</div>
+        <div class="text-wrapper-35">Préstamos activos: 0</div>
+        <div class="text-wrapper-36">Renovaciones: 0</div>
+        <p class="text-wrapper-37">Fecha último préstamo: dd / mm / aaaa</p>
+        <div class="botn">
+          <div class="enter-svgrepo-com"></div>
+          <div class="pr-stamo">Ver libros prestados</div>
+        </div>
+        <div class="botn-2">
+          <div class="enter-svgrepo-com-2"></div>
+          <div class="pr-stamo">Ver libros prestados</div>
+        </div>
+        <div class="botn-3">
+          <div class="enter-svgrepo-com-3"></div>
+          <div class="pr-stamo">Ver libros prestados</div>
+        </div>
+        <div class="botn-4">
+          <div class="enter-svgrepo-com-4"></div>
+          <div class="pr-stamo">Ver libros prestados</div>
+        </div>
+        <div class="botn-5">
+          <div class="enter-svgrepo-com-5"></div>
+          <div class="pr-stamo">Ver libros prestados</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
-export const PginaDeSocios = () => {
-	return (
-	<div className="pgina-de-socios">
-	<div className="div">
-	<div className="overlap-group">
-	<img
-	className="logotipo-repositorio"
-	alt="Logotipo repositorio"
-	src={logotipoRepositorioLibrocultour1}
-	/>
-	</div>
-
-	<div className="overlap">
-	<Instagram className="instagram-instance" />
-	<img className="vector" alt="Vector" src={vector} />
-
-	<div className="text-wrapper">Política de cookies</div>
-	<div className="text-wrapper-2">Política de privacidad</div>
-	<div className="text-wrapper-3">Certificaciones de calidad</div>
-	</div>
-	
-	<div className="text-wrapper-4">Socios inscritos</div>
-
-	<img className="group" alt="Group" src={group2} />
-	<img className="img" alt="Group" src={group} />
-	<img className="group-2" alt="Group" src={image1} />
-	<img className="group-3" alt="Group" src={group3} />
-	<img className="group-4" alt="Group" src={group4} />
-	<img className="vector-2" alt="Vector" src={vector2} />
-	<img className="vector-3" alt="Vector" src={image} />
-	<img className="vector-4" alt="Vector" src={vector22} />
-	<img className="vector-5" alt="Vector" src={vector23} />
-	<img className="vector-6" alt="Vector" src={vector24} />
-
-	<div className="text-wrapper-10">Nombre: José Antonio</div>
-	
-	<div className="text-wrapper-11">Apellidos: Camacho Iborra</div>
-	<div className="text-wrapper-12">Email: loremipsum@gmail.com</div>
-	<div className="text-wrapper-13">Telefono: +123456789</div>
-	<div className="text-wrapper-14">Prestamos activos: 0</div>
-	<div className="text-wrapper-15">Renovaciones: 0</div>
-	<p className="text-wrapper-16">Fecha último préstamo: dd / mm / aaaa</p>
-
-	<div className="text-wrapper-17">Nombre: Miguel</div>
-	
-	<div className="text-wrapper-18">Apellidos: Rey Marfil</div>
-	<div className="text-wrapper-19">Email: loremipsum@gmail.com</div>
-	<div className="text-wrapper-20">Telefono: +123456789</div>
-	<div className="text-wrapper-21">Prestamos activos: 0</div>
-	<div className="text-wrapper-22">Renovaciones: 0</div>
-	<p className="text-wrapper-23">Fecha último préstamo: dd / mm / aaaa</p>
-
-	<div className="text-wrapper-24">Nombre: Jesús</div>
-	
-	<div className="text-wrapper-25">Apellidos: Romanillos Rubio</div>
-	<div className="text-wrapper-26">Email: loremipsum@gmail.com</div>
-	<div className="text-wrapper-27">Telefono: +123456789</div>
-	<div className="text-wrapper-28">Prestamos activos: 0</div>
-	<div className="text-wrapper-29">Renovaciones: 0</div>
-	<p className="text-wrapper-30">Fecha último préstamo: dd / mm / aaaa</p>
-
-	<div className="text-wrapper-31">Nombre: Daniel</div>
-	
-	<div className="text-wrapper-32">Apellidos: Moreta Díez</div>
-	<div className="text-wrapper-33">Email: loremipsum@gmail.com</div>
-	<div className="text-wrapper-34">Telefono: +123456789</div>
-	<div className="text-wrapper-35">Prestamos activos: 0</div>
-	<div className="text-wrapper-36">Renovaciones: 0</div>
-	<p className="text-wrapper-37">Fecha último préstamo: dd / mm / aaaa</p>
-
-	<BotN
-	className="botn"
-	enterSvgrepoComClassName="bot-n-instance"
-	property1="normal"
-	text="Ver libros prestados"
-
-	/>
-
-	<BotN
-	className="design-component-instance-node"
-	enterSvgrepoComClassName="botn-2"
-	property1="normal"
-	text="Ver libros prestados"
-	/>
-	<BotN
-	className="botn-3"
-	enterSvgrepoComClassName="botn-2"
-	property1="normal"
-	text="Ver libros prestados"
-	/>
-	<BotN
-	className="notn-5"
-	enterSvgrepoComClassName="botn-6"
-	property1="normal"
-	text="Ver libros prestados"
-	/>
-	<BotN
-	className="notn-7"
-	enterSvgrepoComClassName="botn-8"
-	property1="normal"
-	text="Ver libros prestados"
-	/>
-	</div>
-	</div>
-	);
-	};
 
 .pgina-de-socios {
 	background-color: transparent;

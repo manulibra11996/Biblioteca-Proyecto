@@ -1,106 +1,67 @@
-import React from "react";
-import { BotN } from "./BotN";
-import { Imput } from "./Imput";
-import { Instagram } from "./Instagram";
-import { TopBarOrdenadorY } from "./TopBarOrdenadorY";
-import { VectorWrapper } from "./VectorWrapper";
-import image from "./image.png";
-import image1 from "./image.svg";
-import maskGroup2 from "./mask-group-2.png";
-import maskGroup3 from "./mask-group-3.png";
-import maskGroup4 from "./mask-group-4.png";
-import maskGroup5 from "./mask-group-5.png";
-import maskGroup6 from "./mask-group-6.png";
-import maskGroup7 from "./mask-group-7.png";
-import maskGroup8 from "./mask-group-8.png";
-import maskGroup9 from "./mask-group-9.png";
-import maskGroup from "./mask-group.png";
-import "./style.css";
-
-export const SeccinCategoras = () => {
-  return (
-    <div className="seccin-categoras">
-      <div className="overlap-group-wrapper">
-        <div className="overlap-group">
-          <div className="overlap">
-            <TopBarOrdenadorY
-              className="top-bar-ordenador-y-m-vil"
-              logotipoRepositorio="logotipo-repositorio-librocultour-1-2.png"
-              property1="default"
-            />
-            <div className="group" />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="seccin-categoras">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="overlap">
+            <div class="top-bar-ordenador-y">
+              <img class="logotipo-repositorio" src="img/logotipo-repositorio-librocultour-1.png" />
+              <div class="text-wrapper">Libros</div>
+              <div class="text-wrapper">Autores</div>
+              <div class="text-wrapper">Categorías</div>
+            </div>
+            <div class="group"></div>
           </div>
-
-          <div className="text-wrapper-2">Categorías</div>
-
-          <Imput
-            className="imput-instance"
-            icon={<VectorWrapper />}
-            property1="default"
-            propertySearchPropertySearchClassName="design-component-instance-node"
-          />
-          <div className="overlap-2">
-            <Instagram className="instagram-instance" />
-            <img className="img" alt="Vector" src={image1} />
-
-            <div className="text-wrapper-3">Política de cookies</div>
-
-            <div className="text-wrapper-4">Política de privacidad</div>
-
-            <div className="text-wrapper-5">Certificaciones de calidad</div>
+          <div class="div">Categorías</div>
+          <div class="imput">
+            <div class="component"></div>
+            <div class="text-wrapper-2">Buscar</div>
+            <img class="vector" src="img/vector.png" />
           </div>
-
-          <img className="mask-group" alt="Mask group" src={maskGroup3} />
-
-          <img className="mask-group-2" alt="Mask group" src={maskGroup6} />
-
-          <img className="mask-group-3" alt="Mask group" src={maskGroup5} />
-
-          <img className="mask-group-4" alt="Mask group" src={maskGroup8} />
-
-          <img className="mask-group-5" alt="Mask group" src={maskGroup9} />
-
-          <img className="mask-group-6" alt="Mask group" src={image} />
-
-          <img className="mask-group-7" alt="Mask group" src={maskGroup2} />
-
-          <img className="mask-group-8" alt="Mask group" src={maskGroup4} />
-
-          <img className="mask-group-9" alt="Mask group" src={maskGroup7} />
-
-          <img className="mask-group-10" alt="Mask group" src={maskGroup} />
-
-          <div className="text-wrapper-6">Drama</div>
-
-          <div className="text-wrapper-7">Novela</div>
-
-          <div className="text-wrapper-8">Romance</div>
-
-          <div className="text-wrapper-9">Fantasía</div>
-
-          <div className="text-wrapper-10">Poesía / Lírica</div>
-
-          <div className="text-wrapper-11">Ficción histórica</div>
-
-          <div className="text-wrapper-12">Terror</div>
-
-          <div className="text-wrapper-13">Crimen</div>
-
-          <div className="text-wrapper-14">Infantil</div>
-
-          <div className="text-wrapper-15">Juvenil</div>
-
-          <BotN
-            className="botn"
-            enterSvgrepoComClassName="bot-n-instance"
-            property1="normal"
-            text="Añadir categoría"
-          />
+          <div class="overlap-2">
+            <img class="instagram" src="img/instagram.svg" />
+            <img class="img" src="img/vector.svg" />
+            <div class="text-wrapper-3">Política de cookies</div>
+            <div class="text-wrapper-4">Política de privacidad</div>
+            <div class="text-wrapper-5">Certificaciones de calidad</div>
+          </div>
+          <img class="mask-group" src="img/mask-group-7.png" />
+          <img class="mask-group-2" src="img/mask-group-8.png" />
+          <img class="mask-group-3" src="img/mask-group-2.png" />
+          <img class="mask-group-4" src="img/mask-group-4.png" />
+          <img class="mask-group-5" src="img/mask-group-9.png" />
+          <img class="mask-group-6" src="img/mask-group-3.png" />
+          <img class="mask-group-7" src="img/mask-group-6.png" />
+          <img class="mask-group-8" src="img/mask-group-5.png" />
+          <img class="mask-group-9" src="img/mask-group.png" />
+          <img class="mask-group-10" src="img/image.png" />
+          <div class="text-wrapper-6">Drama</div>
+          <div class="text-wrapper-7">Novela</div>
+          <div class="text-wrapper-8">Romance</div>
+          <div class="text-wrapper-9">Fantasía</div>
+          <div class="text-wrapper-10">Poesía / Lírica</div>
+          <div class="text-wrapper-11">Ficción histórica</div>
+          <div class="text-wrapper-12">Terror</div>
+          <div class="text-wrapper-13">Crimen</div>
+          <div class="text-wrapper-14">Infantil</div>
+          <div class="text-wrapper-15">Juvenil</div>
+          <div class="botn">
+            <div class="enter-svgrepo-com"></div>
+            <div class="pr-stamo">Añadir categoría</div>
+          </div>
         </div>
       </div>
     </div>
-  );
-};
+  </body>
+</html>
+
 
 .seccin-categoras {
   background-color: #ffffff;

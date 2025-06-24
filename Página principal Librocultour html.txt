@@ -1,116 +1,70 @@
-import React from "react";
-import { BotN } from "./BotN";
-import { Instagram } from "./Instagram";
-import { TopBarOrdenadorY } from "./TopBarOrdenadorY";
-import estanteriaConLibros from "./estanteria-con-libros.png";
-import image from "./image.svg";
-import imagenLibroAbierto from "./imagen-libro-abierto.png";
-import pasilloConLibros from "./pasillo-con-libros.png";
-import "./style.css";
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="pgina-principal">
+<div class="div">
+<div class="overlap">
 
-export const PginaPrincipal = () => {
-  return (
-    <div className="pgina-principal">
-      <div className="div">
-        <div className="overlap">
-          <img
-            className="pasillo-con-libros"
-            alt="Pasillo con libros"
-            src={pasilloConLibros}
-          />
+<img class="pasillo-con-libros" src="img/pasillo-con-libros.png" />
+<div class="top-bar-ordenador-y">
+<img class="logotipo-repositorio" src="img/logotipo-repositorio-librocultour-1.png" />
+<div class="text-wrapper">Libros</div>
+<div class="text-wrapper">Autores</div>
+<div class="text-wrapper">Categorias</div>
+</div>
+<img class="imagen-libro-abierto" src="img/imagen-libro-abierto.png" />
+<div class="group">
+<div class="overlap-group"><div class="text-wrapper-2">Libro</div></div>
+</div>
+<div class="group-2"></div>
+<div class="rectangule"></div>
+<p class="p">¡Bienvenido a Librocultour!</p>
+<div class="rectangule-2"></div>
+<div class="text-wrapper-3">¿Que lecturabuscas?</div>
+<div class="botn">
+<div class= "enter-svgrepo-com"></div>
+<div class="pr-stamo">Haz click aquí</div>
+</div>
+</div>
+<div class="overlap-2">
+<img class="estanteria-con" src="img/estanteria-con-libros.png" />
+<div class="rectangle-3"></div>
+<div class="text-wrapper-4">¿Que género buscas?</div>
+<div class="botn-2">
+<div class="enter-svgrepo-com-2"></div>
+<div class="pr-stamo">Haz click aqui</div>
+</div>
+<div class="rectangule-4"></div>
+<img class="instagram" src="img/instagram.svg" />
+<img class="vector" src="img/image.svg" />
+<div class class="text-wrapper-5">Política de cookies</div>
+<div class="text-wrapper-6">Política de privacidad</div>
+<div class="text-wrapper-7">Certificaciones de calidad</div>
+</div>
+<div class="overlap-group-wrapper">
+<div class="overlap-group"><div class="text-wrapper-8">Categorias</div></div>
+</div>
+<div class="overlap-3">
+<div class="rectangule-5"></div>
+<div class="text-wrapper-9">¿Buscas a alguien?</div>
+<div class="botn-3">
+<div class="enter-svgrepo-com-3"></div>
+<div class="pr-stamo">Haz click aquí</div>
+</div>
+</div>
+<div class="overlap-wrapper">
+<div class="overlap-group"><div class="text-wrapper-10">Autores</div></div>
+</div>
+</div>
+</div>
+</body>
+</html>
 
-          <TopBarOrdenadorY
-            className="top-bar-ordenador-y-m-vil"
-            logotipoRepositorio="image.png"
-            property1="default"
-          />
-          <img
-            className="imagen-libro-abierto"
-            alt="Imagen libro abierto"
-            src={imagenLibroAbierto}
-          />
-
-          <div className="group">
-            <div className="overlap-group">
-              <div className="text-wrapper-2">Libro</div>
-            </div>
-          </div>
-
-          <div className="group-2" />
-
-          <div className="rectangle" />
-
-          <p className="p">¡ Bienvenido a Librocultour !</p>
-
-          <div className="rectangle-2" />
-
-          <div className="text-wrapper-3">¿Qué lectura buscas?</div>
-
-          <BotN
-            className="botn"
-            enterSvgrepoComClassName="bot-n-instance"
-            property1="normal"
-            text="Haz click aquí"
-          />
-        </div>
-
-        <div className="overlap-2">
-          <img
-            className="estanteria-con"
-            alt="Estanteria con"
-            src={estanteriaConLibros}
-          />
-
-          <div className="rectangle-3" />
-
-          <div className="text-wrapper-4">¿Qué género buscas?</div>
-
-          <BotN
-            className="design-component-instance-node"
-            enterSvgrepoComClassName="botn-2"
-            property1="normal"
-            text="Haz click aquí"
-          />
-          <div className="rectangle-4" />
-
-          <Instagram className="instagram-instance" />
-          <img className="vector" alt="Vector" src={image} />
-
-          <div className="text-wrapper-5">Política de cookies</div>
-
-          <div className="text-wrapper-6">Política de privacidad</div>
-
-          <div className="text-wrapper-7">Certificaciones de calidad</div>
-        </div>
-
-        <div className="overlap-group-wrapper">
-          <div className="overlap-group">
-            <div className="text-wrapper-8">Categorías</div>
-          </div>
-        </div>
-
-        <div className="overlap-3">
-          <div className="rectangle-5" />
-
-          <div className="text-wrapper-9">¿Buscas a alguien?</div>
-
-          <BotN
-            className="botn-3"
-            enterSvgrepoComClassName="botn-4"
-            property1="normal"
-            text="Haz click aquí"
-          />
-        </div>
-
-        <div className="overlap-wrapper">
-          <div className="overlap-group">
-            <div className="text-wrapper-10">Autores</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 .pgina-principal {
   background-color: #ffffff;

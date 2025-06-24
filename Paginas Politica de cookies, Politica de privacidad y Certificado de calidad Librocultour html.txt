@@ -1,134 +1,76 @@
-import React from "react";
-import { Instagram } from "./Instagram";
-import { TopBarOrdenadorY } from "./TopBarOrdenadorY";
-import image1 from "./image.svg";
-import "./style.css";
-
-export const PolticaDeCookies = () => {
-  return (
-    <div className="poltica-de-cookies">
-      <div className="overlap-group-wrapper">
-        <div className="overlap-group">
-          <div className="overlap">
-            <TopBarOrdenadorY
-              className="top-bar-ordenador-y-m-vil"
-              logotipoRepositorio="image.png"
-              property1="default"
-            />
-            <div className="group" />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="poltica-de-cookies">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="overlap">
+            <div class="top-bar-ordenador-y">
+              <img class="logotipo-repositorio" src="img/logotipo-repositorio-librocultour-1.png" />
+              <div class="text-wrapper">Libros</div>
+              <div class="text-wrapper">Autores</div>
+              <div class="text-wrapper">Categorías</div>
+            </div>
+            <div class="group"></div>
           </div>
-
-          <div className="div">
-            <Instagram className="instagram-instance" />
-            <img className="vector" alt="Vector" src={image1} />
-
-            <div className="text-wrapper-2">Política de cookies</div>
-
-            <div className="text-wrapper-3">Política de privacidad</div>
-
-            <div className="text-wrapper-4">Certificaciones de calidad</div>
+          <div class="div">
+            <img class="instagram" src="img/instagram.svg" />
+            <img class="vector" src="img/image.svg" />
+            <div class="text-wrapper-2">Política de cookies</div>
+            <div class="text-wrapper-3">Política de privacidad</div>
+            <div class="text-wrapper-4">Certificaciones de calidad</div>
           </div>
-
-          <p className="librocultour-est">
-            Librocultour está comprometido con proporcionarle la mejor
-            experiencia online mientras dure su visita a la web de
-            fundacionadecco.org (la “Web”). Para lograrlo, utilizamos nuestras
-            propias cookies y las de terceros, así como otras tecnologías
-            similares, para obtener información acerca de su comportamiento
-            online mientras esté navegando en la Web y también monitorizamos con
-            qué frecuencia visita la Web.
-            <br />
-            La información que recogemos es anónima y no le identifica como
-            persona, a menos que Usted proporcione información mediante la
-            cumplimentación de un formulario o a través de cualquier otra
-            función similar ofrecida en la Web. Cuando Librocultour recoja
-            información personal, dicho tratamiento de datos se regirá por lo
-            dispuesto en la Política de Privacidad.
-            <br />
-            <br />
-            ¿Qué monitorizamos?
-            <br />
-            <br />
-            Una cookie es un archivo de texto que contiene datos que la página
-            web solicita a su navegador que lo almacene en su dispositivo para
-            recordar información acerca de Usted, como el idioma o sus
-            credenciales de acceso. Estas cookies están configuradas por
-            nosotros y son llamadas cookies propias. También podemos utilizar
-            cookies de terceras partes, las cuales son de un dominio diferente
-            que el dominio de la web que estás visitando.
-            <br />
-            <br />
-            De manera específica, utilizamos cookies y otras tecnologías de
-            rastreo para las siguientes finalidades:
-            <br />
-            <br />· Asistirle en su navegación;
-            <br />· Asistirle en su registro a nuestros eventos, acceso y poder
-            darnos su opinión;
-            <br />· Analizar su uso de nuestros productos, servicios o
-            aplicaciones;
-            <br />· Asistirle con finalidades promocionales o de marketing
-            (incluida publicidad comportamental).
-            <br />
-            <br />
-            No utilizamos cookies intrusivas en la Web para recoger su
-            información personal. Utilizamos las habituales cookies de terceros
-            como Google Analytics para monitorizar su comportamiento online y
-            obtener información estadística a un nivel agregado de la siguiente
-            manera:
-            <br />
-            <br />· Monitorizamos el número de visitas a la Web, de dónde
-            procede cada visitante (por ejemplo, la página web que Usted visitó
-            previamente antes de acceder a la Web) y donde va cada visitante
-            desde la Web (por ejemplo, la página web que Usted visita tras salir
-            de la nuestra);
-            <br />· Una cookie es almacenada en su dispositivo durante el plazo
-            definido en la sección “Cookies utilizadas en librocultour.es”, lo
-            cual está vinculado con su dirección IP. Las cookies son pequeños
-            archivos de texto que su navegador almacena en su dispositivo. Esto
-            nos permite monitorizar si Usted vuelva a la Web.
-            <br />
-            <br />
-            ¿Cómo gestionar las cookies?
-            <br />
-            <br />A menos que hayas configurado su navegador para que rechace
-            las cookies, nuestros sistemas generan cookies cada vez que visite
-            la Web.
-            <br />
-            <br />
-            En el Centro de Preferencias de Cookies, al cual puede acceder en el
-            siguiente botón. En esta apartado podrás gestionar tus preferencias
-            para permitir o rechazar el almacenamiento de las cookies por
-            categoría:
-            <br />
-            <br />
-            Configuración de cookies
-            <br />
-            <br />
-            Tenga en cuenta que si desactiva algunas categorías de cookies puede
-            que no tenga acceso a ciertas partes de la Web o utilizar algunas
-            funcionalidades.
-            <br />
-            <br />
-            Cookies de terceros
-            <br />
-            <br />
-            Durante su visita a la Web puede que también observe contenido de
-            terceros. También tendrás la posibilidad de compartir contenido e
-            información con otros utilizando redes sociales como Facebook,
-            LinkedIn y Twitter. Este contenido es adicional, así que le
-            mantendremos actualizado con información cuidadosamente seleccionada
-            que Usted pueda encontrar relevante o interesante; sin embargo, esto
-            puede resultar en que terceros proveedores almacenen cookies
-            adicionales en sus dispositivos sobre lo que no tenemos control
-            alguno. De esta manera, le sugerimos que compruebe las páginas web
-            de los terceros y sus políticas de privacidad para más información
-            acerca de las cookies y sobre cómo administrarlas.
+          <p class="librocultour-est">
+            Librocultour está comprometido con proporcionarle la mejor experiencia online mientras dure su visita a la
+            web de fundacionadecco.org (la “Web”). Para lograrlo, utilizamos nuestras propias cookies y las de terceros,
+            así como otras tecnologías similares, para obtener información acerca de su comportamiento online mientras
+            esté navegando en la Web y también monitorizamos con qué frecuencia visita la Web.<br />La información que
+            recogemos es anónima y no le identifica como persona, a menos que Usted proporcione información mediante la
+            cumplimentación de un formulario o a través de cualquier otra función similar ofrecida en la Web. Cuando
+            Librocultour recoja información personal, dicho tratamiento de datos se regirá por lo dispuesto en
+            la Política de Privacidad.<br /><br />¿Qué monitorizamos?<br /><br />Una cookie es un archivo de texto que
+            contiene datos que la página web solicita a su navegador que lo almacene en su dispositivo para recordar
+            información acerca de Usted, como el idioma o sus credenciales de acceso. Estas cookies están configuradas
+            por nosotros y son llamadas cookies propias. También podemos utilizar cookies de terceras partes, las cuales
+            son de un dominio diferente que el dominio de la web que estás visitando.<br /><br />De manera específica,
+            utilizamos cookies y otras tecnologías de rastreo para las siguientes finalidades:<br /><br />· Asistirle en
+            su navegación;<br />· Asistirle en su registro a nuestros eventos, acceso y poder darnos su opinión;<br />·
+            Analizar su uso de nuestros productos, servicios o aplicaciones;<br />· Asistirle con finalidades
+            promocionales o de marketing (incluida publicidad comportamental).<br /><br />No utilizamos cookies
+            intrusivas en la Web para recoger su información personal. Utilizamos las habituales cookies de terceros
+            como Google Analytics para monitorizar su comportamiento online y obtener información estadística a un nivel
+            agregado de la siguiente manera:<br /><br />· Monitorizamos el número de visitas a la Web, de dónde procede
+            cada visitante (por ejemplo, la página web que Usted visitó previamente antes de acceder a la Web) y donde
+            va cada visitante desde la Web (por ejemplo, la página web que Usted visita tras salir de la nuestra);<br />·
+            Una cookie es almacenada en su dispositivo durante el plazo definido en la sección “Cookies utilizadas en
+            librocultour.es”, lo cual está vinculado con su dirección IP. Las cookies son pequeños archivos de texto que
+            su navegador almacena en su dispositivo. Esto nos permite monitorizar si Usted vuelva a la Web.<br /><br />¿Cómo
+            gestionar las cookies?<br /><br />A menos que hayas configurado su navegador para que rechace las cookies,
+            nuestros sistemas generan cookies cada vez que visite la Web.<br /><br />En el Centro de Preferencias de
+            Cookies, al cual puede acceder en el siguiente botón. En esta apartado podrás gestionar tus preferencias
+            para permitir o rechazar el almacenamiento de las cookies por categoría:<br /><br />Configuración de
+            cookies<br /><br />Tenga en cuenta que si desactiva algunas categorías de cookies puede que no tenga acceso
+            a ciertas partes de la Web o utilizar algunas funcionalidades.<br /><br />Cookies de terceros<br /><br />Durante
+            su visita a la Web puede que también observe contenido de terceros. También tendrás la posibilidad de
+            compartir contenido e información con otros utilizando redes sociales como Facebook, LinkedIn y Twitter.
+            Este contenido es adicional, así que le mantendremos actualizado con información cuidadosamente seleccionada
+            que Usted pueda encontrar relevante o interesante; sin embargo, esto puede resultar en que terceros
+            proveedores almacenen cookies adicionales en sus dispositivos sobre lo que no tenemos control alguno. De
+            esta manera, le sugerimos que compruebe las páginas web de los terceros y sus políticas de privacidad para
+            más información acerca de las cookies y sobre cómo administrarlas.
           </p>
         </div>
       </div>
     </div>
-  );
-};
+  </body>
+</html>
+
 
 .poltica-de-cookies {
 	background-color: #ffffff;
@@ -254,48 +196,44 @@ export const PolticaDeCookies = () => {
 	width: 1080px;
 }
 
-import React from "react";
-import {Instagram} from "./Instagram";
-import {TopBarOrdenadorY} from "./TopBarOrdenadorY";
-import image1 from "./image.svg";
-import "./style.css";
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="certificaciones-de">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="overlap">
+            <div class="top-bar-ordenador-y">
+              <img class="logotipo-repositorio" src="img/logotipo-repositorio-librocultour-1.png" />
+              <div class="text-wrapper">Libros</div>
+              <div class="text-wrapper">Autores</div>
+              <div class="text-wrapper">Categorías</div>
+            </div>
+            <div class="group"></div>
+          </div>
+          <div class="div">
+            <img class="instagram" src="img/instagram.svg" />
+            <img class="vector" src="img/image.svg" />
+            <div class="text-wrapper-2">Política de cookies</div>
+            <div class="text-wrapper-3">Política de privacidad</div>
+            <div class="text-wrapper-4">Certificaciones de calidad</div>
+          </div>
+          <p class="pol-tica-de-calidad">
+            Política de calidad y certificaciones<br /><br />Librocultour cuenta con una política de calidad certificada
+            por varias entidades.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
-export const CertificacionesDe = () => {
-	return (
-	<div className="certificaciones-de">
-	<div className="overlap-group-wrapper">
-	<div className="overlap-group">
-	<div className="overlap">
-	<TopBarOrdenadorY
-	className="top-bar-ordenador-y-m-vil"
-	logotipoRepositorio="image.png"
-	property1="default"
-	/>
-	<div className="group" />
-	</div>
-
-	<div className="div" />
-	<Instagram className="instagrm-instance" />
-	<img className="vector" alt="Vector" src={image1} />
-	
-	<div className="text-wrapper-2">Política de cookies</div>
-
-	<div className="text-wrapper-3">Política de privacidad</div>
-
-	<div className="text-wrapper-4">Certificaciones de calidad</div>
-	</div>
-
-	<p className="pol-tica-de-calidad">
-	Política de calidad y certificaciones
-	<br />
-	<br />
-	Librocultour cuenta con una política de calidad certificada por varias entidades
-	</p>
-	</div>
-	</div>
-	</div>
-	);
-	};
 
 .certificaciones-de {
 
@@ -422,125 +360,43 @@ export const CertificacionesDe = () => {
 	top: 277px;
 }
 
-import React from "react";
-import { Instagram } from "./Instagram";
-import { TopBarOrdenadorY } from "./TopBarOrdenadorY";
-import image1 from "./image.svg";
-import "./style.css";
-
-export const PolticaDe = () => {
-
-	return (
-	<div className="poltica-de">
-	<div className="overlap-group-wrapper">
-	<div className="overlap-group">
-	<div className="overlap">
-	<TopBarOrdenadorY
-	className="top-bar-ordenador-y-m-vil"
-	logotipoRepositorio="image.png"
-	property1="default"
-	/>
-	<div className="group" />
-	</div>
-
-	<div className="div">
-	<Instagram className="instagram-instance"
-	<img className="vector" alt="Vector" src={image1} />
-
-	<div className="text-wrapper-2">Política de cookies</div>
-
-	<div className="text-wrapper-3">Política de privacidad</div>
-	
-	<div className="text-wrapper-4">Certificaciones de calidad</div>
-	</div>
-
-	<p className="estamos-encantados">
-		Estamos encantados de poder trabajar con Vd. y poder ayudarle en el desarrollo de su carrera.
-		Como supondrá, para poder ayudarle, recogemos y utilizamos información sobre Vd.
-
-		<br />
-		Estamos comprometidos con la protección y respeto por su privacidad.
-		Esta Declaración de Privacidad describe los derechos que, en dicha materia, ostenta en relación con la información sobre Vd. que procesamos, así como las medidas que tomamos para proteger su privacidad.
-		Sabemos que puede ser extenso y tedioso, pero por favor lea detenidamente la Declaración. <br />
-		<br />
-		<br />
-		1) ¿Qué datos personales recogemos y utilizamos?
-		<br />
-		La información personal que recoge incluye, entre otros, los siguientes datos:
-		<br />
-		Su nombre, datos de nacimiento, datos de contacto
-		<br />
-		Si contacta con nosotros, podremos mantener evidencias de dicha comunicación.
-		<br />
-		Cualquier información que Usted nos proporcione cuando utilice nuestros formularios de contacto (por ejemplo, "Contacta con nosotros"). En concreto, nombre, apellidos y correo electrónico.
-		Provisión de su infromación personal por medio de los formularios de contacto no nes una exigencia obligatoria o contractual. Sin embargo los campos marcados con un asterisco son obligatorios porque necesitamos esta informacion para cumplr o responder su solicitud.
-		Otra información que Usted comparta con nosotros completando los formularios de contacto es a su total discreción.
-		<br />
-		Valoraciones sobre Vd. por parte de nuestro personal o terceras partes, así como valoraciones que Vd. mismo realice ya que al fin y al cabo, es su opinión.
-		<br />
-		También recogemos información sobre las visitas a la página web/Portal, incluido, pero no limitado a, la dirección IP, navegador empleado, localización, país, entradas en la página y otras comunicaciones de datos y fuentes a las que accede. Esta información hará más fácil su visita a nuestra página web o Portal en el futuro.
-		<br />
-		Puede que también recojamos información para fines de mercadotecnica y analisis, incluyendo información sobre su respuesta a correos, mensajes, llamadas y otras campañas de marketing. Le enviaremos comunicaciones de marketing cuando Usted así lo consienta expresamente. Podrá cancelar dichas comunicaciones en cualquier momento.
-		<br />
-		<br />
-		3) ¿Por qué empleamos información personal sobre usted?
-		<br/>
-		La empresa recoge y procesa la información personal para:
-		<br />
-		<br />
-		Con su consentimiento puede que también utilicemos su información personal para campañas de mercadotecnia, por ejemplo, vía correo electrónico, mensajes o teléfono.
-		<br />
-		Para posteriormente desarrollar, probar y mejorar nuestro sitio web/Portal u otros procesos o servicios, ya sean nuevos o existentes, y así poder ofrecerle un mejor provecho. Esta situación mayormente ocurre en entornos de sistemas informáticos, por lo que su información ficticia no permita replicar adecuadamente las operaciones del nuevo sistema informático.
-		<br />
-		Para realizar estudios e investigaciones estadísticas y analíticas por ejemplo, para comparar la eficacia de las asignaciones/contrataciones de Candidatos entre diferentes sectores de negocio y áreas geográficas, así como buscar identificar factores que puedan influir en las diferencias halladas.
-		<br />
-		Comunicar datos a terceras partes (ver más adelante).
-		<br />
-		Cuando sea necesario, cumplir con las obligaciones legales
-		<br />
-		Puede que también empleemos la información para:
-		<br />
-		Promover la seguridad y protección de las personas, instalaciones, sistemas y bienes
-		<br />
-		Asegurar cumplimiento con políticas y procedimientos internos
-		<br />
-		Gestionar comunicaciones y otros sistemas empleados por Librocultour
-		<br />
-		Investigar y gestionar a incidentes y reclamaciones
-		<br />
-		Cumplir con las obligaciones y derechos, así como cooperar con cualesquiera investigaciones llevadas a cabo por la polícia, juzgados, reguladores, etc.
-		<br />
-		<br />
-		4) ¿Que dice al respecto la ley?
-		<br />
-		<br />
-		Estamos obligados por ley a procesar los datos que sobre Vd. tenemos bajo alguna de las bases legales que lo permitan
-		<br />
-		<br />
-		5) ¿Tiene que facilitarnos la información personal que hemos solicitado?
-		<br />
-		<br />
-		Aunque no está obligado a facilitarnos la información personal, si no nos facilita no podremos ayudarle y no podremos llegar a facilitar servicio alguno.
-		<br />
-		<br />
-		<br />
-		8) ¿Comunicamos la información a terceras partes?
-		<br />
-		<br />
-		Como se indica más arriba, normalmente comunicamos su información a terceras partes.
-		<br />
-		¿Cuales son sus derechos?
-		<br />
-		Derecho a acceder y obtener una copia de la informacion personal Vd. tiene derecho a solicitar información sobre si tratamoss algún dato personal suyo. En caso de que así sea, puede acceder a su información personal (vía el Portal) y a determinada información sobre cómo se procesa la misma. En algunos casos, puede solicitarnos que le facilitemos una copia en medios electrónicos sobre su información
-		<br />
-		Derecho de rectificación de la información personal. En caso de que evidencie que la información personal. En caso de que evidencie que la informacion personal que sobre Vd. tenemos es incorrecta, puede requerirnos para que actualicemos o corrijamos dicha información. En cualquier caso, le incentivamos a que sea Vd mismo quien acceda al Portal y actualice la información personal directamente.
-		<br />
-		Derecho al olvido o a la supresion de la informacion. En ciertas ocasiones, Vd. tendrá derecho a solicitar que cesemos en el procesamiento de su informacion personal o que, dicha informacion, sea eliminada. La solicitud se puede presentar en cualquier momento y será Librocultour quien evalue y fundamente si su solicitud debe ser concedida. No obstante, este derecho está sujeto a los requisitos legales u obligaciones que puedan existir por las cuales tengamso que retener su informacion. Para aquellos casos en los que de acuerdo con la norma, determinemos que la solicitud de cancelación de los datos debe ser concedidad, Librocultour lo hara sin incurrir en retrasos innecesarios. Hay que tener en cuenta que una vez la información es eliminada, la empresa no podra seguir siendole de ayuda para los fines comentados. En caso de que Vd. quiera registrarse nuevamente con la empresa, sera necesario volver a facilitar la informacion
-		<br />
-		Derecho de oposicion. En la medidad en la que el procesamiento realiza la la Fundacion de los datos personales que sobre Vd tengamos este basado en el interes legitimo de la misma (y no existiera otra base para el procesamiento) o se refiera a acciones de mercadotecnia, Vd estara legitimado para oponerse, por motivos relacionados con su situacion particular, al procesamiento que relaiza la empresa de sus datos
-		/p>
-		iv>
->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="certificaciones-de">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="overlap">
+            <div class="top-bar-ordenador-y">
+              <img class="logotipo-repositorio" src="img/logotipo-repositorio-librocultour-1.png" />
+              <div class="text-wrapper">Libros</div>
+              <div class="text-wrapper">Autores</div>
+              <div class="text-wrapper">Categorías</div>
+            </div>
+            <div class="group"></div>
+          </div>
+          <div class="div">
+            <img class="instagram" src="img/instagram.svg" />
+            <img class="vector" src="img/image.svg" />
+            <div class="text-wrapper-2">Política de cookies</div>
+            <div class="text-wrapper-3">Política de privacidad</div>
+            <div class="text-wrapper-4">Certificaciones de calidad</div>
+          </div>
+          <p class="pol-tica-de-calidad">
+            Política de calidad y certificaciones<br /><br />Librocultour cuenta con una política de calidad certificada
+            por varias entidades.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
 
 .politica-de {

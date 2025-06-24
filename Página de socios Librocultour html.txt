@@ -1,74 +1,42 @@
-import React from "react";
-import {Instagram} from "./Instagram";
-import group from "./group.png";
-import logotipoRepositorioLibrocultour1 from "./logotipo-repositorio-librocultour-1.png";
-import "./style.css";
-import vector from "./vector.svg";
-
-export const PginaDeSocios = () => {
-	return (
-	<div className="pgina-de-socios">
-	<div className="div">
-	<div className="overlap">
-	<img
-	className="logotipo-repositorio"
-	alt="Logotipo repositorio"
-	src={logotipotipoRepositorioLibrocultour1}
-	/>
-	</div>
-
-	<div className="overlap-group">
-	<Instagram className="instagram-instance" />
-	<img className="vector" alt="Vector" src={vector} />
-
-	<div className=text-wrapper">Política de cookies</div>
-	<div className="text-wrapper-2">Política de privacidad</div>
-	<iv className="text-wrapper-3">Certificaciones de calidad</div>
-	</div>
-
-	<div className="text-wrapper-4">Socios</div>
-	<img className="group" alt="Group" src={group} />
-
-	<div className="div-wrapper">
-	<div className="text-wrapper-5">Nombre</div>
-	</div>
-
-	<div className="overlap-2">
-	<div className="text-wrapper-6">Apellidos</div>
-	</div>
-
-	<div className="overlap-3">
-	<div className="text-wrapper-7">Email</div>
-	</div>
-	
-	<div className="overlap-4">
-	<div className="text-wrapper-8">Teléfono</div>
-	</div>
-
-	<div className="overlap-group-wrapper">
-	<div className="overlap-group-2">
-	<div className="overlap-group-2">
-	<div className="text-wrapper-9">Nuevo-socio</div>
-	</div>
-	</div>
-
-	<div className="overlap-group-wrapper">
-	<div className="overlap-group-2">
-	<div className="text-wrapper-9">Nuevo-socio</div>
-	</div>
-	</div>
-
-	<div className="overlap-wrapper">
-	<div className="overlap-group-2">
-	<div className="socios-inscritos">
-	Socios
-	<br />
-	inscritos
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pgina-de-socios">
+      <div class="div">
+        <div class="overlap">
+          <img class="logotipo-repositorio" src="img/logotipo-repositorio-librocultour-1.png" />
+        </div>
+        <div class="overlap-group">
+          <img class="instagram" src="img/instagram.svg" />
+          <img class="vector" src="img/vector.svg" />
+          <div class="text-wrapper">Política de cookies</div>
+          <div class="text-wrapper-2">Política de privacidad</div>
+          <div class="text-wrapper-3">Certificaciones de calidad</div>
+        </div>
+        <div class="text-wrapper-4">Socios</div>
+        <img class="group" src="img/group.png" />
+        <div class="div-wrapper"><div class="text-wrapper-5">Nombre</div></div>
+        <div class="overlap-2"><div class="text-wrapper-6">Apellidos</div></div>
+        <div class="overlap-3"><div class="text-wrapper-7">Email</div></div>
+        <div class="overlap-4"><div class="text-wrapper-8">Teléfono</div></div>
+        <div class="overlap-group-wrapper">
+          <div class="overlap-group-2"><div class="text-wrapper-9">Nuevo socio</div></div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-group-2">
+            <div class="socios-inscritos">Socios<br />inscritos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
 .pgina-de-socios {
 	background-color: transparent;
