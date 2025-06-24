@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle de libro</title>
+</head>
+<body>
+<div>
+    <h1>Detalle de libro</h1>
+
+    <div th:if="${error}">
+        <p th:text="${error}"></p>
+    </div>
+
+    <div th:if="${libro}">
+
+        <div>
+            <strong>ID:</strong> <span th:text="${libro.id}"></span>
+        </div>
+        <div>
+            <strong>Titulo:</strong> <span th:text="${libro.titulo}"></span>
+        </div>
+        <div>
+            <strong>Autor:</strong> <span th:text="${libro.autor.nombre}"></span>
+        </div>
+        <div>
+            <strong>Numero de paginas:</strong> <span th:text="${libro.numeroPaginas}"></span>
+        </div>
+        <div>
+            <strong>Disponible:</strong> <span th:text="${libro.disponible ? 'Sí' : 'No'}"></span>
+        </div>
+        <div>
+            <strong>Categoria:</strong> <span th:text="${libro.categoria.nombre}"></span>
+        </div>
+
+    </div>
+
+    <div>
+        <a th:href="@{/libro}">Volver al listado de libros</a>
+    </div>
+</div>
+
+</body>
+</html>

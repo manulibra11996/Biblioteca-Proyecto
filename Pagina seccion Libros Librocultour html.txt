@@ -1,0 +1,1088 @@
+import React from "react";
+import { BotN } from "./BotN";
+import { Imput } from "./Imput";
+import { Instagram } from "./Instagram";
+import { TopBarOrdenadorY } from "./TopBarOrdenadorY";
+import { VectorWrapper } from "./VectorWrapper";
+import aliciaEnElPaisDeLasMaravillasLewisCarrol1 from "./alicia-en-el-pais-de-las-maravillas-lewis-carrol-1.png";
+import cronicaDeUnaMuerteAnunciadaGabrielGarciaMRquez1 from "./cronica-de-una-muerte-anunciada-gabriel-garcia-m-rquez-1.png";
+import elMedicoNoahGordon1 from "./el-medico-noah-gordon-1.png";
+import elPanDeLaGuerraDevorahEllis1 from "./el-pan-de-la-guerra-devorah-ellis-1.png";
+import image1 from "./image.svg";
+import losCachorrosMarioVargasLlosa1 from "./los-cachorros-mario-vargas-llosa-1.png";
+import losGirasolesCiegosAlbertoMendez1 from "./los-girasoles-ciegos-alberto-mendez-1.png";
+import pedroYElCapitanMarioBenedetti1 from "./pedro-y-el-capitan-mario-benedetti-1.png";
+import "./style.css";
+import vector12 from "./vector-1-2.svg";
+import vector13 from "./vector-1-3.svg";
+import vector1 from "./vector-1.svg";
+import vector22 from "./vector-2-2.svg";
+import vector23 from "./vector-2-3.svg";
+import vector2 from "./vector-2.svg";
+import vector3 from "./vector-3.svg";
+import vector4 from "./vector-4.svg";
+
+export const SeccinLibros = () => {
+  return (
+    <div className="seccin-libros">
+      <div className="overlap-group-wrapper">
+        <div className="overlap-group">
+          <img className="img" alt="Vector" src={image1} />
+
+          <BotN
+            className="botn"
+            enterSvgrepoComClassName="bot-n-instance"
+            property1="normal"
+          />
+          <p className="lorem-ipsum-dolor">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
+            Proin maximus, lectus a sagittis ullamcorper, eros magna
+            <br />
+            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+
+          <div className="text-wrapper-2">Resumen:</div>
+
+          <div className="text-wrapper-3">Categoría: Novela</div>
+
+          <div className="text-wrapper-4">Autor: Mario Vargas Llosa</div>
+
+          <div className="text-wrapper-5">Título: Los Cachorros</div>
+
+          <img className="vector-2" alt="Vector" src={vector12} />
+
+          <p className="p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
+            Proin maximus, lectus a sagittis ullamcorper, eros magna
+            <br />
+            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+
+          <div className="text-wrapper-6">Resumen:</div>
+
+          <div className="text-wrapper-7">Categoría: Novela; Crimen</div>
+
+          <div className="text-wrapper-8">Autor: Gabriel García Márquez</div>
+
+          <p className="text-wrapper-9">
+            Título: Crónica de una muerte anunciada
+          </p>
+
+          <img
+            className="los-cachorros-mario"
+            alt="Los cachorros mario"
+            src={losCachorrosMarioVargasLlosa1}
+          />
+
+          <img
+            className="cronica-de-una"
+            alt="Cronica de una"
+            src={cronicaDeUnaMuerteAnunciadaGabrielGarciaMRquez1}
+          />
+
+          <div className="text-wrapper-10">Título: El Médico</div>
+
+          <BotN
+            className="design-component-instance-node"
+            enterSvgrepoComClassName="botn-2"
+            property1="normal"
+          />
+          <div className="text-wrapper-11">Autor: Noah Gordon</div>
+
+          <div className="text-wrapper-12">
+            Categoría: Novela; Ficción histórica
+          </div>
+
+          <p className="lorem-ipsum-dolor-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
+            Proin maximus, lectus a sagittis ullamcorper, eros magna
+            <br />
+            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+
+          <BotN
+            className="botn-3"
+            enterSvgrepoComClassName="botn-4"
+            property1="normal"
+          />
+          <img className="vector-3" alt="Vector" src={vector22} />
+
+          <img className="vector-4" alt="Vector" src={vector3} />
+
+          <div className="text-wrapper-13">1</div>
+
+          <img
+            className="los-girasoles-ciegos"
+            alt="Los girasoles ciegos"
+            src={losGirasolesCiegosAlbertoMendez1}
+          />
+
+          <div className="text-wrapper-14">Título: Los girasoles ciegos</div>
+
+          <div className="text-wrapper-15">Autor: Alberto Méndez</div>
+
+          <div className="text-wrapper-16">Categoría: Novela</div>
+
+          <div className="text-wrapper-17">Resumen:</div>
+
+          <p className="lorem-ipsum-dolor-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
+            Proin maximus, lectus a sagittis ullamcorper, eros magna
+            <br />
+            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+
+          <BotN
+            className="botn-5"
+            enterSvgrepoComClassName="botn-6"
+            property1="normal"
+          />
+          <img className="vector-5" alt="Vector" src={vector23} />
+
+          <div className="text-wrapper-18">Resumen:</div>
+
+          <p className="lorem-ipsum-dolor-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
+            Proin maximus, lectus a sagittis ullamcorper, eros magna
+            <br />
+            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+
+          <BotN
+            className="botn-7"
+            enterSvgrepoComClassName="botn-8"
+            property1="normal"
+          />
+          <img
+            className="el-pan-de-la-guerra"
+            alt="El pan de la guerra"
+            src={elPanDeLaGuerraDevorahEllis1}
+          />
+
+          <p className="text-wrapper-19">Título: El pan de la guerra</p>
+
+          <div className="text-wrapper-20">Autor: Devorah Ellis</div>
+
+          <div className="text-wrapper-21">Categoría: Novela; Juvenil</div>
+
+          <div className="text-wrapper-22">Resumen:</div>
+
+          <p className="lorem-ipsum-dolor-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
+            Proin maximus, lectus a sagittis ullamcorper, eros magna
+            <br />
+            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+
+          <BotN
+            className="botn-9"
+            enterSvgrepoComClassName="botn-10"
+            property1="normal"
+          />
+          <img className="vector-6" alt="Vector" src={vector2} />
+
+          <p className="text-wrapper-23">
+            Título: Alicia en el País de las Maravillas
+          </p>
+
+          <div className="text-wrapper-24">Autor: Lewis Carrol</div>
+
+          <div className="text-wrapper-25">Categoría: Fantasía; Infantil</div>
+
+          <div className="text-wrapper-26">Resumen:</div>
+
+          <img
+            className="alicia-en-el-pais-de"
+            alt="Alicia en el pais de"
+            src={aliciaEnElPaisDeLasMaravillasLewisCarrol1}
+          />
+
+          <div className="overlap">
+            <TopBarOrdenadorY
+              className="top-bar-ordenador-y-m-vil"
+              logotipoRepositorio="image.png"
+              property1="default"
+            />
+            <div className="group" />
+          </div>
+
+          <div className="text-wrapper-27">Libros</div>
+
+          <Imput
+            className="imput-instance"
+            icon={<VectorWrapper />}
+            property1="default"
+            propertySearchPropertySearchClassName="imput-2"
+          />
+          <p className="text-wrapper-28">Título: Pedro y el Capitán</p>
+
+          <div className="text-wrapper-29">Autor: Mario Benedetti</div>
+
+          <div className="text-wrapper-30">Resumen:</div>
+
+          <p className="lorem-ipsum-dolor-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
+            Proin maximus, lectus a sagittis ullamcorper, eros magna
+            <br />
+            pellentesque quam, sit amet hendrerit ligula augue vel mauris.
+          </p>
+
+          <BotN
+            className="botn-11"
+            enterSvgrepoComClassName="botn-12"
+            property1="normal"
+          />
+          <img className="vector-7" alt="Vector" src={vector1} />
+
+          <img
+            className="pedro-y-el-capitan"
+            alt="Pedro y el capitan"
+            src={pedroYElCapitanMarioBenedetti1}
+          />
+
+          <div className="overlap-2">
+            <Instagram className="instagram-instance" />
+            <img className="vector-8" alt="Vector" src={vector4} />
+
+            <div className="text-wrapper-31">Política de cookies</div>
+
+            <div className="text-wrapper-32">Política de privacidad</div>
+
+            <div className="text-wrapper-33">Certificaciones de calidad</div>
+          </div>
+
+          <div className="text-wrapper-34">Categoría: Drama</div>
+
+          <img
+            className="el-medico-noah"
+            alt="El medico noah"
+            src={elMedicoNoahGordon1}
+          />
+
+          <img className="vector-9" alt="Vector" src={vector13} />
+
+          <BotN
+            className="botn-13"
+            enterSvgrepoComClassName="botn-14"
+            property1="normal"
+            text="Añadir libro"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+.seccin-libros {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.seccin-libros .overlap-group-wrapper {
+  background-color: #ffffff;
+  height: 4324px;
+  width: 1440px;
+}
+
+.seccin-libros .overlap-group {
+  background-image: url(./fondo-para-libros.svg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 4310px;
+  position: relative;
+  top: 14px;
+}
+
+.seccin-libros .img {
+  height: 3px;
+  left: 115px;
+  position: absolute;
+  top: 1414px;
+  width: 1267px;
+}
+
+.seccin-libros .botn {
+  left: 497px !important;
+  position: absolute !important;
+  top: 1344px !important;
+}
+
+.seccin-libros .bot-n-instance {
+  background-image: url(./clip-path-group-3.png) !important;
+}
+
+.seccin-libros .lorem-ipsum-dolor {
+  color: #000000;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1254px;
+}
+
+.seccin-libros .text-wrapper-2 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1196px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-3 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1138px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-4 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1080px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-5 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1022px;
+  white-space: nowrap;
+}
+
+.seccin-libros .vector-2 {
+  height: 3px;
+  left: 115px;
+  position: absolute;
+  top: 1866px;
+  width: 1267px;
+}
+
+.seccin-libros .p {
+  color: #000000;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 498px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1680px;
+}
+
+.seccin-libros .text-wrapper-6 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 497px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1621px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-7 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 497px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1561px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-8 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 497px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1503px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-9 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 497px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1445px;
+  white-space: nowrap;
+}
+
+.seccin-libros .los-cachorros-mario {
+  height: 361px;
+  left: 117px;
+  object-fit: cover;
+  position: absolute;
+  top: 1023px;
+  width: 259px;
+}
+
+.seccin-libros .cronica-de-una {
+  height: 392px;
+  left: 117px;
+  object-fit: cover;
+  position: absolute;
+  top: 1444px;
+  width: 259px;
+}
+
+.seccin-libros .text-wrapper-10 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1896px;
+  white-space: nowrap;
+}
+
+.seccin-libros .design-component-instance-node {
+  left: 496px !important;
+  position: absolute !important;
+  top: 1796px !important;
+}
+
+.seccin-libros .botn-2 {
+  background-image: url(./clip-path-group-4.png) !important;
+}
+
+.seccin-libros .text-wrapper-11 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1954px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-12 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2012px;
+  white-space: nowrap;
+}
+
+.seccin-libros .lorem-ipsum-dolor-2 {
+  color: #000000;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3080px;
+}
+
+.seccin-libros .botn-3 {
+  left: 496px !important;
+  position: absolute !important;
+  top: 3191px !important;
+}
+
+.seccin-libros .botn-4 {
+  background-image: url(./clip-path-group-7.png) !important;
+}
+
+.seccin-libros .vector-3 {
+  height: 3px;
+  left: 116px;
+  position: absolute;
+  top: 3270px;
+  width: 1267px;
+}
+
+.seccin-libros .vector-4 {
+  height: 32px;
+  left: 709px;
+  position: absolute;
+  top: 3979px;
+  width: 32px;
+}
+
+.seccin-libros .text-wrapper-13 {
+  color: #000000;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 673px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3974px;
+}
+
+.seccin-libros .los-girasoles-ciegos {
+  height: 438px;
+  left: 116px;
+  object-fit: cover;
+  position: absolute;
+  top: 3312px;
+  width: 258px;
+}
+
+.seccin-libros .text-wrapper-14 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3311px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-15 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 497px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3370px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-16 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3429px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-17 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3488px;
+  white-space: nowrap;
+}
+
+.seccin-libros .lorem-ipsum-dolor-3 {
+  color: #000000;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3547px;
+}
+
+.seccin-libros .botn-5 {
+  left: 496px !important;
+  position: absolute !important;
+  top: 3707px !important;
+}
+
+.seccin-libros .botn-6 {
+  background-image: url(./clip-path-group-8.png) !important;
+}
+
+.seccin-libros .vector-5 {
+  height: 3px;
+  left: 116px;
+  position: absolute;
+  top: 3784px;
+  width: 1267px;
+}
+
+.seccin-libros .text-wrapper-18 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2076px;
+  white-space: nowrap;
+}
+
+.seccin-libros .lorem-ipsum-dolor-4 {
+  color: #000000;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2140px;
+}
+
+.seccin-libros .botn-7 {
+  left: 496px !important;
+  position: absolute !important;
+  top: 2250px !important;
+}
+
+.seccin-libros .botn-8 {
+  background-image: url(./clip-path-group-5.png) !important;
+}
+
+.seccin-libros .el-pan-de-la-guerra {
+  height: 412px;
+  left: 116px;
+  object-fit: cover;
+  position: absolute;
+  top: 2361px;
+  width: 258px;
+}
+
+.seccin-libros .text-wrapper-19 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2360px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-20 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2414px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-21 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2468px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-22 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2529px;
+  white-space: nowrap;
+}
+
+.seccin-libros .lorem-ipsum-dolor-5 {
+  color: #000000;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2583px;
+}
+
+.seccin-libros .botn-9 {
+  left: 496px !important;
+  position: absolute !important;
+  top: 2733px !important;
+}
+
+.seccin-libros .botn-10 {
+  background-image: url(./clip-path-group-6.png) !important;
+}
+
+.seccin-libros .vector-6 {
+  height: 3px;
+  left: 116px;
+  position: absolute;
+  top: 2808px;
+  width: 1267px;
+}
+
+.seccin-libros .text-wrapper-23 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2840px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-24 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2894px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-25 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2951px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-26 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3009px;
+  white-space: nowrap;
+}
+
+.seccin-libros .alicia-en-el-pais-de {
+  height: 389px;
+  left: 115px;
+  object-fit: cover;
+  position: absolute;
+  top: 2841px;
+  width: 260px;
+}
+
+.seccin-libros .overlap {
+  height: 87px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.seccin-libros .top-bar-ordenador-y-m-vil {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 1440px !important;
+}
+
+.seccin-libros .group {
+  background-image: url(./vector.svg);
+  background-size: 100% 100%;
+  height: 32px;
+  left: 1350px;
+  position: absolute;
+  top: 27px;
+  width: 32px;
+}
+
+.seccin-libros .text-wrapper-27 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 112px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 201px;
+  white-space: nowrap;
+}
+
+.seccin-libros .imput-instance {
+  border-color: #000000 !important;
+  left: 117px !important;
+  position: absolute !important;
+  top: 383px !important;
+}
+
+.seccin-libros .imput-2 {
+  background-image: url(./search-2.png) !important;
+  height: 32px !important;
+  position: relative !important;
+  width: 32px !important;
+}
+
+.seccin-libros .text-wrapper-28 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 564px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-29 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 624px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-30 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 747px;
+  white-space: nowrap;
+}
+
+.seccin-libros .lorem-ipsum-dolor-6 {
+  color: #000000;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 799px;
+}
+
+.seccin-libros .botn-11 {
+  left: 496px !important;
+  position: absolute !important;
+  top: 926px !important;
+}
+
+.seccin-libros .botn-12 {
+  background-image: url(./clip-path-group-2.png) !important;
+}
+
+.seccin-libros .vector-7 {
+  height: 3px;
+  left: 117px;
+  position: absolute;
+  top: 994px;
+  width: 1267px;
+}
+
+.seccin-libros .pedro-y-el-capitan {
+  height: 400px;
+  left: 117px;
+  object-fit: cover;
+  position: absolute;
+  top: 566px;
+  width: 259px;
+}
+
+.seccin-libros .overlap-2 {
+  background-color: #1d3461;
+  height: 214px;
+  left: 0;
+  position: absolute;
+  top: 4096px;
+  width: 1440px;
+}
+
+.seccin-libros .instagram-instance {
+  height: 64px !important;
+  left: 271px !important;
+  position: absolute !important;
+  top: 73px !important;
+  width: 64px !important;
+}
+
+.seccin-libros .vector-8 {
+  height: 64px;
+  left: 115px;
+  position: absolute;
+  top: 73px;
+  width: 64px;
+}
+
+.seccin-libros .text-wrapper-31 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 456px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 96px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-32 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 780px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 96px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-33 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 1104px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 96px;
+  white-space: nowrap;
+}
+
+.seccin-libros .text-wrapper-34 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 496px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 684px;
+  white-space: nowrap;
+}
+
+.seccin-libros .el-medico-noah {
+  height: 392px;
+  left: 116px;
+  object-fit: cover;
+  position: absolute;
+  top: 1898px;
+  width: 258px;
+}
+
+.seccin-libros .vector-9 {
+  height: 3px;
+  left: 115px;
+  position: absolute;
+  top: 2324px;
+  width: 1267px;
+}
+
+.seccin-libros .botn-13 {
+  background-color: #945600 !important;
+  left: 1072px !important;
+  position: absolute !important;
+  top: 219px !important;
+}
+
+.seccin-libros .botn-14 {
+  background-image: url(./clip-path-group-9.png) !important;
+}

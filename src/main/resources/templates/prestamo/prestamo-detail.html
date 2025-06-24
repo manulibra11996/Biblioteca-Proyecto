@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle de prestamo</title>
+</head>
+<body>
+<div>
+  <h1>Detalle de prestamo</h1>
+
+  <div th:if="${error}">
+    <p th:text="${error}"></p>
+  </div>
+
+  <div th:if="${prestamo}">
+
+    <div>
+      <strong>ID:</strong> <span th:text="${prestamo.id}"></span>
+    </div>
+    <div>
+      <strong>Libro:</strong> <span th:text="${prestamo.libro.titulo}"></span>
+    </div>
+    <div>
+      <strong>Socio:</strong> <span th:text="${prestamo.socio.nombre}"></span>
+    </div>
+    <div>
+      <strong>Fecha de entrega:</strong> <span th:text="${prestamo.fechaEntrega}"></span>
+    </div>
+    <div th:if="${prestamo.fechaDevolucion != null}">
+      <strong>Fecha de devolución:</strong> <span th:text="${prestamo.fechaDevolucion}"></span>
+    </div>
+  </div>
+
+  <div>
+    <a th:href="@{/prestamo}">Volver al listado de prestamos</a>
+  </div>
+</div>
+
+</body>
+</html>

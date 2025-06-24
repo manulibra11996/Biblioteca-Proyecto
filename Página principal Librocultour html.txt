@@ -1,0 +1,472 @@
+import React from "react";
+import { BotN } from "./BotN";
+import { Instagram } from "./Instagram";
+import { TopBarOrdenadorY } from "./TopBarOrdenadorY";
+import estanteriaConLibros from "./estanteria-con-libros.png";
+import image from "./image.svg";
+import imagenLibroAbierto from "./imagen-libro-abierto.png";
+import pasilloConLibros from "./pasillo-con-libros.png";
+import "./style.css";
+
+export const PginaPrincipal = () => {
+  return (
+    <div className="pgina-principal">
+      <div className="div">
+        <div className="overlap">
+          <img
+            className="pasillo-con-libros"
+            alt="Pasillo con libros"
+            src={pasilloConLibros}
+          />
+
+          <TopBarOrdenadorY
+            className="top-bar-ordenador-y-m-vil"
+            logotipoRepositorio="image.png"
+            property1="default"
+          />
+          <img
+            className="imagen-libro-abierto"
+            alt="Imagen libro abierto"
+            src={imagenLibroAbierto}
+          />
+
+          <div className="group">
+            <div className="overlap-group">
+              <div className="text-wrapper-2">Libro</div>
+            </div>
+          </div>
+
+          <div className="group-2" />
+
+          <div className="rectangle" />
+
+          <p className="p">¡ Bienvenido a Librocultour !</p>
+
+          <div className="rectangle-2" />
+
+          <div className="text-wrapper-3">¿Qué lectura buscas?</div>
+
+          <BotN
+            className="botn"
+            enterSvgrepoComClassName="bot-n-instance"
+            property1="normal"
+            text="Haz click aquí"
+          />
+        </div>
+
+        <div className="overlap-2">
+          <img
+            className="estanteria-con"
+            alt="Estanteria con"
+            src={estanteriaConLibros}
+          />
+
+          <div className="rectangle-3" />
+
+          <div className="text-wrapper-4">¿Qué género buscas?</div>
+
+          <BotN
+            className="design-component-instance-node"
+            enterSvgrepoComClassName="botn-2"
+            property1="normal"
+            text="Haz click aquí"
+          />
+          <div className="rectangle-4" />
+
+          <Instagram className="instagram-instance" />
+          <img className="vector" alt="Vector" src={image} />
+
+          <div className="text-wrapper-5">Política de cookies</div>
+
+          <div className="text-wrapper-6">Política de privacidad</div>
+
+          <div className="text-wrapper-7">Certificaciones de calidad</div>
+        </div>
+
+        <div className="overlap-group-wrapper">
+          <div className="overlap-group">
+            <div className="text-wrapper-8">Categorías</div>
+          </div>
+        </div>
+
+        <div className="overlap-3">
+          <div className="rectangle-5" />
+
+          <div className="text-wrapper-9">¿Buscas a alguien?</div>
+
+          <BotN
+            className="botn-3"
+            enterSvgrepoComClassName="botn-4"
+            property1="normal"
+            text="Haz click aquí"
+          />
+        </div>
+
+        <div className="overlap-wrapper">
+          <div className="overlap-group">
+            <div className="text-wrapper-10">Autores</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+.pgina-principal {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.pgina-principal .div {
+  background-color: #ffffff;
+  height: 4311px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.pgina-principal .overlap {
+  height: 2048px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 1442px;
+}
+
+.pgina-principal .pasillo-con-libros {
+  height: 1081px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1439px;
+}
+
+.pgina-principal .top-bar-ordenador-y-m-vil {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 1440px !important;
+}
+
+.pgina-principal .imagen-libro-abierto {
+  height: 951px;
+  left: 0;
+  position: absolute;
+  top: 1097px;
+  width: 1439px;
+}
+
+.pgina-principal .group {
+  height: 238px;
+  left: 0;
+  position: absolute;
+  top: 1024px;
+  width: 1442px;
+}
+
+.pgina-principal .overlap-group {
+  background-color: #8093f1;
+  height: 238px;
+  position: relative;
+  width: 1440px;
+}
+
+.pgina-principal .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 639px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 82px;
+  white-space: nowrap;
+}
+
+.pgina-principal .group-2 {
+  background-image: url(./vector.svg);
+  background-size: 100% 100%;
+  height: 32px;
+  left: 1351px;
+  position: absolute;
+  top: 27px;
+  width: 32px;
+}
+
+.pgina-principal .rectangle {
+  -webkit-backdrop-filter: blur(5.7px) brightness(100%);
+  backdrop-filter: blur(5.7px) brightness(100%);
+  background-color: #ffffffa1;
+  border: 1px solid;
+  border-color: #ffffff1c;
+  border-radius: 0px 30px 0px 30px;
+  height: 172px;
+  left: 258px;
+  position: absolute;
+  top: 429px;
+  width: 924px;
+}
+
+.pgina-principal .p {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 284px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 480px;
+  white-space: nowrap;
+}
+
+.pgina-principal .rectangle-2 {
+  -webkit-backdrop-filter: blur(5.7px) brightness(100%);
+  backdrop-filter: blur(5.7px) brightness(100%);
+  background-color: #ffffffa1;
+  border: 1px solid;
+  border-color: #ffffff1c;
+  border-radius: 0px 30px 0px 30px;
+  height: 329px;
+  left: 258px;
+  position: absolute;
+  top: 1400px;
+  width: 924px;
+}
+
+.pgina-principal .text-wrapper-3 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 384px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1462px;
+  white-space: nowrap;
+}
+
+.pgina-principal .botn {
+  left: 615px !important;
+  position: absolute !important;
+  top: 1619px !important;
+}
+
+.pgina-principal .bot-n-instance {
+  background-image: url(./clip-path-group-2.png) !important;
+}
+
+.pgina-principal .overlap-2 {
+  height: 1000px;
+  left: 1px;
+  position: absolute;
+  top: 3311px;
+  width: 1440px;
+}
+
+.pgina-principal .estanteria-con {
+  height: 841px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1439px;
+}
+
+.pgina-principal .rectangle-3 {
+  -webkit-backdrop-filter: blur(5.7px) brightness(100%);
+  backdrop-filter: blur(5.7px) brightness(100%);
+  background-color: #ffffffa1;
+  border: 1px solid;
+  border-color: #ffffff1c;
+  border-radius: 0px 30px 0px 30px;
+  height: 329px;
+  left: 258px;
+  position: absolute;
+  top: 140px;
+  width: 924px;
+}
+
+.pgina-principal .text-wrapper-4 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 384px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 212px;
+  white-space: nowrap;
+}
+
+.pgina-principal .design-component-instance-node {
+  left: 615px !important;
+  position: absolute !important;
+  top: 367px !important;
+}
+
+.pgina-principal .botn-2 {
+  background-image: url(./clip-path-group-4.png) !important;
+}
+
+.pgina-principal .rectangle-4 {
+  background-color: #1d3461;
+  height: 214px;
+  left: 0;
+  position: absolute;
+  top: 786px;
+  width: 1440px;
+}
+
+.pgina-principal .instagram-instance {
+  height: 64px !important;
+  left: 260px !important;
+  position: absolute !important;
+  top: 861px !important;
+  width: 64px !important;
+}
+
+.pgina-principal .vector {
+  height: 64px;
+  left: 104px;
+  position: absolute;
+  top: 861px;
+  width: 64px;
+}
+
+.pgina-principal .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 452px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 882px;
+  white-space: nowrap;
+}
+
+.pgina-principal .text-wrapper-6 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 776px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 882px;
+  white-space: nowrap;
+}
+
+.pgina-principal .text-wrapper-7 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 1100px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 882px;
+  white-space: nowrap;
+}
+
+.pgina-principal .overlap-group-wrapper {
+  height: 238px;
+  left: 1px;
+  position: absolute;
+  top: 3073px;
+  width: 1442px;
+}
+
+.pgina-principal .text-wrapper-8 {
+  color: #ffffff;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 554px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 82px;
+  white-space: nowrap;
+}
+
+.pgina-principal .overlap-3 {
+  background-image: url(./multiples-libros.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 785px;
+  left: 1px;
+  position: absolute;
+  top: 2288px;
+  width: 1439px;
+}
+
+.pgina-principal .rectangle-5 {
+  -webkit-backdrop-filter: blur(5.7px) brightness(100%);
+  backdrop-filter: blur(5.7px) brightness(100%);
+  background-color: #ffffffa1;
+  border: 1px solid;
+  border-color: #ffffff1c;
+  border-radius: 0px 30px 0px 30px;
+  height: 329px;
+  left: 258px;
+  position: absolute;
+  top: 128px;
+  width: 924px;
+}
+
+.pgina-principal .text-wrapper-9 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 418px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 179px;
+  white-space: nowrap;
+}
+
+.pgina-principal .botn-3 {
+  left: 615px !important;
+  position: absolute !important;
+  top: 354px !important;
+}
+
+.pgina-principal .botn-4 {
+  background-image: url(./clip-path-group-3.png) !important;
+}
+
+.pgina-principal .overlap-wrapper {
+  height: 238px;
+  left: 1px;
+  position: absolute;
+  top: 2049px;
+  width: 1442px;
+}
+
+.pgina-principal .text-wrapper-10 {
+  color: #ffffff;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 599px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 82px;
+  white-space: nowrap;
+}
+

@@ -1,0 +1,462 @@
+import React from "react";
+import { BotN } from "./BotN";
+import { Imput } from "./Imput";
+import { Instagram } from "./Instagram";
+import { TopBarOrdenadorY } from "./TopBarOrdenadorY";
+import { VectorWrapper } from "./VectorWrapper";
+import image from "./image.png";
+import image1 from "./image.svg";
+import maskGroup2 from "./mask-group-2.png";
+import maskGroup3 from "./mask-group-3.png";
+import maskGroup4 from "./mask-group-4.png";
+import maskGroup5 from "./mask-group-5.png";
+import maskGroup6 from "./mask-group-6.png";
+import maskGroup7 from "./mask-group-7.png";
+import maskGroup8 from "./mask-group-8.png";
+import maskGroup9 from "./mask-group-9.png";
+import maskGroup from "./mask-group.png";
+import "./style.css";
+
+export const SeccinCategoras = () => {
+  return (
+    <div className="seccin-categoras">
+      <div className="overlap-group-wrapper">
+        <div className="overlap-group">
+          <div className="overlap">
+            <TopBarOrdenadorY
+              className="top-bar-ordenador-y-m-vil"
+              logotipoRepositorio="logotipo-repositorio-librocultour-1-2.png"
+              property1="default"
+            />
+            <div className="group" />
+          </div>
+
+          <div className="text-wrapper-2">Categorías</div>
+
+          <Imput
+            className="imput-instance"
+            icon={<VectorWrapper />}
+            property1="default"
+            propertySearchPropertySearchClassName="design-component-instance-node"
+          />
+          <div className="overlap-2">
+            <Instagram className="instagram-instance" />
+            <img className="img" alt="Vector" src={image1} />
+
+            <div className="text-wrapper-3">Política de cookies</div>
+
+            <div className="text-wrapper-4">Política de privacidad</div>
+
+            <div className="text-wrapper-5">Certificaciones de calidad</div>
+          </div>
+
+          <img className="mask-group" alt="Mask group" src={maskGroup3} />
+
+          <img className="mask-group-2" alt="Mask group" src={maskGroup6} />
+
+          <img className="mask-group-3" alt="Mask group" src={maskGroup5} />
+
+          <img className="mask-group-4" alt="Mask group" src={maskGroup8} />
+
+          <img className="mask-group-5" alt="Mask group" src={maskGroup9} />
+
+          <img className="mask-group-6" alt="Mask group" src={image} />
+
+          <img className="mask-group-7" alt="Mask group" src={maskGroup2} />
+
+          <img className="mask-group-8" alt="Mask group" src={maskGroup4} />
+
+          <img className="mask-group-9" alt="Mask group" src={maskGroup7} />
+
+          <img className="mask-group-10" alt="Mask group" src={maskGroup} />
+
+          <div className="text-wrapper-6">Drama</div>
+
+          <div className="text-wrapper-7">Novela</div>
+
+          <div className="text-wrapper-8">Romance</div>
+
+          <div className="text-wrapper-9">Fantasía</div>
+
+          <div className="text-wrapper-10">Poesía / Lírica</div>
+
+          <div className="text-wrapper-11">Ficción histórica</div>
+
+          <div className="text-wrapper-12">Terror</div>
+
+          <div className="text-wrapper-13">Crimen</div>
+
+          <div className="text-wrapper-14">Infantil</div>
+
+          <div className="text-wrapper-15">Juvenil</div>
+
+          <BotN
+            className="botn"
+            enterSvgrepoComClassName="bot-n-instance"
+            property1="normal"
+            text="Añadir categoría"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+.seccin-categoras {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.seccin-categoras .overlap-group-wrapper {
+  background-color: #ffffff;
+  height: 4310px;
+  width: 1440px;
+}
+
+.seccin-categoras .overlap-group {
+  background-image: url(./fondo-para-categorias.svg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 4310px;
+  position: relative;
+}
+
+.seccin-categoras .overlap {
+  height: 87px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.seccin-categoras .top-bar-ordenador-y-m-vil {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 1440px !important;
+}
+
+.seccin-categoras .group {
+  background-image: url(./vector.svg);
+  background-size: 100% 100%;
+  height: 32px;
+  left: 1350px;
+  position: absolute;
+  top: 27px;
+  width: 32px;
+}
+
+.seccin-categoras .text-wrapper-2 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 116px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 205px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .imput-instance {
+  border-color: #000000 !important;
+  left: 118px !important;
+  position: absolute !important;
+  top: 385px !important;
+}
+
+.seccin-categoras .design-component-instance-node {
+  background-image: url(./search-2.png) !important;
+  height: 32px !important;
+  position: relative !important;
+  width: 32px !important;
+}
+
+.seccin-categoras .overlap-2 {
+  background-color: #1d3461;
+  height: 214px;
+  left: 0;
+  position: absolute;
+  top: 4096px;
+  width: 1440px;
+}
+
+.seccin-categoras .instagram-instance {
+  height: 64px !important;
+  left: 284px !important;
+  position: absolute !important;
+  top: 73px !important;
+  width: 64px !important;
+}
+
+.seccin-categoras .img {
+  height: 64px;
+  left: 128px;
+  position: absolute;
+  top: 73px;
+  width: 64px;
+}
+
+.seccin-categoras .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 460px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 96px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 784px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 96px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 1108px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 96px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .mask-group {
+  height: 320px;
+  left: 882px;
+  position: absolute;
+  top: 1128px;
+  width: 320px;
+}
+
+.seccin-categoras .mask-group-2 {
+  height: 320px;
+  left: 173px;
+  position: absolute;
+  top: 2048px;
+  width: 320px;
+}
+
+.seccin-categoras .mask-group-3 {
+  height: 320px;
+  left: 882px;
+  position: absolute;
+  top: 1577px;
+  width: 320px;
+}
+
+.seccin-categoras .mask-group-4 {
+  height: 320px;
+  left: 173px;
+  position: absolute;
+  top: 2521px;
+  width: 320px;
+}
+
+.seccin-categoras .mask-group-5 {
+  height: 320px;
+  left: 882px;
+  position: absolute;
+  top: 2521px;
+  width: 320px;
+}
+
+.seccin-categoras .mask-group-6 {
+  height: 320px;
+  left: 882px;
+  position: absolute;
+  top: 703px;
+  width: 320px;
+}
+
+.seccin-categoras .mask-group-7 {
+  height: 320px;
+  left: 173px;
+  position: absolute;
+  top: 1128px;
+  width: 320px;
+}
+
+.seccin-categoras .mask-group-8 {
+  height: 320px;
+  left: 173px;
+  position: absolute;
+  top: 1577px;
+  width: 320px;
+}
+
+.seccin-categoras .mask-group-9 {
+  height: 320px;
+  left: 882px;
+  position: absolute;
+  top: 2048px;
+  width: 320px;
+}
+
+.seccin-categoras .mask-group-10 {
+  height: 320px;
+  left: 173px;
+  position: absolute;
+  top: 703px;
+  width: 320px;
+}
+
+.seccin-categoras .text-wrapper-6 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 992px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1056px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-7 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 280px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1056px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-8 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 260px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1493px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-9 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 977px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1493px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-10 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 225px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1930px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-11 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 914px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1930px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-12 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 287px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2413px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-13 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 987px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2413px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-14 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 274px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2886px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-15 {
+  color: #000000;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 988px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2886px;
+  white-space: nowrap;
+}
+
+.seccin-categoras .botn {
+  background-color: #945600 !important;
+  left: 1022px !important;
+  position: absolute !important;
+  top: 223px !important;
+}
+
+.seccin-categoras .bot-n-instance {
+  background-image: url(./clip-path-group-2.png) !important;
+}
