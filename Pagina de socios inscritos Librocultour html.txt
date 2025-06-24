@@ -1,0 +1,828 @@
+import React from "react";
+import { BotN } from "./BotN";
+import { Instagram } from "./Instagram";
+import group2 from "./group-2.png";
+import group3 from "./group-3.png"
+import group4 from "./group-4.png"
+import group from "./group.png";
+import image1 from "./image.png";
+import image from "./image.svg";
+import logotipoRepositorioLibrocultour1 from "./logotipo-repositorio-librocultour-1.png";
+import "./style.css";
+import vector22 from "./vector-2-2.svg";
+import vector23 from "./vector-2-3.svg";
+import vector24 from "./vector-2-4.svg";
+import vector2 from "./vector-2.svg";
+import vector from "./vector.svg";
+
+export const PginaDeSocios = () => {
+	return (
+	<div className="pgina-de-socios">
+	<div className="div">
+	<div className="overlap-group">
+	<img
+	className="logotipo-repositorio"
+	alt="Logotipo repositorio"
+	src={logotipoRepositorioLibrocultour1}
+	/>
+	</div>
+
+	<div className="overlap">
+	<Instagram className="instagram-instance" />
+	<img className="vector" alt="Vector" src={vector} />
+
+	<div className="text-wrapper">Política de cookies</div>
+	<div className="text-wrapper-2">Política de privacidad</div>
+	<div className="text-wrapper-3">Certificaciones de calidad</div>
+	</div>
+	
+	<div className="text-wrapper-4">Socios inscritos</div>
+
+	<img className="group" alt="Group" src={group2} />
+	<img className="img" alt="Group" src={group} />
+	<img className="group-2" alt="Group" src={image1} />
+	<img className="group-3" alt="Group" src={group3} />
+	<img className="group-4" alt="Group" src={group4} />
+	<img className="vector-2" alt="Vector" src={vector2} />
+	<img className="vector-3" alt="Vector" src={image} />
+	<img className="vector-4" alt="Vector" src={vector22} />
+	<img className="vector-5" alt="Vector" src={vector23} />
+	<img className="vector-6" alt="Vector" src={vector24} />
+
+	<div className="text-wrapper-10">Nombre: José Antonio</div>
+	
+	<div className="text-wrapper-11">Apellidos: Camacho Iborra</div>
+	<div className="text-wrapper-12">Email: loremipsum@gmail.com</div>
+	<div className="text-wrapper-13">Telefono: +123456789</div>
+	<div className="text-wrapper-14">Prestamos activos: 0</div>
+	<div className="text-wrapper-15">Renovaciones: 0</div>
+	<p className="text-wrapper-16">Fecha último préstamo: dd / mm / aaaa</p>
+
+	<div className="text-wrapper-17">Nombre: Miguel</div>
+	
+	<div className="text-wrapper-18">Apellidos: Rey Marfil</div>
+	<div className="text-wrapper-19">Email: loremipsum@gmail.com</div>
+	<div className="text-wrapper-20">Telefono: +123456789</div>
+	<div className="text-wrapper-21">Prestamos activos: 0</div>
+	<div className="text-wrapper-22">Renovaciones: 0</div>
+	<p className="text-wrapper-23">Fecha último préstamo: dd / mm / aaaa</p>
+
+	<div className="text-wrapper-24">Nombre: Jesús</div>
+	
+	<div className="text-wrapper-25">Apellidos: Romanillos Rubio</div>
+	<div className="text-wrapper-26">Email: loremipsum@gmail.com</div>
+	<div className="text-wrapper-27">Telefono: +123456789</div>
+	<div className="text-wrapper-28">Prestamos activos: 0</div>
+	<div className="text-wrapper-29">Renovaciones: 0</div>
+	<p className="text-wrapper-30">Fecha último préstamo: dd / mm / aaaa</p>
+
+	<div className="text-wrapper-31">Nombre: Daniel</div>
+	
+	<div className="text-wrapper-32">Apellidos: Moreta Díez</div>
+	<div className="text-wrapper-33">Email: loremipsum@gmail.com</div>
+	<div className="text-wrapper-34">Telefono: +123456789</div>
+	<div className="text-wrapper-35">Prestamos activos: 0</div>
+	<div className="text-wrapper-36">Renovaciones: 0</div>
+	<p className="text-wrapper-37">Fecha último préstamo: dd / mm / aaaa</p>
+
+	<BotN
+	className="botn"
+	enterSvgrepoComClassName="bot-n-instance"
+	property1="normal"
+	text="Ver libros prestados"
+
+	/>
+
+	<BotN
+	className="design-component-instance-node"
+	enterSvgrepoComClassName="botn-2"
+	property1="normal"
+	text="Ver libros prestados"
+	/>
+	<BotN
+	className="botn-3"
+	enterSvgrepoComClassName="botn-2"
+	property1="normal"
+	text="Ver libros prestados"
+	/>
+	<BotN
+	className="notn-5"
+	enterSvgrepoComClassName="botn-6"
+	property1="normal"
+	text="Ver libros prestados"
+	/>
+	<BotN
+	className="notn-7"
+	enterSvgrepoComClassName="botn-8"
+	property1="normal"
+	text="Ver libros prestados"
+	/>
+	</div>
+	</div>
+	);
+	};
+
+.pgina-de-socios {
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.pgina-de-socios .div {
+	background: linear-gradient(
+	0deg,
+	rgba(255, 255, 255, 1) 0%,
+	rgba(255, 255, 255, 1) 100%
+);
+height: 4311px;
+overflow: hidden;
+position: relative;
+width: 1440px;
+}
+
+.pgina-de-socios .overlap-group {
+	background-color: #ffffff;
+	height: 87px;
+	left: 1px;
+	position: absolute;
+	top: 1px;
+	width: 1440px;
+}
+
+.pgina-de-socios .logotipo-repositorio {
+	height: 56px;
+	left: 682px;
+	object-fit: cover;
+	position: absolute;
+	top: 16px;
+	width: 76px;
+}
+
+.pgina-de-socios ,overlap {
+	background-color: #1d3461;
+	height:214px;
+	left: 1px;
+	position; absolute;
+	top: 4097px;
+	width: 1440px;
+}
+
+.pgina-de-socios .instagram-instance {
+	height: 64px !important;
+	left: 260px !important;
+	position: absolute !important;
+	top: 75px !important;
+	width: 64px !important;
+}
+
+.pgina-de-socios .vector {
+	height: 64px;
+	left: 104px;
+	position: absolute;
+	top: 75px;
+	width: 64px;
+}
+
+.pgina-de-socios .text-wrapper {
+	color: #ffffff;
+	font-family: "Helvetica-Regular", Helvetica;
+	font-size: 20px;
+	font-weight: 400;
+	left: 452px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 96px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-2 {
+	color: #ffffff;
+	font-family: "Helvetica-Regular", Helvetica;
+	font-size: 20px;
+	font-weight: 400;
+	left: 776px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 96px;
+	white-space:nowrap;
+}
+
+.pgina-de-socios .text-wrapper-3 {
+	color: #ffffff;
+	font-family: "Helvetica-Regular", Helvetica;
+	font-size: 20px;
+	font-weight: 400;
+	left: 1100px;
+	letter-spacing: 0;
+	line-height: normal;
+	top: 96px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-4 {
+	color: #000000;
+	font-family: "Helvita-Bold·", Helvetica;
+	font-size: 64px;
+	font-weight: 700;
+	left: 117px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 307px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .group {
+	height: 182px;
+	left: 115px;
+	position: absolute;
+	top: 673px;
+	width: 182px;
+}
+
+.pgina-de-socios .img {
+	height: 182px;
+	left: 115px;
+	position: absolute;
+	top: 1285px;
+	width: 182px;
+}
+
+.pgina-de-socios .group-2 {
+	heigth: 182px;
+	left: 115px;
+	position: absolute;
+	top: 1901px;
+	width: 182px;
+}
+
+.pgina-de-socios .group-3 {
+	height: 182px;
+	left: 112px;
+	postion: absolute;
+	top: 2529px;
+	width: 182px;
+}
+
+.pgina-de-socios .group-4 {
+	height: 182px;
+	left: 115px;
+	position: absolute;
+	top: 3225px;
+	width: 182px;
+}
+
+.pgina-de-socios .vector-2 {
+	height: 3px;
+	left: 115px;
+	position: absolute;
+	top: 600px;
+	width: 1267px;
+}
+
+.pgina-de-socios .vector-3 {
+	height: 3px;
+	left: 117px;
+	position: ansolute;
+	top: 1208px;
+	width: 1267px;
+}
+
+.pgina-de-socios .vector-4 {
+	height: 3px;
+	left: 117px;
+	position: absolute;
+	top: 1816px;
+	width: 1267px;
+}
+
+.pgina-de-socios .vector-5 {
+	height: 3px;
+	left: 112px;
+	position: absolute;
+	top: 2444px;
+	width: 1267px;
+}
+
+.pgina-de-socios .vector-6 {
+	height: 3px;
+	left: 115px;
+	position: absolute;
+	top: 3136px;
+	width: 1267px;
+}
+
+.pgina-de-socios .nombre-miguel-ngel {
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-scaping: 0;
+	line-height: normal;
+	position: absolute;
+	top: 672px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-5 {
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 736px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-6{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 800px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-7{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 864px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-8{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 928px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-9{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 992px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .p{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 1056px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-10{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 1284px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-11{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 1348px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-12{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 1412px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-13{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 1476px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-14{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 1540px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-15{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 1604px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-16{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 1668px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-17{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 1900px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-18{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 1964px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-19{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2028px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-20{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2092px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-21{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2156px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-22{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2220px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-23{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2284px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-24{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2528px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-25{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2592px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-26{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2656px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-27{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2720px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-28{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2784px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-29{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2848px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-30{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 2912px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-31{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 3224px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-32{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 3288px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-33{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 3352px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-34{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 3416px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-35{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 3480px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-36{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 3544px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-37{
+	color: #000000;
+	font-family: "Helvetica-Bold", Helvetica;
+	font-size: 32px;
+	font-weight: 700;
+	left: 448px;
+	letter-spacing: 0;
+	line-height: normal;
+	position: absolute;
+	top: 3608px;
+	white-space: nowrap;
+}
+
+.pgina-de-socios .botn {
+	left: 449px !important;
+	position: absolute !important;
+	top: 1121px !important;
+}
+
+.pgina-de-socios .bot-n-instance {
+	background-image: url(./clip-path-group-2.png) !important;
+
+}
+
+.pgina-de-socios .design-componenet-instance-node {
+	left: 449px !important;
+	position: absolute !important;
+	top: 1733px !important;
+}
+
+.pgina-de-socios .botn-2 {
+	background-image: url(./clip-path-group-3.png) !important;
+
+}
+
+.pgina-de-socios .botn-3 {
+	left: 451px !important;
+	position: absolute !important;
+	top: 2349px !important;
+}
+
+.pgina-de-socios .botn-4 {
+	background-image: url(./clip-path-group-4.png) !important;
+}
+
+.pgina-de-socios .botn-5 {
+	left: 450px !important;
+	position: absolute !important;
+	top: 2977px !important;
+}
+
+.pgina-de-socios .botn-6 {
+	background-image: url(./clip-path-group-5.png) !important;
+}
+
+.pgina-de-socios .botn-7 {
+	left: 446px !important;
+	position: absolute !important;
+	top: 3673px !important;
+}
+
+.pgina-de-socios .botn-8 {
+	background-image: url(./clip-path-group-6.png) !important;
+}
+	
+	
+
+	
