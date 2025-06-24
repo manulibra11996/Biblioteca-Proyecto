@@ -3,33 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Detalle de categoria</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}">
+    <style>
+        :root {
+          --bg: #f5f7fa;
+          --card-bg: #ffffff;
+          --text-primary: #334155;
+          --text-secondary: #64748b;
+          --accent: #6366f1;
+          --error: #ef4444;
+        }
+        body {
+          background: var(--bg);
+          color: var(--text-primary);
+          font-family: 'Segoe UI', sans-serif;
+        }
+        .card {
+          background: var(--card-bg);
+          border-radius: 1rem;
+          box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+        h1 {
+          font-size: 1.75rem;
+          font-weight: 500;
+          color: var(--accent);
+        }
+        dt {
+          font-weight: 600;
+          color: var(--text-secondary);
+        }
+        dd {
+          margin-bottom: 1rem;
+        }
+        .btn-outline-primary {
+          color: var(--accent);
+          border-color: var(--accent);
+          transition: background .2s, color .2s;
+        }
+        .btn-outline-primary:hover {
+          background: var(--accent);
+          color: #fff;
+        }
+        .alert {
+          border-radius: 0.5rem;
+          font-weight: 500;
+        }
+    </style>
 </head>
 <body>
-<div>
-    <h1>Detalle de categoria</h1>
-
-    <div th:if="${error}">
-        <p th:text="${error}"></p>
-    </div>
-
-    <div th:if="${categoria}">
-
-        <div>
-            <strong>ID:</strong> <span th:text="${categoria.id}"></span>
+<div class="container my-5">
+    <div class="card p-4">
+        <h1 class="mb-4">
+            <i class="fa-solid fa-id-badge me-2"></i>Detalle de categoria
+        </h1>
+        <div th:if="${error}" class="alert alert-danger d-flex align-items-center">
+            <i class="fa-solid fa-exclamation-triangle me-2"></i>
+            <span th:text="${error}"></span>
         </div>
-        <div>
-            <strong>Nombre:</strong> <span th:text="${categoria.nombre}"></span>
+        <div th:if="${categoria}">
+            <dl class="row">
+                <dt class="col-sm-4">ID</dt>
+                <dd class="col-sm-8" th:text="${categoria.id}"></dd>
+                <dt class="col-sm-4">Nombre</dt>
+                <dd class="col-sm-8" th:text="${categoria.nombre}"></dd>
+                <dt class="col-sm-4">Apellido</dt>
+                <dd class="col-sm-8" th:text="${categoria.descripcion}"></dd>
+            </dl>
         </div>
-        <div>
-            <strong>Descripcion:</strong> <span th:text="${categoria.descripcion}"></span>
-        </div>
-
-    </div>
-
-    <div>
-        <a th:href="@{/categoria}">Volver al listado de categorias</a>
+        <a th:href="@{/categoria}" class="btn btn-outline-primary rounded-pill px-4 py-2 mt-3">
+            <i class="fa-solid fa-arrow-left me-2"></i>Volver al listado de categorias
+        </a>
     </div>
 </div>
-
 </body>
 </html>

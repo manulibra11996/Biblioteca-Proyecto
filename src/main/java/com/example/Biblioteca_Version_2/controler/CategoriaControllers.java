@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -44,6 +45,35 @@ public class CategoriaControllers {
         }
 
         return "categoria/categoria-detail";
+    }
+
+    // mostrar formulario para crear nuevo categoria
+    @GetMapping("/categoria/nuevo")
+    public String createForm(Model model) {
+        model.addAttribute("categoria", new Categoria());
+
+        return "categoria/categoria-form";
+    }
+
+    // mostrar formulario para editar categoria existente
+    @GetMapping("/categoria/{id}/editar")
+    public String editForm(Model model, @PathVariable Long id) {
+        Optional<Categoria> categoriaOpt = categoriaRepository.findById(id);
+
+        if (categoriaOpt.isPresent()) {
+            model.addAttribute("categoria", categoriaOpt.get());
+        } else {
+            model.addAttribute("error", "Categoria no encontrado");
+        }
+
+        return "categoria/categoria-form";
+    }
+
+    // procesar formulario (crear o actualizar)
+    @PostMapping("/categoria")
+    public String saveForm(@ModelAttribute Categoria categoria) {
+        categoriaRepository.save(categoria);
+        return "redirect:/categoria";
     }
 
     @PostMapping("/categoria/{id}/eliminar")
