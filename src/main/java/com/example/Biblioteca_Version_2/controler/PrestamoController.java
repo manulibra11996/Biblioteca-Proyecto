@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -57,7 +58,40 @@ public class PrestamoController {
 
         return "prestamo/prestamo-detail"; // TODO: crear proveedor-detail.html
     }
-    
+
+    // mostrar formulario para crear nuevo prestamo
+    @GetMapping("/prestamo/nuevo")
+    public String createForm(Model model) {
+        model.addAttribute("prestamo", new Prestamo());
+        model.addAttribute("libro", libroRepository.findAll());
+        model.addAttribute("socio", socioRepository.findAll());
+
+        return "prestamo/prestamo-form";
+    }
+
+    // mostrar formulario para editar prestamo existente
+    @GetMapping("/prestamo/{id}/editar")
+    public String editForm(Model model, @PathVariable Long id) {
+        Optional<Prestamo> prestamoOpt = prestamoRepository.findById(id);
+
+        if (prestamoOpt.isPresent()) {
+            model.addAttribute("prestamo", prestamoOpt.get());
+            model.addAttribute("libro", libroRepository.findAll());
+            model.addAttribute("socio", socioRepository.findAll());
+        } else {
+            model.addAttribute("error", "Prestamo no encontrado");
+        }
+
+        return "prestamo/prestamo-form";
+    }
+
+    // procesar formulario (crear o actualizar)
+    @PostMapping("/prestamo")
+    public String saveForm(@ModelAttribute Prestamo prestamo) {
+        prestamoRepository.save(prestamo);
+        return "redirect:/prestamo";
+    }
+
     @PostMapping("/prestamo/{id}/eliminar")
     public String delete(@PathVariable Long id) {
 

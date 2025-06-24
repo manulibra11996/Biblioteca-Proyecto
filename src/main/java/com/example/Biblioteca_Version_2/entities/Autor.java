@@ -1,6 +1,8 @@
 package com.example.Biblioteca_Version_2.entities;
 
 import jakarta.persistence.*;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 
@@ -18,7 +20,7 @@ public class Autor {
     private String apellido;
     @Column(name = "biografia")
     private String biografia;
-    @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(name = "fecha_nacimiento")
     private Date fechaNacimiento;
     @Column(name = "nacionalidad")

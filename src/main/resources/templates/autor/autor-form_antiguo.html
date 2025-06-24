@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de autor</title>
+</head>
+<body>
+
+
+<h1 th:if="${autor.id != null}">
+  Modificar autor <span th:text="${autor.id}"></span>
+</h1>
+<h1 th:if="${autor.id == null}">Crear nuevo autor</h1>
+
+<form th:action="@{/autor}" method="post" th:object="${autor}">
+  <!-- campo oculto para ID -->
+  <input type="hidden" th:field="*{id}" />
+
+  <!-- nombre -->
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text"
+           id="nombre"
+           th:field="*{nombre}"
+           placeholder="Escribe el nombre">
+  </div>
+  <br>
+
+  <!-- apellido -->
+  <div>
+    <label for="apellido">Apellido:</label>
+    <input type="text"
+           id="apellido"
+           th:field="*{apellido}"
+           placeholder="Escribe el apellido">
+  </div>
+  <br>
+
+  <!-- Bibliografia -->
+  <div>
+    <label for="biografia">Biografia:</label>
+    <input type="text"
+           id="biografia"
+           th:field="*{biografia}"
+           placeholder="Escribe el biografia">
+  </div>
+  <br>
+
+  <!-- Fecha de nacimiento -->
+  <div>
+  <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+  <input type="date"
+         id="fechaNacimiento"
+         th:field="*{fechaNacimiento}"
+         placeholder="01/01/2000">
+  </div>
+  <br>
+
+  <!-- Nacionalidad -->
+  <div>
+    <label for="nacionalidad">Nacionalidad:</label>
+    <input type="text"
+           id="nacionalidad"
+           th:field="*{nacionalidad}"
+           placeholder="Escribe la nacionalidad">
+  </div>
+  <br>
+
+  <!-- botones -->
+  <div>
+    <a th:href="@{/autor}">Cancelar</a>
+    <button type="submit">Guardar</button>
+  </div>
+</form>
+
+</body>
+</html>

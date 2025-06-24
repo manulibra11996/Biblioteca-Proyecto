@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de autor</title>
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+  <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}">
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+      --card-bg: rgba(255, 255, 255, 0.8);
+      --accent: #5c4dfd;
+      --input-border: #d1d5db;
+      --text: #334155;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: var(--bg-gradient);
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+    }
+    .form-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 460px;
+    }
+    .form-card h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: var(--accent);
+    }
+    .form-group {
+      position: relative;
+      margin-bottom: 1.75rem;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem 0.5rem;
+      border: none;
+      border-bottom: 2px solid var(--input-border);
+      background: transparent;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    .form-group input:focus {
+      border-bottom-color: var(--accent);
+    }
+    .form-group label {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.5rem;
+      font-size: 1rem;
+      color: var(--input-border);
+      pointer-events: none;
+      transition: transform 0.2s, font-size 0.2s;
+    }
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label {
+      transform: translateY(-1.6rem);
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+    .btn-disruptive {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-disruptive:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .form-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .form-footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .form-footer a:hover {
+      color: #3b30b3;
+    }
+  </style>
+</head>
+<body>
+<div class="form-card">
+  <h1 th:if="${autor.id != null}">Modificar autor <span th:text="${autor.id}"></span></h1>
+  <h1 th:if="${autor.id == null}">Crear nuevo autor</h1>
+  <form th:action="@{/autor}" method="post" th:object="${autor}">
+    <input type="hidden" th:field="*{id}" />
+    <div class="form-group">
+      <input type="text" id="nombre" th:field="*{nombre}" placeholder=" " autocomplete="off">
+      <label for="nombre">Nombre</label>
+    </div>
+    <div class="form-group">
+      <input type="text" id="apellido" th:field="*{apellido}" placeholder=" " autocomplete="off">
+      <label for="apellido">Apellido</label>
+    </div>
+    <div class="form-group">
+      <input type="text" id="biografia" th:field="*{biografia}" placeholder=" " autocomplete="off">
+      <label for="biografia">Biografía</label>
+    </div>
+    <div class="form-group">
+      <input type="date" id="fechaNacimiento" th:field="*{fechaNacimiento}" placeholder=" ">
+      <label for="fechaNacimiento">Fecha de Nacimiento</label>
+    </div>
+    <div class="form-group">
+      <input type="text" id="nacionalidad" th:field="*{nacionalidad}" placeholder=" " autocomplete="off">
+      <label for="nacionalidad">Nacionalidad</label>
+    </div>
+    <div class="form-footer">
+      <a th:href="@{/autor}">Cancelar</a>
+      <button type="submit" class="btn-disruptive">
+        <i class="fa-solid fa-floppy-disk me-2"></i>Guardar
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

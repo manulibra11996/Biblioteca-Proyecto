@@ -43,6 +43,35 @@ public class AutorController {
         return "autor/autor-detail";
     }
 
+    // mostrar formulario para crear nuevo autor
+    @GetMapping("/autor/nuevo")
+    public String createForm(Model model) {
+        model.addAttribute("autor", new Autor());
+
+        return "autor/autor-form";
+    }
+
+    // mostrar formulario para editar autor existente
+    @GetMapping("/autor/{id}/editar")
+    public String editForm(Model model, @PathVariable Long id) {
+        Optional<Autor> autorOpt = autorRepository.findById(id);
+
+        if (autorOpt.isPresent()) {
+            model.addAttribute("autor", autorOpt.get());
+        } else {
+            model.addAttribute("error", "Autor no encontrado");
+        }
+
+        return "autor/autor-form";
+    }
+
+    // procesar formulario (crear o actualizar)
+    @PostMapping("/autor")
+    public String saveForm(@ModelAttribute Autor autor) {
+        autorRepository.save(autor);
+        return "redirect:/autor";
+    }
+    
     @PostMapping("/autor/{id}/eliminar")
     public String delete(@PathVariable Long id) {
         if (libroRepository.countByAutor_Id(id) > 0) {

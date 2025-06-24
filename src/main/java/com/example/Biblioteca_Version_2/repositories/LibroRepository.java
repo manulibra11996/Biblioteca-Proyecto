@@ -21,4 +21,5 @@ public interface LibroRepository extends JpaRepository<Libro, Long> {
 
     long countByCategoria_Id(Long id);
 
+
 }

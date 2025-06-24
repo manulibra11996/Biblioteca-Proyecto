@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle de autor</title>
+</head>
+<body>
+<div>
+    <h1>Detalle de autor</h1>
+
+    <div th:if="${error}">
+        <p th:text="${error}"></p>
+    </div>
+
+    <div th:if="${autor}">
+
+        <div>
+            <strong>ID:</strong> <span th:text="${autor.id}"></span>
+        </div>
+        <div>
+            <strong>Nombre:</strong> <span th:text="${autor.nombre}"></span>
+        </div>
+        <div>
+            <strong>Apellido:</strong> <span th:text="${autor.apellido}"></span>
+        </div>
+        <div>
+            <strong>Biografia:</strong> <span th:text="${autor.biografia}"></span>
+        </div>
+        <div>
+            <strong>Fecha de nacimiento:</strong> <span th:text="${autor.fechaNacimiento}"></span>
+        </div>
+        <div>
+            <strong>Nacionalidad:</strong> <span th:text="${autor.nacionalidad}"></span>
+        </div>
+    </div>
+
+    <div>
+        <a th:href="@{/autor}">Volver al listado de autores</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -13,19 +13,9 @@
 </h1>
 <h1 th:if="${prestamo.id == null}">Crear nuevo prestamo</h1>
 
-<!-- con operador ternario -->
-<h1 th:text="${prestamo.id != null ? 'Modificar prestamo ' + prestamo.id : 'Crear nuevo prestamo'}" ></h1>
-
-<div th:if="${prestamo}">
-
-  <div>
-    <strong>ID:</strong> <span th:text="${prestamo.id}"></span>
-  </div>
-</div>
-<form th:value="@{/prestamo}" th:object="${prestamo}" method="post">
-
+<form th:action="@{/prestamo}" method="post" th:object="${prestamo}">
   <!-- campo oculto para ID -->
-  <input type="hidden" th:field="*{id}">
+  <input type="hidden" th:field="*{id}" />
 
   <!-- nombre del socio -->
   <div>
@@ -75,12 +65,7 @@
   <!-- botones -->
   <div>
     <a th:href="@{/prestamo}">Cancelar</a>
-    <button type="submit">
-      <span th:if="${prestamo.id != null}">Actualizar</span>
-      <span th:if="${prestamo.id == null}">Guardar</span>
-      <!-- operador ternario -->
-      <!--<span th:text="${prestamo.id != null ? 'Actualizar' : 'Guardar'}"></span>-->
-    </button>
+    <button type="submit">Guardar</button>
   </div>
 </form>
 
