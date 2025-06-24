@@ -12,7 +12,7 @@
     <h1 class="mb-4">
         <i class="fa-solid fa-bounce me-2"></i>Lista de prestamos
     </h1>
-    <a th:href="@{/prestamo/construccion}" class="btn btn-success mb-3">
+    <a th:href="@{/prestamo/nuevo}" class="btn btn-success mb-3">
         <i class="fa-solid fa-plus me-2"></i>Insertar nuevo prestamo
     </a>
 
@@ -42,7 +42,7 @@
                            title="Ver detalle">
                             <i class="fa-solid fa-eye me-1"></i>Ver
                         </a>
-                        <a th:href="@{prestamos/{id}/edit(id=${prestamo.id})}"
+                        <a th:href="@{/prestamo/{id}/editar(id=${prestamo.id})}"
                            class="btn btn-warning btn-sm"
                            title="Editar prestamo">
                             <i class="fa-solid fa-file-pen me-1"></i>Editar
