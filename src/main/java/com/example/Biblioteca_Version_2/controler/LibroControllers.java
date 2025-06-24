@@ -62,8 +62,10 @@ public class LibroControllers {
 
         if (libroOpt.isPresent()) {
             model.addAttribute("libro", libroOpt.get());
+            model.addAttribute("autor", autorRepository.findAll());
+            model.addAttribute("categoria", categoriaRepository.findAll());
         } else {
-            model.addAttribute("error", "libro no encontrado");
+            model.addAttribute("error", "Libro no encontrado");
         }
 
         return "libros/libros-form";

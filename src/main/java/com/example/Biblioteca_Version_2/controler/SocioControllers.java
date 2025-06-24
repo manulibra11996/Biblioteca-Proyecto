@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -43,12 +44,34 @@ public class SocioControllers {
 
         return "socios/socio-detail";
     }
-    @GetMapping("/socios/eliminar/{id}")
-    public String eliminarSocio(@PathVariable Long id) {
-        SocioControllers socioService;
-        socioService = null;
-        socioService.eliminarSocio(id);
-        return "redirect:/socios";
+
+    // mostrar formulario para crear nuevo socio
+    @GetMapping("/socio/nuevo")
+    public String createForm(Model model) {
+        model.addAttribute("socio", new Socio());
+
+        return "socios/socio-form";
+    }
+
+    // mostrar formulario para editar socio existente
+    @GetMapping("/socio/{id}/editar")
+    public String editForm(Model model, @PathVariable Long id) {
+        Optional<Socio> socioOpt = socioRepository.findById(id);
+
+        if (socioOpt.isPresent()) {
+            model.addAttribute("socio", socioOpt.get());
+        } else {
+            model.addAttribute("error", "socio no encontrado");
+        }
+
+        return "socios/socio-form";
+    }
+
+    // procesar formulario (crear o actualizar)
+    @PostMapping("/socio")
+    public String saveForm(@ModelAttribute Socio socio) {
+        socioRepository.save(socio);
+        return "redirect:/socio";
     }
 
     @PostMapping("/socio/{id}/eliminar")
