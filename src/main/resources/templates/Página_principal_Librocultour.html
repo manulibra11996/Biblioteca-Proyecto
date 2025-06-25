@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<style>
+
+
+  .pgina-principal {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .pgina-principal .div {
+    background-color: #ffffff;
+    height: 4311px;
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+  }
+
+  .pgina-principal .overlap {
+    height: 2048px;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    width: 1442px;
+  }
+
+  .pgina-principal .pasillo-con-libros {
+    height: 1081px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 1439px;
+  }
+
+  .pgina-principal .top-bar-ordenador-y-m-vil {
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 1440px !important;
+  }
+
+  .pgina-principal .imagen-libro-abierto {
+    height: 951px;
+    left: 0;
+    position: absolute;
+    top: 1097px;
+    width: 1439px;
+  }
+
+  .pgina-principal .group {
+    height: 238px;
+    left: 0;
+    position: absolute;
+    top: 1024px;
+    width: 1442px;
+  }
+
+  .pgina-principal .overlap-group {
+    background-color: #8093f1;
+    height: 238px;
+    position: relative;
+    width: 1440px;
+  }
+
+  .pgina-principal .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Helvetica-Bold", Helvetica;
+    font-size: 64px;
+    font-weight: 700;
+    left: 639px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 82px;
+    white-space: nowrap;
+  }
+
+  .pgina-principal .group-2 {
+    background-image: url(./vector.svg);
+    background-size: 100% 100%;
+    height: 32px;
+    left: 1351px;
+    position: absolute;
+    top: 27px;
+    width: 32px;
+  }
+
+  .pgina-principal .rectangle {
+    -webkit-backdrop-filter: blur(5.7px) brightness(100%);
+    backdrop-filter: blur(5.7px) brightness(100%);
+    background-color: #ffffffa1;
+    border: 1px solid;
+    border-color: #ffffff1c;
+    border-radius: 0px 30px 0px 30px;
+    height: 172px;
+    left: 258px;
+    position: absolute;
+    top: 429px;
+    width: 924px;
+  }
+
+  .pgina-principal .p {
+    color: #000000;
+    font-family: "Helvetica-Bold", Helvetica;
+    font-size: 64px;
+    font-weight: 700;
+    left: 284px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 480px;
+    white-space: nowrap;
+  }
+
+  .pgina-principal .rectangle-2 {
+    -webkit-backdrop-filter: blur(5.7px) brightness(100%);
+    backdrop-filter: blur(5.7px) brightness(100%);
+    background-color: #ffffffa1;
+    border: 1px solid;
+    border-color: #ffffff1c;
+    border-radius: 0px 30px 0px 30px;
+    height: 329px;
+    left: 258px;
+    position: absolute;
+    top: 1400px;
+    width: 924px;
+  }
+
+  .pgina-principal .text-wrapper-3 {
+    color: #000000;
+    font-family: "Helvetica-Bold", Helvetica;
+    font-size: 64px;
+    font-weight: 700;
+    left: 384px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 1462px;
+    white-space: nowrap;
+  }
+
+  .pgina-principal .botn {
+    left: 615px !important;
+    position: absolute !important;
+    top: 1619px !important;
+  }
+
+  .pgina-principal .bot-n-instance {
+    background-image: url(./clip-path-group-2.png) !important;
+  }
+
+  .pgina-principal .overlap-2 {
+    height: 1000px;
+    left: 1px;
+    position: absolute;
+    top: 3311px;
+    width: 1440px;
+  }
+
+  .pgina-principal .estanteria-con {
+    height: 841px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 1439px;
+  }
+
+  .pgina-principal .rectangle-3 {
+    -webkit-backdrop-filter: blur(5.7px) brightness(100%);
+    backdrop-filter: blur(5.7px) brightness(100%);
+    background-color: #ffffffa1;
+    border: 1px solid;
+    border-color: #ffffff1c;
+    border-radius: 0px 30px 0px 30px;
+    height: 329px;
+    left: 258px;
+    position: absolute;
+    top: 140px;
+    width: 924px;
+  }
+
+  .pgina-principal .text-wrapper-4 {
+    color: #000000;
+    font-family: "Helvetica-Bold", Helvetica;
+    font-size: 64px;
+    font-weight: 700;
+    left: 384px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 212px;
+    white-space: nowrap;
+  }
+
+  .pgina-principal .design-component-instance-node {
+    left: 615px !important;
+    position: absolute !important;
+    top: 367px !important;
+  }
+
+  .pgina-principal .botn-2 {
+    background-image: url(./clip-path-group-4.png) !important;
+  }
+
+  .pgina-principal .rectangle-4 {
+    background-color: #1d3461;
+    height: 214px;
+    left: 0;
+    position: absolute;
+    top: 786px;
+    width: 1440px;
+  }
+
+  .pgina-principal .instagram-instance {
+    height: 64px !important;
+    left: 260px !important;
+    position: absolute !important;
+    top: 861px !important;
+    width: 64px !important;
+  }
+
+  .pgina-principal .vector {
+    height: 64px;
+    left: 104px;
+    position: absolute;
+    top: 861px;
+    width: 64px;
+  }
+
+  .pgina-principal .text-wrapper-5 {
+    color: #ffffff;
+    font-family: "Helvetica-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 452px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 882px;
+    white-space: nowrap;
+  }
+
+  .pgina-principal .text-wrapper-6 {
+    color: #ffffff;
+    font-family: "Helvetica-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 776px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 882px;
+    white-space: nowrap;
+  }
+
+  .pgina-principal .text-wrapper-7 {
+    color: #ffffff;
+    font-family: "Helvetica-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 1100px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 882px;
+    white-space: nowrap;
+  }
+
+  .pgina-principal .overlap-group-wrapper {
+    height: 238px;
+    left: 1px;
+    position: absolute;
+    top: 3073px;
+    width: 1442px;
+  }
+
+  .pgina-principal .text-wrapper-8 {
+    color: #ffffff;
+    font-family: "Helvetica-Bold", Helvetica;
+    font-size: 64px;
+    font-weight: 700;
+    left: 554px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 82px;
+    white-space: nowrap;
+  }
+
+  .pgina-principal .overlap-3 {
+    background-image: url(./multiples-libros.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 785px;
+    left: 1px;
+    position: absolute;
+    top: 2288px;
+    width: 1439px;
+  }
+
+  .pgina-principal .rectangle-5 {
+    -webkit-backdrop-filter: blur(5.7px) brightness(100%);
+    backdrop-filter: blur(5.7px) brightness(100%);
+    background-color: #ffffffa1;
+    border: 1px solid;
+    border-color: #ffffff1c;
+    border-radius: 0px 30px 0px 30px;
+    height: 329px;
+    left: 258px;
+    position: absolute;
+    top: 128px;
+    width: 924px;
+  }
+
+  .pgina-principal .text-wrapper-9 {
+    color: #000000;
+    font-family: "Helvetica-Bold", Helvetica;
+    font-size: 64px;
+    font-weight: 700;
+    left: 418px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 179px;
+    white-space: nowrap;
+  }
+
+  .pgina-principal .botn-3 {
+    left: 615px !important;
+    position: absolute !important;
+    top: 354px !important;
+  }
+
+  .pgina-principal .botn-4 {
+    background-image: url(./clip-path-group-3.png) !important;
+  }
+
+  .pgina-principal .overlap-wrapper {
+    height: 238px;
+    left: 1px;
+    position: absolute;
+    top: 2049px;
+    width: 1442px;
+  }
+
+  .pgina-principal .text-wrapper-10 {
+    color: #ffffff;
+    font-family: "Helvetica-Bold", Helvetica;
+    font-size: 64px;
+    font-weight: 700;
+    left: 599px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 82px;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="pgina-principal">
+<div class="div">
+<div class="overlap">
+
+  <div class="top-bar-ordenador-y">
+    <img class="logotipo-repositorio" src="img/logotipo-repositorio-librocultour-1.png" />
+    <div class="text-wrapper"><a th:href="@{/libro}">Libros</a></div>
+    <div class="text-wrapper"><a th:href="@{/autor}">Autores</a></div>
+    <div class="text-wrapper"><a th:href="@{/categoria}">Categorias</a></div>
+  </div>
+
+<img class="pasillo-con-libros" src="img/pasillo-con-libros.png" />
+
+<img class="imagen-libro-abierto" src="img/imagen-libro-abierto.png" />
+<div class="group">
+<div class="overlap-group"><div class="text-wrapper-2">Libro</div></div>
+</div>
+<div class="group-2"></div>
+<div class="rectangule"></div>
+<p class="p">¡Bienvenido a Librocultour!</p>
+<div class="rectangule-2"></div>
+<div class="text-wrapper-3">¿Que lecturabuscas?</div>
+<div class="botn">
+<div class= "enter-svgrepo-com"></div>
+<div class="pr-stamo">Haz click aquí</div>
+</div>
+</div>
+<div class="overlap-2">
+<img class="estanteria-con" src="img/estanteria-con-libros.png" />
+<div class="rectangle-3"></div>
+<div class="text-wrapper-4">¿Que género buscas?</div>
+<div class="botn-2">
+<div class="enter-svgrepo-com-2"></div>
+<div class="pr-stamo">Haz click aqui</div>
+</div>
+<div class="rectangule-4"></div>
+<img class="instagram" src="img/instagram.svg" />
+<img class="vector" src="img/image.svg" />
+<div class="text-wrapper-5">Política de cookies</div>
+<div class="text-wrapper-6">Política de privacidad</div>
+<div class="text-wrapper-7">Certificaciones de calidad</div>
+</div>
+<div class="overlap-group-wrapper">
+<div class="overlap-group"><div class="text-wrapper-8">Categorias</div></div>
+</div>
+<div class="overlap-3">
+<div class="rectangule-5"></div>
+<div class="text-wrapper-9">¿Buscas a alguien?</div>
+<div class="botn-3">
+<div class="enter-svgrepo-com-3"></div>
+<div class="pr-stamo">Haz click aquí</div>
+</div>
+</div>
+<div class="overlap-wrapper">
+<div class="overlap-group"><div class="text-wrapper-10">Autores</div></div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
