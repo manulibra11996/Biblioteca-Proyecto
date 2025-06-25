@@ -1,7 +1,10 @@
 -- Insertar en categorias
-INSERT INTO `biblioteca`.`categorias` (`nombre`, `descripcion`) VALUES ('Romance', 'Libros de amor', 'ficción','Fantasía Romance','Terror','Historia','Biografía','Autobiografía'
-);
-
+INSERT INTO `biblioteca`.`categorias` (`nombre`, `descripcion`) VALUES ('Romance', 'Libros de amor',);
+INSERT INTO `biblioteca`.`categorias` (`nombre`, `descripcion`) VALUES ('ficción', 'Fantasía Romance',);
+INSERT INTO `biblioteca`.`categorias` (`nombre`, `descripcion`) VALUES ('Terror', 'miedo intriga',);
+INSERT INTO `biblioteca`.`categorias` (`nombre`, `descripcion`) VALUES ('Historia', 'eventos del pasado',);
+INSERT INTO `biblioteca`.`categorias` (`nombre`, `descripcion`) VALUES ('Biografia', 'vidas de personajes famosos');
+INSERT INTO `biblioteca`.`categorias` (`nombre`, `descripcion`) VALUES ('Autobiografía', 'vidas ralatadas por el autor');
 -- Insertar en autores
 INSERT INTO `biblioteca`.`autores` (`apellido`, `biografia`, `fecha_nacimiento`, `nacionalidad`, `nombre`) VALUES ('Fernández', 'renacimiento', '1605-01-16', 'España', 'Manuel');
 INSERT INTO `biblioteca`.`autores` (`apellido`, `biografia`, `fecha_nacimiento`, `nacionalidad`, `nombre`) VALUES ('Kathleen Rowling', 'Autora de la serie de libros de Harry Potter una de las series de libros más vendidas de la historia', '1965-07-31','Britámica', 'Joanne');
