@@ -34,10 +34,10 @@ public class SocioController {
 
     @GetMapping("/socio/{id}") // http://localhost:8080/productos/1
     public String findById(Model model, @PathVariable Long id) {
-        Optional<Socio> sociosOpt = socioRepository.findById(id);
+        Optional<Socio> socioOpt = socioRepository.findById(id);
 
-        if (sociosOpt.isPresent()) {
-            model.addAttribute("socio", sociosOpt.get());
+        if (socioOpt.isPresent()) {
+            model.addAttribute("socio", socioOpt.get());
         } else {
             model.addAttribute("error", "404 Socios Not Found");
         }

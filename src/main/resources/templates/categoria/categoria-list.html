@@ -63,6 +63,11 @@
         <i class="fa-solid fa-plus me-2"></i>
         Insertar nuevo categoria
     </a>
+    <a th:href="@{/}"
+       class="btn btn-secondary rounded-pill mb-4 px-4 py-2">
+        <i class=" me-2"></i>
+        Volviendo a Home
+    </a>
     <div th:unless="${categoria.isEmpty()}" class="card">
         <div class="table-responsive">
             <table class="table">
