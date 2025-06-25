@@ -18,7 +18,7 @@ import java.util.Optional;
 @Slf4j
 @RequiredArgsConstructor
 @Controller
-public class LibroControllers {
+public class LibroController {
     private final CategoriaRepository categoriaRepository;
     private final LibroRepository libroRepository;
     private final AutorRepository autorRepository;
@@ -75,7 +75,7 @@ public class LibroControllers {
     @PostMapping("/libro")
     public String saveForm(@ModelAttribute Libro libro) {
         libroRepository.save(libro);
-        return "redirect:/libros";
+        return "redirect:/libro";
     }
 
     @PostMapping("/libro/{id}/eliminar")

@@ -18,7 +18,7 @@ import java.util.Optional;
 @Slf4j
 @RequiredArgsConstructor
 @Controller
-public class SocioControllers {
+public class SocioController {
     private final PrestamoRepository prestamoRepository;
 
     private final SocioRepository socioRepository;

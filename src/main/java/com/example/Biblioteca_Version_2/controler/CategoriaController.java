@@ -18,7 +18,7 @@ import java.util.Optional;
 @Slf4j
 @RequiredArgsConstructor
 @Controller
-public class CategoriaControllers {
+public class CategoriaController {
     // anotación que mapea las peticiones GET a la URL "/alquiler"
 
     private final CategoriaRepository categoriaRepository;
