@@ -1,0 +1,264 @@
+.pgina-de-socios {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.pgina-de-socios .div {
+  overflow: hidden;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 1440px;
+  height: 4311px;
+  position: relative;
+}
+
+.pgina-de-socios .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 87px;
+  top: 1px;
+  left: 1px;
+  background-color: #ffffff;
+}
+
+.pgina-de-socios .logotipo-repositorio {
+  position: absolute;
+  width: 76px;
+  height: 56px;
+  top: 16px;
+  left: 678px;
+  object-fit: cover;
+}
+
+.pgina-de-socios .overlap-group {
+  position: absolute;
+  width: 1440px;
+  height: 214px;
+  top: 4097px;
+  left: 1px;
+  background-color: #1d3461;
+}
+
+.pgina-de-socios .instagram {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 75px;
+  left: 260px;
+}
+
+.pgina-de-socios .vector {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 75px;
+  left: 104px;
+}
+
+.pgina-de-socios .text-wrapper {
+  left: 452px;
+  position: absolute;
+  top: 96px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-2 {
+  left: 776px;
+  position: absolute;
+  top: 96px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-3 {
+  position: absolute;
+  top: 96px;
+  left: 1100px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.pgina-de-socios .text-wrapper-4 {
+  position: absolute;
+  top: 307px;
+  left: 117px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.pgina-de-socios .group {
+  position: absolute;
+  width: 472px;
+  height: 472px;
+  top: 504px;
+  left: 481px;
+}
+
+.pgina-de-socios .div-wrapper {
+  position: absolute;
+  width: 1284px;
+  height: 211px;
+  top: 1224px;
+  left: 75px;
+  background-color: #ffffff;
+  border-radius: 9999px;
+}
+
+.pgina-de-socios .text-wrapper-5 {
+  position: absolute;
+  top: 67px;
+  left: 525px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.pgina-de-socios .overlap-2 {
+  position: absolute;
+  width: 1284px;
+  height: 211px;
+  top: 1557px;
+  left: 75px;
+  background-color: #ffffff;
+  border-radius: 9999px;
+}
+
+.pgina-de-socios .text-wrapper-6 {
+  position: absolute;
+  top: 67px;
+  left: 501px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.pgina-de-socios .overlap-3 {
+  position: absolute;
+  width: 1284px;
+  height: 211px;
+  top: 1890px;
+  left: 75px;
+  background-color: #ffffff;
+  border-radius: 9999px;
+}
+
+.pgina-de-socios .text-wrapper-7 {
+  position: absolute;
+  top: 67px;
+  left: 566px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.pgina-de-socios .overlap-4 {
+  position: absolute;
+  width: 1284px;
+  height: 211px;
+  top: 2223px;
+  left: 75px;
+  background-color: #ffffff;
+  border-radius: 9999px;
+}
+
+.pgina-de-socios .text-wrapper-8 {
+  position: absolute;
+  top: 67px;
+  left: 510px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.pgina-de-socios .overlap-group-wrapper {
+  top: 2660px;
+  position: absolute;
+  width: 610px;
+  height: 211px;
+  left: 413px;
+}
+
+.pgina-de-socios .overlap-group-2 {
+  position: relative;
+  width: 608px;
+  height: 211px;
+  background-color: #1d3461;
+  border-radius: 9999px;
+}
+
+.pgina-de-socios .text-wrapper-9 {
+  position: absolute;
+  top: 69px;
+  left: 113px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.pgina-de-socios .overlap-wrapper {
+  top: 2993px;
+  position: absolute;
+  width: 610px;
+  height: 211px;
+  left: 413px;
+}
+
+.pgina-de-socios .socios-inscritos {
+  position: absolute;
+  top: 32px;
+  left: 173px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
