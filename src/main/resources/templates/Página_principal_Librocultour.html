@@ -158,7 +158,6 @@
   }
 
   .pgina-principal .overlap-2 {
-    background-image: url(./images/Multiples libros.jpg);
     background-position: 50% 50%;
     background-size: cover;
     height: 1000px;
@@ -386,11 +385,13 @@
     <div class="text-wrapper"><a th:href="@{/libro}">Libros</a></div>
     <div class="text-wrapper"><a th:href="@{/autor}">Autores</a></div>
     <div class="text-wrapper"><a th:href="@{/categoria}">Categorias</a></div>
+    <div class="text-wrapper"><a th:href="@{/socio}">Socios</a></div>
+    <div class="text-wrapper"><a th:href="@{/prestamo}">Prestamos</a></div>
   </div>
 
-<img style="z-index:-999" class="pasillo-con-libros" src="images/Pasillo con libros.jpg" />
+<img style="z-index:-999" class="pasillo-con-libros" src="images/pasillo-con-libros.jpg" />
 
-<img class="imagen-libro-abierto" src="images/Imagen libro abierto.jpg" />
+<img class="imagen-libro-abierto" src="images/Imagen-libro-abierto.jpg" />
 <div class="group">
 <div class="overlap-group"><div class="text-wrapper-2">Libro</div></div>
 </div>
@@ -398,26 +399,29 @@
 <div class="rectangule"></div>
 <p class="p">¡Bienvenido a Librocultour!</p>
 <div class="rectangule-2"></div>
-<div class="text-wrapper-3">¿Que lecturabuscas?</div>
+<div class="text-wrapper-3">¿Que lectura buscas?</div>
 <div class="botn">
 <div class= "enter-svgrepo-com"></div>
-  <div class="pr-stamo"><a th:href="@{/libro}">Haz click aquí</a></div>
+  <div class="pr-stamo"><a th:href="@{/libro}" style="color: white;
+   text-decoration: none;">Haz click aquí</a></div>
 </div>
   <div class="overlap-3">
     <div class="rectangule-5"></div>
     <div class="text-wrapper-9">¿Buscas a alguien?</div>
     <div class="botn-3">
       <div class="enter-svgrepo-com-3"></div>
-      <div class="pr-stamo"><a th:href="@{/autor}">Haz click aquí</a></div>
+      <div class="pr-stamo"><a th:href="@{/autor}" style="color: white;
+      text-decoration: none;">Haz click aquí</a></div>
     </div>
 </div>
 <div class="overlap-2">
-<!--<img class="estanteria-con" src="images/Estanteria con libros.jpg" />-->
-<div class="rectangle-3"></div>
+<img class="estanteria-con" src="images/Estanteria-con-libros.jpg" />
+<!--<div class="rectangle-3"></div>-->
 <div class="text-wrapper-4">¿Que género buscas?</div>
 <div class="botn-2">
 <div class="enter-svgrepo-com-2"></div>
-  <div class="pr-stamo"><a th:href="@{/categoria}">Haz click aqui</a></div>
+  <div class="pr-stamo"><a th:href="@{/categoria}" style="color: white;
+   text-decoration: none;">Haz click aqui</a></div>
 </div>
 <div class="rectangule-4">
 <img class="instagram" src="vectores/Instagram.svg" />
@@ -426,11 +430,13 @@
 <div class="text-wrapper-6">Política de privacidad</div>
 <div class="text-wrapper-7">Certificaciones de calidad</div>
 </div>
+</div>
+
 <div class="overlap-group-wrapper">
 <div class="overlap-group"><div class="text-wrapper-8">Categorias</div></div>
 </div>
 
-</div>
+
 <div class="overlap-wrapper">
 <div class="overlap-group"><div class="text-wrapper-10">Autores</div></div>
 </div>
