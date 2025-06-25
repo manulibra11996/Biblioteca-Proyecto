@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta charset="utf-8" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="styles/Style-index.css" />
 <style>
 
 
@@ -158,6 +158,9 @@
   }
 
   .pgina-principal .overlap-2 {
+    background-image: url(./images/Multiples libros.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
     height: 1000px;
     left: 1px;
     position: absolute;
@@ -297,7 +300,7 @@
   }
 
   .pgina-principal .overlap-3 {
-    background-image: url(./multiples-libros.png);
+    background-image: url(./images/Multiples libros.jpg);
     background-position: 50% 50%;
     background-size: cover;
     height: 785px;
@@ -364,6 +367,13 @@
     top: 82px;
     white-space: nowrap;
   }
+
+  .rectangule-4 {
+      background-color: navy;
+      color: white;
+      height: 150px;
+      padding: 20px;
+    }
 </style>
 </head>
 <body>
@@ -372,15 +382,15 @@
 <div class="overlap">
 
   <div class="top-bar-ordenador-y">
-    <img class="logotipo-repositorio" src="img/logotipo-repositorio-librocultour-1.png" />
+    <img class="logotipo-repositorio" src="images/Logo-librocultour.jpg" />
     <div class="text-wrapper"><a th:href="@{/libro}">Libros</a></div>
     <div class="text-wrapper"><a th:href="@{/autor}">Autores</a></div>
     <div class="text-wrapper"><a th:href="@{/categoria}">Categorias</a></div>
   </div>
 
-<img class="pasillo-con-libros" src="img/pasillo-con-libros.png" />
+<img style="z-index:-999" class="pasillo-con-libros" src="images/Pasillo con libros.jpg" />
 
-<img class="imagen-libro-abierto" src="img/imagen-libro-abierto.png" />
+<img class="imagen-libro-abierto" src="images/Imagen libro abierto.jpg" />
 <div class="group">
 <div class="overlap-group"><div class="text-wrapper-2">Libro</div></div>
 </div>
@@ -391,20 +401,27 @@
 <div class="text-wrapper-3">¿Que lecturabuscas?</div>
 <div class="botn">
 <div class= "enter-svgrepo-com"></div>
-<div class="pr-stamo">Haz click aquí</div>
+  <div class="pr-stamo"><a th:href="@{/libro}">Haz click aquí</a></div>
 </div>
+  <div class="overlap-3">
+    <div class="rectangule-5"></div>
+    <div class="text-wrapper-9">¿Buscas a alguien?</div>
+    <div class="botn-3">
+      <div class="enter-svgrepo-com-3"></div>
+      <div class="pr-stamo"><a th:href="@{/autor}">Haz click aquí</a></div>
+    </div>
 </div>
 <div class="overlap-2">
-<img class="estanteria-con" src="img/estanteria-con-libros.png" />
+<!--<img class="estanteria-con" src="images/Estanteria con libros.jpg" />-->
 <div class="rectangle-3"></div>
 <div class="text-wrapper-4">¿Que género buscas?</div>
 <div class="botn-2">
 <div class="enter-svgrepo-com-2"></div>
-<div class="pr-stamo">Haz click aqui</div>
+  <div class="pr-stamo"><a th:href="@{/categoria}">Haz click aqui</a></div>
 </div>
-<div class="rectangule-4"></div>
-<img class="instagram" src="img/instagram.svg" />
-<img class="vector" src="img/image.svg" />
+<div class="rectangule-4">
+<img class="instagram" src="vectores/Instagram.svg" />
+<img class="vector" src="vectores/Vector.svg" />
 <div class="text-wrapper-5">Política de cookies</div>
 <div class="text-wrapper-6">Política de privacidad</div>
 <div class="text-wrapper-7">Certificaciones de calidad</div>
@@ -412,16 +429,11 @@
 <div class="overlap-group-wrapper">
 <div class="overlap-group"><div class="text-wrapper-8">Categorias</div></div>
 </div>
-<div class="overlap-3">
-<div class="rectangule-5"></div>
-<div class="text-wrapper-9">¿Buscas a alguien?</div>
-<div class="botn-3">
-<div class="enter-svgrepo-com-3"></div>
-<div class="pr-stamo">Haz click aquí</div>
-</div>
+
 </div>
 <div class="overlap-wrapper">
 <div class="overlap-group"><div class="text-wrapper-10">Autores</div></div>
+</div>
 </div>
 </div>
 </div>
