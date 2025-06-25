@@ -1,0 +1,460 @@
+//Politica de cookies
+
+.poltica-de-cookies {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.poltica-de-cookies .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 4310px;
+}
+
+.poltica-de-cookies .overlap-group {
+  position: relative;
+  height: 4310px;
+  background-image: url(./img/fondo-para-categorias.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.poltica-de-cookies .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 87px;
+  top: 0;
+  left: 0;
+}
+
+.poltica-de-cookies .top-bar-ordenador-y {
+  display: flex;
+  width: 1440px;
+  height: 87px;
+  align-items: flex-start;
+  gap: 127px;
+  padding: 22px 60px 22px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.poltica-de-cookies .logotipo-repositorio {
+  position: relative;
+  width: 76px;
+  height: 56px;
+  margin-bottom: -13.00px;
+  object-fit: cover;
+}
+
+.poltica-de-cookies .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d3461;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.poltica-de-cookies .group {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 27px;
+  left: 1350px;
+  background-image: url(./img/vector.svg);
+  background-size: 100% 100%;
+}
+
+.poltica-de-cookies .div {
+  position: absolute;
+  width: 1440px;
+  height: 214px;
+  top: 4096px;
+  left: 0;
+  background-color: #1d3461;
+}
+
+.poltica-de-cookies .instagram {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 73px;
+  left: 284px;
+}
+
+.poltica-de-cookies .vector {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 73px;
+  left: 128px;
+}
+
+.poltica-de-cookies .text-wrapper-2 {
+  left: 460px;
+  position: absolute;
+  top: 96px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.poltica-de-cookies .text-wrapper-3 {
+  left: 784px;
+  position: absolute;
+  top: 96px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.poltica-de-cookies .text-wrapper-4 {
+  position: absolute;
+  top: 96px;
+  left: 1108px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.poltica-de-cookies .librocultour-est {
+  position: absolute;
+  width: 1080px;
+  top: 320px;
+  left: 180px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+//Política de privacidad
+
+.poltica-de {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.poltica-de .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 4310px;
+}
+
+.poltica-de .overlap-group {
+  position: relative;
+  height: 4310px;
+  background-image: url(./img/fondo-para-categorias.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.poltica-de .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 87px;
+  top: 0;
+  left: 0;
+}
+
+.poltica-de .top-bar-ordenador-y {
+  display: flex;
+  width: 1440px;
+  height: 87px;
+  align-items: flex-start;
+  gap: 127px;
+  padding: 22px 60px 22px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.poltica-de .logotipo-repositorio {
+  position: relative;
+  width: 76px;
+  height: 56px;
+  margin-bottom: -13.00px;
+  object-fit: cover;
+}
+
+.poltica-de .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d3461;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.poltica-de .group {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 27px;
+  left: 1350px;
+  background-image: url(./img/image.svg);
+  background-size: 100% 100%;
+}
+
+.poltica-de .div {
+  position: absolute;
+  width: 1440px;
+  height: 214px;
+  top: 4096px;
+  left: 0;
+  background-color: #1d3461;
+}
+
+.poltica-de .instagram {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 73px;
+  left: 284px;
+}
+
+.poltica-de .vector {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 73px;
+  left: 128px;
+}
+
+.poltica-de .text-wrapper-2 {
+  left: 460px;
+  position: absolute;
+  top: 96px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.poltica-de .text-wrapper-3 {
+  left: 784px;
+  position: absolute;
+  top: 96px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.poltica-de .text-wrapper-4 {
+  position: absolute;
+  top: 96px;
+  left: 1108px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.poltica-de .estamos-encantados {
+  position: absolute;
+  width: 1238px;
+  top: 250px;
+  left: 94px;
+  font-family: "Helvetica-Oblique", Helvetica;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+//Certificaciones de calidad
+
+.certificaciones-de {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.certificaciones-de .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 4310px;
+}
+
+.certificaciones-de .overlap-group {
+  position: relative;
+  height: 4310px;
+  background-image: url(./img/fondo-para-categorias.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.certificaciones-de .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 87px;
+  top: 0;
+  left: 0;
+}
+
+.certificaciones-de .top-bar-ordenador-y {
+  display: flex;
+  width: 1440px;
+  height: 87px;
+  align-items: flex-start;
+  gap: 127px;
+  padding: 22px 60px 22px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.certificaciones-de .logotipo-repositorio {
+  position: relative;
+  width: 76px;
+  height: 56px;
+  margin-bottom: -13.00px;
+  object-fit: cover;
+}
+
+.certificaciones-de .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d3461;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.certificaciones-de .group {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 27px;
+  left: 1350px;
+  background-image: url(./img/vector.svg);
+  background-size: 100% 100%;
+}
+
+.certificaciones-de .div {
+  position: absolute;
+  width: 1440px;
+  height: 214px;
+  top: 4096px;
+  left: 0;
+  background-color: #1d3461;
+}
+
+.certificaciones-de .instagram {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 73px;
+  left: 284px;
+}
+
+.certificaciones-de .vector {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 73px;
+  left: 128px;
+}
+
+.certificaciones-de .text-wrapper-2 {
+  top: 96px;
+  left: 460px;
+  color: #ffffff;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.certificaciones-de .text-wrapper-3 {
+  top: 96px;
+  left: 784px;
+  color: #ffffff;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.certificaciones-de .text-wrapper-4 {
+  position: absolute;
+  top: 96px;
+  left: 1108px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.certificaciones-de .pol-tica-de-calidad {
+  top: 277px;
+  left: 158px;
+  color: #000000;
+  position: absolute;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+
