@@ -1,0 +1,434 @@
+.seccin-categoras {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.seccin-categoras .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 4310px;
+}
+
+.seccin-categoras .overlap-group {
+  position: relative;
+  height: 4310px;
+  background-image: url(./img/fondo-para-categorias.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.seccin-categoras .overlap {
+  position: absolute;
+  width: 1440px;
+  height: 87px;
+  top: 0;
+  left: 0;
+}
+
+.seccin-categoras .top-bar-ordenador-y {
+  display: flex;
+  width: 1440px;
+  height: 87px;
+  align-items: flex-start;
+  gap: 127px;
+  padding: 22px 60px 22px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.seccin-categoras .logotipo-repositorio {
+  position: relative;
+  width: 76px;
+  height: 56px;
+  margin-bottom: -13.00px;
+  object-fit: cover;
+}
+
+.seccin-categoras .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #1d3461;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .group {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 27px;
+  left: 1350px;
+  background-image: url(./img/image.svg);
+  background-size: 100% 100%;
+}
+
+.seccin-categoras .div {
+  position: absolute;
+  top: 205px;
+  left: 116px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .imput {
+  display: flex;
+  width: 1154px;
+  align-items: center;
+  gap: 40px;
+  padding: 8px 12px 8px 52px;
+  position: absolute;
+  top: 385px;
+  left: 118px;
+  background-color: #ffffff;
+  border-radius: 8888px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.seccin-categoras .component {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-image: url(./img/search.png);
+  background-size: 100% 100%;
+}
+
+.seccin-categoras .text-wrapper-2 {
+  position: relative;
+  width: 927px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #00000080;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.seccin-categoras .vector {
+  position: relative;
+  width: 52px;
+  margin-right: -1.00px;
+}
+
+.seccin-categoras .overlap-2 {
+  position: absolute;
+  width: 1440px;
+  height: 214px;
+  top: 4096px;
+  left: 0;
+  background-color: #1d3461;
+}
+
+.seccin-categoras .instagram {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 73px;
+  left: 284px;
+}
+
+.seccin-categoras .img {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 73px;
+  left: 128px;
+}
+
+.seccin-categoras .text-wrapper-3 {
+  left: 460px;
+  position: absolute;
+  top: 96px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-4 {
+  left: 784px;
+  position: absolute;
+  top: 96px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-5 {
+  position: absolute;
+  top: 96px;
+  left: 1108px;
+  font-family: "Helvetica-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .mask-group {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  top: 1128px;
+  left: 882px;
+}
+
+.seccin-categoras .mask-group-2 {
+  top: 2048px;
+  left: 173px;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+.seccin-categoras .mask-group-3 {
+  top: 1577px;
+  left: 882px;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+.seccin-categoras .mask-group-4 {
+  top: 2521px;
+  left: 173px;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+.seccin-categoras .mask-group-5 {
+  top: 2521px;
+  left: 882px;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+.seccin-categoras .mask-group-6 {
+  top: 703px;
+  left: 882px;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+.seccin-categoras .mask-group-7 {
+  top: 1128px;
+  left: 173px;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+.seccin-categoras .mask-group-8 {
+  top: 1577px;
+  left: 173px;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+.seccin-categoras .mask-group-9 {
+  top: 2048px;
+  left: 882px;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+.seccin-categoras .mask-group-10 {
+  top: 703px;
+  left: 173px;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+
+.seccin-categoras .text-wrapper-6 {
+  position: absolute;
+  top: 1056px;
+  left: 992px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-7 {
+  position: absolute;
+  top: 1056px;
+  left: 280px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-8 {
+  position: absolute;
+  top: 1493px;
+  left: 260px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-9 {
+  position: absolute;
+  top: 1493px;
+  left: 977px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-10 {
+  position: absolute;
+  top: 1930px;
+  left: 225px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-11 {
+  position: absolute;
+  top: 1930px;
+  left: 914px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-12 {
+  position: absolute;
+  top: 2413px;
+  left: 287px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-13 {
+  position: absolute;
+  top: 2413px;
+  left: 987px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-14 {
+  position: absolute;
+  top: 2886px;
+  left: 274px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .text-wrapper-15 {
+  position: absolute;
+  top: 2886px;
+  left: 988px;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.seccin-categoras .botn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  position: absolute;
+  top: 223px;
+  left: 1022px;
+  background-color: #945600;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.seccin-categoras .enter-svgrepo-com {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  background-image: url(./img/clip-path-group.png);
+  background-size: 100% 100%;
+}
+
+.seccin-categoras .pr-stamo {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
